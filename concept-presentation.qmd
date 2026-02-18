@@ -1,0 +1,664 @@
+---
+title: "Conceptual Framework for Defections"
+subtitle: "When and Why Do Regime Supporters Cease Their Support?"
+author: "Jonathan Pinckney"
+date: "2026-02-17"
+format:
+  revealjs:
+    theme: [dark, custom.scss]
+    slide-number: true
+    width: 1280
+    height: 720
+    center: false
+    hash-type: number
+    footer: "Defections Project — Conceptual Framework"
+    title-slide-attributes:
+      data-background-color: "#1a1a2e"
+---
+
+```{r}
+library(tidyverse)
+```
+
+
+
+## The Motivating Question {.smaller}
+
+> When do supporters of authoritarian and democratic backsliding regimes cease to support their leaders? When do they [**defect**]{.highlight-red}?
+
+. . .
+
+- Defection is [**consequential**]{.highlight-red} — it shapes regime stability and transformation
+- Yet we lack a [**unifying framework**]{.highlight-red} for understanding defection across contexts
+- 
+
+. . .
+
+**Goal:** Develop a framework to guide research and inform practitioners seeking to advance, defend, and repair democracy.
+
+
+## Power Rests on Obedience {.smaller}
+
+All political regimes rely on key groups and institutions to provide power and resources [(Sharp 1973)]{.small-gray}:
+
+. . .
+
+- [**Security forces**]{.highlight-red} → capacity for repression
+- [**Media**]{.highlight-red} → regime narratives and public compliance
+- [**Citizens**]{.highlight-red} → taxes, obedience, legitimacy
+- [**Business elites**]{.highlight-red} → economic resources
+- [**Legislators & bureaucrats**]{.highlight-red} → institutional functioning
+
+. . .
+
+
+
+
+## What Is Defection? {.smaller}
+
+[**Defection**]{.highlight-red} is any instance in which a regime supporter [**substantively decreases**]{.highlight-red} their level of regime support.
+
+. . .
+
+Examples:
+
+- Soldiers refuse to open fire on demonstrators
+- Government attorneys refuse politically-motivated prosecutions
+- Legislators resign or vote against their party leadership
+- Businesses withdraw financial support
+
+. . .
+
+Defection is especially crucial in processes of [**nonviolent resistance**]{.highlight-red}, whose logic rests not on eliminating opponents but on *shifting them to one's side* [(Chenoweth & Stephan 2011)]{.small-gray}.
+
+
+## The Spectrum of Allies and Opponents {.smaller}
+
+Adapted from [Oppenheimer & Lakey (1965)]{.small-gray}:
+
+```{r}
+#| fig-align: center
+#| 
+vlines <- tibble(x = 0:5)
+spectrum.data <- tibble(
+  y = rep(0,5),
+  x = seq(0.5,4.5,1),
+  label = c("Active\nOpposition","Passive\nOpposition","Neutral\n","Passive\nSupport","Active\nSupport")
+)
+arrows <- tibble(
+  x = c(4.5,3.5,2.5),
+  y = c(0.5,0.2,0.8),
+  xend = c(2.5,1.5,0.5),
+  yend = c(0.5,0.2,0.8),
+  label = c("Defection","Defection","Not Defection")
+)
+
+# Color palette for dark background
+col_opposition <- "#A93226"   # warm red
+col_support    <- "#4ECDC4"   # teal
+col_neutral    <- "#FFE66D"   # yellow
+col_arrow_def  <- "#A93226"
+col_arrow_ndef <- "#4ECDC4"
+col_text       <- "white"
+col_hline      <- "white"
+col_vline      <- "white"
+
+# Assign colors to spectrum labels
+spectrum.data <- spectrum.data |>
+  mutate(color = c(col_opposition, col_opposition, col_neutral, col_support, col_support))
+
+# Assign colors to arrows
+arrows <- arrows |>
+  mutate(color = c(col_arrow_def, col_arrow_def, col_arrow_ndef))
+
+ggplot(spectrum.data, aes(x, y, label = label)) +
+  geom_text(
+    aes(color = "white"),
+    vjust = 1.5,
+    fontface = "bold",
+    size = 8
+  ) +
+  geom_hline(yintercept = 0, color = col_hline, linewidth = 0.8) +
+  geom_vline(
+    data = vlines,
+    aes(xintercept = x),
+    linetype = "dashed",
+    color = col_vline,
+    linewidth = 0.5
+  ) +
+  geom_segment(
+    data = arrows,
+    aes(x = x, y = y, xend = xend, yend = yend, color = color),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    linewidth = 1.5
+  ) +
+  geom_text(
+    data = arrows,
+    aes(
+      x = (x + xend) / 2,
+      y = (y + yend) / 2,
+      label = label,
+      color = color
+    ),
+    vjust = -1,
+    fontface = "bold",
+    size = 8
+  ) +
+  scale_color_identity() +
+  scale_y_continuous(limits = c(-0.4, 1.2)) +
+  coord_cartesian(clip = "off") +
+  theme_void() +
+  theme(
+    plot.background = element_rect(fill = "#191919", color = "#191919"),
+    panel.background = element_rect(fill = "#191919", color = "#191919"),
+    panel.border = element_blank(),
+    text = element_text(size = 22)
+  )
+```
+
+. . .
+
+- [**Loyalty Shifts**]{.highlight-red} = any movement along the spectrum
+- [**Defection**]{.highlight-red} = any leftward movement *beginning* in active or passive support
+
+
+## Scope Conditions {.smaller}
+
+This project focuses on defection within:
+
+. . .
+
+**1. Authoritarian and democratic backsliding regimes**
+
+- Repression makes defection far riskier than in healthy democracies [(Davenport 2007)]{.small-gray}
+- Different risk environments → different motivators
+- Core motivation: understanding how to protect, repair, and advance democracy
+
+. . .
+
+**2. The contemporary world (post–Cold War)**
+
+- Modern authoritarianism relies more on pseudo-democratic institutions, less on brute repression [(Guriev & Treisman 2019)]{.small-gray}
+- Democratic backsliding today is gradual, centered on executive aggrandizement under a veneer of legality [(Bermeo 2016; Riedl et al. 2025)]{.small-gray}
+
+
+## What Do We Already Know? {.smaller}
+
+Different forms of defection have been studied in **isolation**:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- **Military/security defection** during civil resistance [(Nepstad 2013; Grewal 2019; Dahl, Celestino & Gates 2026)]{.small-gray}
+- **Legislative defection** from ruling parties in autocracies [(del Río 2022; Reuter & Gandhi 2011)]{.small-gray}
+
+:::
+
+::: {.column width="50%"}
+
+- **Individual elite defection** from regime coalitions [(Hale & Colton 2017; Tertytchnaya 2020)]{.small-gray}
+- **Mass voter defection** in electoral autocracies
+
+:::
+
+::::
+
+
+## Three Consensus Findings {.smaller}
+
+::: {style="display: grid; grid-template-rows: repeat(3, 1fr); height: 70vh;"}
+
+::: {.fragment style="align-self: center; padding-left: 0%;"}
+### Defection is [Consequential]{.highlight-red}
+:::
+
+::: {.fragment style="align-self: center; padding-left: 15%;"}
+### Defection is [Difficult]{.highlight-red}
+:::
+
+::: {.fragment style="align-self: center; padding-left: 30%;"}
+### Defection is [Complex]{.highlight-red} but [Predictable]{.highlight-red}
+:::
+
+:::
+
+## {background-color="#1a1a2e"}
+
+::: {style="text-align: center; margin-top: 150px;"}
+
+[Guiding Assumptions]{style="font-size: 1.5em; font-weight: bold;"}
+
+:::
+
+
+## Defection is Individual or Collective {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Defection occurs at both levels:
+
+::: {.incremental}
+- [**Individual (micro):**]{.highlight-red} Personal decisions that may or may not affect one's group
+- [**Group (meso):**]{.highlight-red} Collective defection that cannot be reduced to aggregated individual decisions
+:::
+
+[Research at only one level that doesn't accounr for the other yields an incomplete picture.]{.fragment}
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| fig-width: 5
+#| fig-height: 6
+#| fig-align: center
+library(ggplot2)
+
+# Define box positions
+boxes <- data.frame(
+  x = c(2.5, 2.5, 1, 2.5, 4),
+  y = c(5, 3, 1, 1, 1),
+  label = c("Political System", "Group", "Individual", "Individual", "Individual"),
+  width = c(2.4, 1.8, 1.4, 1.4, 1.4),
+  height = c(0.7, 0.7, 0.7, 0.7, 0.7),
+  fill = rep("#A93226",5)
+)
+
+# Define connecting lines (from bottom of upper box to top of lower box)
+lines <- data.frame(
+  x =    c(2.5, 2.5, 2.5, 2.5),
+  xend = c(2.5, 1.0, 2.5, 4.0),
+  y =    c(5 - 0.35, 3 - 0.35, 3 - 0.35, 3 - 0.35),
+  yend = c(3 + 0.35, 1 + 0.35, 1 + 0.35, 1 + 0.35)
+)
+
+ggplot() +
+  # Draw connecting lines
+  geom_segment(
+    data = lines,
+    aes(x = x, y = y, xend = xend, yend = yend),
+    color = "#ffffff88",
+    linewidth = 1.2
+  ) +
+  # Draw rounded rectangles
+  geom_tile(
+    data = boxes,
+    aes(x = x, y = y, width = width, height = height, fill = fill),
+    color = NA,
+    linejoin = "round"
+  ) +
+  # Add labels
+  geom_text(
+    data = boxes,
+    aes(x = x, y = y, label = label),
+    color = "white",
+    fontface = "bold",
+    size = 5
+  ) +
+  scale_fill_identity() +
+  coord_cartesian(xlim = c(-0.2, 5.2), ylim = c(0.2, 5.8)) +
+  theme_void() +
+  theme(
+    plot.background = element_rect(fill = "#191919", color = "#191919"),
+    panel.background = element_rect(fill = "#191919", color = "#191919"),
+  )
+```
+
+:::
+
+::::
+
+
+## Defection Is Social {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Understanding defection requires attention to:
+
+- [**Embeddedness**]{.highlight-red} within broader social networks
+- [**Information Flows**]{.highlight-red} through those networks
+
+:::
+
+::: {.column width="50%"}
+
+```{r}
+#| fig-width: 5
+#| fig-height: 5
+#| fig-align: center
+library(igraph)
+
+set.seed(42)
+edges <- data.frame(
+  from = c(1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 7, 8, 1, 4, 6),
+  to   = c(2, 3, 4, 5, 6, 7, 5, 6, 8, 8, 8, 9, 6, 7, 9)
+)
+g <- graph_from_data_frame(edges, directed = TRUE)
+
+node_colors <- c(
+  "#4ECDC4", "#4ECDC4", "#4ECDC4", "#A93226", "#4ECDC4",
+  "#A93226", "#A93226", "#4ECDC4", "#A93226"
+)
+
+coords <- layout_with_fr(g)
+
+par(bg = NA, mar = c(0, 0, 0, 0))
+plot(g,
+  layout = coords,
+  vertex.color = node_colors,
+  vertex.frame.color = node_colors,
+  vertex.size = 18,
+  vertex.label = NA,
+  edge.color = "#ffffff55",
+  edge.arrow.size = 0.5,
+  edge.width = 1.5
+)
+```
+
+:::
+
+::::
+
+
+## Defection Has Multi-Faceted, Obscure Motivations {.smaller}
+
+People defect for many reasons — often simultaneously:
+
+- [**Rational self-interest**]{.highlight-red} (material utility maximization)
+- [**Moral conviction**]{.highlight-red} [(Pearlman 2018)]{.small-gray}
+- [**Changing social norms**]{.highlight-red} of appropriate behavior
+
+. . .
+
+These motivations interact:
+
+- Material interests are easier to advance with moral justification
+- Principled commitment is easier to sustain when materially beneficial
+
+. . .
+
+**Key caution:** Self-reported explanations are one data source among many, not definitive answers. People construct narratives to shape self and collective image [(Nisbett & Wilson 1977)]{.small-gray}.
+
+
+## Defection Is Behavioral {.smaller}
+
+Defection is defined not by what people [**think**]{.highlight-red} but by what they [**do**]{.highlight-red}.
+
+. . .
+
+- There must be an [**observable behavioral change**]{.highlight-red} vis-à-vis the regime
+- Changes in beliefs or attitudes that don't produce behavior change ≠ defection
+
+. . .
+
+But speech counts as behavior!
+
+- In authoritarian contexts, even slight indications of dissent are politically meaningful
+
+. . .
+
+**Caveat:** What counts as defection depends what constitutes [*loyalty*]{.highlight-red} for that individual or group.
+
+- Havel's shopkeeper removing "Workers of the World, Unite" sign
+
+
+## Defection Takes Many Forms {.smaller}
+
+Two dimensions categorize forms of defection:
+
+|  | [**Breaking**]{.highlight-red} (exit/outside) | [**Binding**]{.highlight-red} (voice/inside) |
+|---|---|---|
+| [**Speaking**]{.highlight-red} | Public condemnation | Private disapproval |
+| [**Acting**]{.highlight-red} | Joining a demonstration | Creating internal reforms |
+| [**Standing in the way**]{.highlight-red} | Disobeying orders | Foot-dragging |
+
+. . .
+
+- [**Breaking**]{.highlight-red} severs ties with the regime (visible, explicit)
+- [**Binding**]{.highlight-red} maintains identity within regime while applying internal pressure (quiet, behind-the-scenes)
+- Defection over time likely begins with **binding** → then **breaking**
+
+
+## {background-color="#1a1a2e"}
+
+::: {style="text-align: center; margin-top: 150px;"}
+
+[Initial Propositions]{style="font-size: 1.5em; font-weight: bold;"}
+
+:::
+
+
+## Defection Requires a Way Out {.smaller}
+
+Regime supporters won't defect without perceiving an **acceptable post-defection future**.
+
+. . .
+
+- Corrupt business elites fear both losing benefits *and* opposition animosity [(Sinanoglu 2025)]{.small-gray}
+- Without viable post-defection pathways, defection is particularly rare [(Langston 2002)]{.small-gray}
+- Eliminating alternatives is a key strategy of authoritarian control
+
+. . .
+
+**Implication for resistance campaigns:**
+
+- Create alternative institutions
+- Negotiate exit plans
+- Promote an **inclusive vision** of a post-regime future where potential defectors can see themselves
+
+
+## It's Not What You Know, It's Who You Know {.smaller}
+
+Defection is driven by **social connections** and a "logic of appropriateness" [(March & Olsen 1998)]{.small-gray}.
+
+. . .
+
+- Positive connections to individuals/groups with lower regime loyalty → reduced loyalty, increased defection probability
+- When group boundaries blur (supporters see their group as including opponents) → in-group loyalty no longer implies regime loyalty
+
+. . .
+
+**For resistance campaigns, defection is more likely when:**
+
+1. The campaign increases [**social connections**]{.highlight-red} to regime supporters
+2. The campaign signals that [**dissent is more widespread and durable**]{.highlight-red} than previously believed
+
+
+## But Material Consequences Matter {.smaller}
+
+Social connections are important but likely insufficient. Defection in authoritarian contexts is **high-risk, high-cost**, thus may only occur when material costs of defection are lower than costs of loyalty.
+
+. . .
+
+**Tension:** Social vs. material logics of sparking defection
+
+*Example:* A business supporting an authoritarian leader
+
+- [**Social**]{.highlight-red} approach: Patronize the business → build connections → social logic of appropriateness
+- [**Material**]{.highlight-red} approach: Boycott → cut connections → heighten material costs of loyalty
+
+. . .
+
+Campaigns are likely to be effective when they [**sequence**]{.highlight-red} social and material strategies — material pressure may be most effective when seen as a temporary break in a relationship that can be restored.
+
+
+## Step Size and Regime Type {.smaller}
+
+[**Little steps are easier than big steps**]{.highlight-red}
+
+- Most common defection: passive support → neutrality
+- Jumps of multiple levels (active support → active opposition) are rare
+- Reaching active opposition typically requires passing through each intermediate stage
+
+. . .
+
+[**But authoritarianism can make defection all-or-nothing**]{.highlight-red}
+
+- Authoritarian regimes punish even modest loyalty declines with severe repression
+- This accumulates large numbers of "false supporters" [(Kuran 1991)]{.small-gray}
+- When they defect, they do so dramatically
+
+. . .
+
+**Hypothesis:** Defection scale is directly related to degree of authoritarianism. More open → small, frequent defections. More authoritarian → rare but large and abrupt.
+
+
+## {background-color="#1a1a2e"}
+
+::: {style="text-align: center; margin-top: 150px;"}
+
+[Discussion]{style="font-size: 1.5em; font-weight: bold;"}
+
+:::
+
+
+## Is This Framework Helpful? {.smaller}
+
+[**Do the concepts and definitions in this framework illuminate the relevant phenomena?**]{.highlight-red}
+
+[**In particular: is it helpful to lump together small moves and big moves?**]{.highlight-red}
+
+. . .
+```{r}
+#| fig-align: center
+#| 
+vlines <- tibble(x = 0:5)
+spectrum.data <- tibble(
+  y = rep(0,5),
+  x = seq(0.5,4.5,1),
+  label = c("Active\nOpposition","Passive\nOpposition","Neutral\n","Passive\nSupport","Active\nSupport")
+)
+arrows <- tibble(
+  x = c(4.5,3.5,2.5),
+  y = c(0.5,0.2,0.8),
+  xend = c(3.5,1.5,0.5),
+  yend = c(0.5,0.2,0.8),
+  label = c("Defection","Defection","Not Defection")
+)
+
+# Color palette for dark background
+col_opposition <- "#A93226"   # warm red
+col_support    <- "#4ECDC4"   # teal
+col_neutral    <- "#FFE66D"   # yellow
+col_arrow_def  <- "#A93226"
+col_arrow_ndef <- "#4ECDC4"
+col_text       <- "white"
+col_hline      <- "white"
+col_vline      <- "white"
+
+# Assign colors to spectrum labels
+spectrum.data <- spectrum.data |>
+  mutate(color = c(col_opposition, col_opposition, col_neutral, col_support, col_support))
+
+# Assign colors to arrows
+arrows <- arrows |>
+  mutate(color = c(col_arrow_def, col_arrow_def, col_arrow_ndef))
+
+ggplot(spectrum.data, aes(x, y, label = label)) +
+  geom_text(
+    aes(color = "white"),
+    vjust = 1.5,
+    fontface = "bold",
+    size = 8
+  ) +
+  geom_hline(yintercept = 0, color = col_hline, linewidth = 0.8) +
+  geom_vline(
+    data = vlines,
+    aes(xintercept = x),
+    linetype = "dashed",
+    color = col_vline,
+    linewidth = 0.5
+  ) +
+  geom_segment(
+    data = arrows,
+    aes(x = x, y = y, xend = xend, yend = yend, color = color),
+    arrow = arrow(length = unit(0.3, "cm"), type = "closed"),
+    linewidth = 1.5
+  ) +
+  geom_text(
+    data = arrows,
+    aes(
+      x = (x + xend) / 2,
+      y = (y + yend) / 2,
+      label = label,
+      color = color
+    ),
+    vjust = -1,
+    fontface = "bold",
+    size = 8
+  ) +
+  scale_color_identity() +
+  scale_y_continuous(limits = c(-0.4, 1.2)) +
+  coord_cartesian(clip = "off") +
+  theme_void() +
+  theme(
+    plot.background = element_rect(fill = "#191919", color = "#191919"),
+    panel.background = element_rect(fill = "#191919", color = "#191919"),
+    panel.border = element_blank(),
+    text = element_text(size = 22)
+  )
+```
+
+
+## Gains and Losses {.smaller}
+
+[**What is gained and what is lost from thinking of defections in this high-level, unified way?**]{.highlight-red}
+
+. . .
+
+*Some considerations:*
+
+- Gain: Cross-pollination of insights across fragmented literatures
+- Gain: Unified language for practitioners and researchers
+- Loss: Context-specific dynamics may be obscured
+- Loss: Risk of over-generalizing across diverse phenomena
+
+
+## Evaluating the Assumptions {.smaller}
+
+[**Which assumptions are clear/unclear or helpful/unhelpful? Are there contradictions?**]{.highlight-red}
+
+The six assumptions:
+
+1. Defection can be [**individual or collective**]{.highlight-red}
+2. Defection is [**social**]{.highlight-red}
+3. Defection has [**multi-faceted, obscure motivations**]{.highlight-red}
+4. Defection is [**behavioral**]{.highlight-red}
+5. Defection [**takes many forms**]{.highlight-red}
+6. Defection is [**contextual**]{.highlight-red}
+
+
+
+## What's Missing? {.smaller}
+
+[**What additional assumptions are necessary to understand defections?**]{.highlight-red}
+
+. . .
+
+*Some possible prompts:*
+
+- Role of **emotions** (fear, hope, shame, anger) as distinct from rational calculation or moral conviction?
+- **Temporality** — does timing of defection matter independently?
+- **Reversibility** — can defectors return to support? How does this affect the framework?
+
+
+## Other Critiques? {.smaller}
+
+
+- What are the methodological challenges of studying defection given the framework?
+- Are the scope conditions (authoritarian + backsliding regimes) too broad or too narrow?
+- How does this framework relate to adjacent concepts (exit/voice/loyalty, methods of nonviolent action)?
+
+
+## {background-color="#1a1a2e"}
+
+::: {style="text-align: center; margin-top: 150px;"}
+
+[Thank You!]{style="font-size: 1.5em; font-weight: bold;"}
+
+:::

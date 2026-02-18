@@ -1,0 +1,623 @@
+NAVCOID	CAMPAIGN	LOCATION	BYEAR	EYEAR	TARGET	SUCCESS	LIMITED	FAILURE	ONGOING	VIOL	NONVIOL	FSELFDET	REGCHANGE	SECESSION	OTHER
+1027.0	"Third Anglo-Afghan War"	"Afghanistan"	1919.0	1919.0	"British occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+1041.0	"Anti-Reformist movement"	"Afghanistan"	1924.0	1929.0	"Amanullah Khan regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+4.0	"Afghans"	"Afghanistan"	1978.0	1979.0	"Afghan government"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+462.0	"Anti-Soviet Movement (3 Hut Uprising)"	"Afghanistan"	1980.0	1980.0	"Gov't of USSR"	0.0	0.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+3.0	"Afghan resistance"	"Afghanistan"	1980.0	1989.0	"Soviet occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+218.0	"Taliban/anti-government forces"	"Afghanistan"	1992.0	1996.0	"Afghan regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+217.0	"Taliban"	"Afghanistan"	2001.0	2019.0	"Afghan government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+436.0	"ISIS-Afghanistan"	"Afghanistan"	2015.0	2019.0	"Gov't of Afghanistan/Go'vt of US"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+5.0	"Albanian anti-communist"	"Albania"	1990.0	1991.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+563.0	"Albanian anti-corruption"	"Albania"	2019.0	2019.0	"Rama government"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+6.0	"Algerian Revolt/National Liberation Front"	"Algeria"	1954.0	1962.0	"French occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+82.0	"former rebel leaders"	"Algeria"	1962.0	1963.0	"Ben Bella regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+106.0	"Islamic Salvation Front"	"Algeria"	1992.0	2002.0	"Algerian government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+317.0	"Anti-Abdelaziz Bouteflika Campaign"	"Algeria"	2010.0	2012.0	"Abdelaziz Bouteflika's Government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+564.0	"Smile Revolution"	"Algeria"	2019.0	2019.0	"Abdelaziz Bouteflika's Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+176.0	"Popular Movement for the Liberation of Angola"	"Angola"	1961.0	1974.0	"Portuguese occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+237.0	"UNITA"	"Angola"	1975.0	2002.0	"Angolan government"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+390.0	"Cabinda Conflict"	"Angola"	1991.0	2019.0	"Govt of Angola"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+362.0	"Revolucion Libertadora"	"Argentina"	1955.0	1955.0	"Argentina"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+72.0	"ERP/Monteneros"	"Argentina"	1973.0	1977.0	"Argentina regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+33.0	"pro-democracy movement"	"Argentina"	1977.0	1983.0	"military junta"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+32.0	"Argentina anti-coup"	"Argentina"	1987.0	1987.0	"attempted coup"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0
+318.0	"Armenian Opposition Protest / March 1st Movement"	"Armenia"	2007.0	2009.0	"Government / President"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+558.0	"2018 Anti-government protests"	"Armenia"	2018.0	2018.0	"Gov't of Armenia"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+254.0	"Pro-Independence Campaign"	"Aruba"	1977.0	1977.0	"Government of the Netherlands and the Netherlands Antilles Council"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+1055.0	"socialists"	"Austria"	1934.0	1934.0	"Dolfuss government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+35.0	"Armenians in Nagorno-Karabakh"	"Azerbaijan"	1991.0	1994.0	"Azeri occupation"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+255.0	"Anti-King Hamad Campaign"	"Bahrain"	2011.0	2019.0	"Monarchy of King Hamad"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+198.0	"Shanti Bahini"	"Bangladesh"	1976.0	1997.0	"Autonomy from Bangladesh regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+37.0	"anti-Ershad campaign"	"Bangladesh"	1987.0	1990.0	"Military rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+478.0	"1994-1996 Awami League Campaign"	"Bangladesh"	1994.0	1996.0	"The Government of Bangladesh, BNP"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+288.0	"Oust The Government Campaign"	"Bangladesh"	2004.0	2004.0	"BNP-led government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+288.0	"Awami League Protests"	"Bangladesh"	2006.0	2007.0	"Interim Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+38.0	"Belarus anti-communist"	"Belarus"	1988.0	1991.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+39.0	"Denim revolution"	"Belarus"	2006.0	2006.0	"Belarus government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+451.0	"Benin anti-government protests"	"Benin"	1963.0	1963.0	"Benin govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+41.0	"Benin anti-communist"	"Benin"	1989.0	1990.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1005.0	"Acre rebellion"	"Bolivia"	1902.0	1903.0	"secession from Bolivia"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+392.0	"Popular Revolutionary Movement"	"Bolivia"	1946.0	1946.0	"Villaroel regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+44.0	"leftists"	"Bolivia"	1952.0	1952.0	"military junta"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+453.0	"Bolivian anti-government protests"	"Bolivia"	1964.0	1964.0	"incumbent govt"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+43.0	"Bolivian anti-juntas"	"Bolivia"	1977.0	1982.0	"Mil juntas"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+289.0	"Anti-Siles Zuazo"	"Bolivia"	1985.0	1985.0	"President Hernan Silez-Zuazo"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+257.0	"Anti-Sanchez de Lozada Campaign"	"Bolivia"	2003.0	2003.0	"President Sanchez de Lozada"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+496.0	"Anti-Mesa Campaign Phase 1"	"Bolivia"	2004.0	2004.0	"President Carlos Mesa"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+498.0	"Anti-Mesa Campaign Phase 2"	"Bolivia"	2005.0	2005.0	"President Carlos Mesa"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+565.0	"anti-Morales protests"	"Bolivia"	2019.0	2019.0	"Morales govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+566.0	"anti-Áñez protests"	"Bolivia"	2019.0	2019.0	"Áñez govt"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+196.0	"Serb militias"	"Bosnia-Herzegovina"	1992.0	1995.0	"Bosnian government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+369.0	"Republic of Western Bosnia (secession)"	"Bosnia-Herzegovina"	1993.0	1995.0	""	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+521.0	"UDAR"	"Bosnia-Herzegovina"	2014.0	2014.0	"incumbent government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1052.0	"Paolistas"	"Brazil"	1932.0	1932.0	"Brazilian regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+68.0	"diretas ja"	"Brazil"	1984.0	1985.0	"Military rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+475.0	"Anti-Collor Protests"	"Brazil"	1992.0	1992.0	"Gov't of Brazil (Collor)"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+529.0	"Anti-Rousseff"	"Brazil"	2015.0	2016.0	"Gov't of Brazil"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+383.0	"Brunei Revolt"	"Brunei"	1962.0	1962.0	"Brunei government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1038.0	"Agrarian League movement"	"Bulgaria"	1923.0	1923.0	"Military regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+47.0	"Bulgarian anti-communist"	"Bulgaria"	1989.0	1990.0	"Communist regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+507.0	"Anti-Socialist Demonstrations"	"Bulgaria"	2009.0	2009.0	"Socialist Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+290.0	"Dance with me Campaign"	"Bulgaria"	2013.0	2014.0	"Gov't of PM Oresharski"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+522.0	"Anti-Compaore Campaign"	"Burkina Faso"	2014.0	2014.0	"President Compaore"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+346.0	"Burmese independence movement"	"Burma"	1916.0	1938.0	"British colonial rule"	0.0	0.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+1049.0	"Saya San's rebellion"	"Burma"	1930.0	1932.0	"British occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+439.0	"Kachin rebels"	"Burma"	1948.0	1994.0	"Burmese government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+408.0	"Karens"	"Burma"	1948.0	1994.0	"Burmese government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+408.0	"Pro-Democracy movement in Burma"	"Burma"	1988.0	2019.0	"Burmese government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+81.0	"Hutu rebellion"	"Burundi"	1972.0	1973.0	"Tutsi hegemony in government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+225.0	"Burundian Civil War"	"Burundi"	1991.0	2008.0	"Gov't of Burundi"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+236.0	"Tutsi supremacists"	"Burundi"	1991.0	1992.0	"Buyoya regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+504.0	"Palipehutu-FNL"	"Burundi"	2008.0	2008.0	"Tutsi-dominated government in Burundi"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+530.0	"Anti-Nkurunziza Campaign"	"Burundi"	2015.0	2015.0	"Nkurunziza regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+371.0	"Cambodian Independence Movement"	"Cambodia"	1946.0	1954.0	"French rule"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+117.0	"Khmer Rouge"	"Cambodia"	1970.0	1975.0	"Cambodian government"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+22.0	"Kampuchean United Front for National Salvation"	"Cambodia"	1978.0	1979.0	"Khmer Rouge regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+193.0	"Second Khmer Rouge"	"Cambodia"	1979.0	1997.0	"Cambodian government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+483.0	"Anti-Hun Sen"	"Cambodia"	1998.0	1998.0	"PM Hun Sen"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+519.0	"2013 Cambodian election protests"	"Cambodia"	2013.0	2014.0	"government of Cambodia"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+51.0	"anti-colonialist movement"	"Cameroon"	1955.0	1960.0	"French occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+413.0	"Cameroon anti-Ahidjo government movement"	"Cameroon"	1960.0	1971.0	"Franco-Cameroonian administration"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+259.0	"NCCOP pro-democracy movement"	"Cameroon"	1991.0	1991.0	"Biya Regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+404.0	"Jama'atu Ahlis Sunna Lidda'awati wal-Jihad (Boko Haram Affliliate)"	"Cameroon"	2013.0	2018.0	"Gov't of Cameroon"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+358.0	"Ambazonia Independence"	"Cameroon"	2017.0	2018.0	"Cameroon govt"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+358.0	"Anglophone Crisis/Ambazonia Independence"	"Cameroon"	2017.0	2019.0	"Cameroon govt"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+325.0	"CCCN and Union pro-democracy movement"	"Central African Republic"	1990.0	1993.0	"Kolingba Presidency"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+479.0	"multiple factions"	"Central African Republic"	1994.0	1997.0	"CAR regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+360.0	"Seleka rebellion"	"Central African Republic"	2003.0	2013.0	"President Francois Bozize"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+361.0	"anti-Balaka"	"Central African Republic"	2013.0	2014.0	"Central African Republic govt"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+85.0	"Frolinat"	"Chad"	1966.0	1990.0	"Chadian government"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+54.0	"rebels"	"Chad"	1994.0	1998.0	"Chadian regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+363.0	"MDJT"	"Chad"	1998.0	2003.0	"Govt of Chad"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+499.0	"Chadian Civll War I"	"Chad"	2005.0	2006.0	"Gov't of Chad"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+433.0	"Anti-Deby Rebellion"	"Chad"	2005.0	2009.0	"Govt of Chad"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+500.0	"Chadian Civll War II"	"Chad"	2006.0	2010.0	"Gov't of Chad"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1050.0	"anti-Ibanez campaign"	"Chile"	1931.0	1931.0	"Ibanez regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+170.0	"Pinochet-led rebels"	"Chile"	1973.0	1973.0	"Allende regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+26.0	"anti-Pinochet campaign"	"Chile"	1983.0	1989.0	"Augusto Pinochet"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+567.0	"anti-Pinera"	"Chile"	2019.0	2019.0	"Pinera government"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+1016.0	"Republicans"	"China"	1911.0	1913.0	"Imperial regime; military dictatorship"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1019.0	"Yunnan rebellion"	"China"	1916.0	1918.0	"Chinese occupation"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+1028.0	"May the Fourth Movement"	"China"	1919.0	1919.0	"Japanese occupation"	0.0	1.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+425.0	"Chinese communist movement"	"China"	1927.0	1949.0	"Kuomintang regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1051.0	"Manchurian guerillas"	"China"	1931.0	1941.0	"Japanese occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+1060.0	"Chinese rebels"	"China"	1937.0	1945.0	"Japanese occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+216.0	"Taiwanese Revolt"	"China"	1947.0	1947.0	"Chinese occupation"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+92.0	"Hundred Flowers Movement"	"China"	1956.0	1957.0	"Communist regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+228.0	"Tibetan resistance"	"China"	1956.0	1959.0	"Chinese occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+63.0	"Cultural Revolution Red Guards"	"China"	1967.0	1968.0	"anti-Maoists"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	0.0	1.0
+66.0	"Democracy Movement"	"China"	1976.0	1979.0	"Communist regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+226.0	"Tiananmen Square"	"China"	1989.0	1989.0	"Communist regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+513.0	"Kirti Monastery Protests"	"China"	2012.0	2012.0	"Government of China"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+523.0	"Hong Kong pro-democracy (Umbrella Movement)"	"China"	2014.0	2019.0	"Government of Hong Kong (Chief Executive Leung)"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	1.0
+129.0	"La Violencia/Liberals of 1949"	"Colombia"	1948.0	1958.0	"Conservative govt"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+443.0	"anti-Rojas"	"Colombia"	1957.0	1957.0	"Rojas government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+182.0	"Revolutionary Armed Forces of Colombia, National Liberation Army, M-19"	"Colombia"	1964.0	2016.0	"Colombia govt and US influence"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+367.0	"Anjouan Separatist Movement"	"Comoros"	1997.0	2000.0	"Comoros govt"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+67.0	"Denis Sassou Nguesso campaign"	"Congo-Brazzaville (ROC)"	1997.0	1999.0	"Lissouba regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+397.0	"Anti-Sassou-Nguessou Campaign (Cocoyes, Ninjas, Ntsiloulous)"	"Congo-Brazzaville (ROC)"	1997.0	2003.0	"Sassou-Nguessou Regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+146.0	"National Union Party"	"Costa Rica"	1948.0	1948.0	"Calderon regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+391.0	"Serbian Republic of Krajina (secession campaign)"	"Croatia"	1991.0	1995.0	"Gov't of Croatia"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+485.0	"Croatian pro-democracy"	"Croatia"	1999.0	2000.0	"semi-presidential system"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+62.0	"Cuban Revolution"	"Cuba"	1958.0	1959.0	"Batista regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+77.0	"Ethniki Organosis Kyprios Agoniston"	"Cyprus"	1954.0	1959.0	"British occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+64.0	"Czech uprising"	"Czechoslovakia"	1968.0	1968.0	"Soviet occupation"	0.0	0.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+240.0	"Velvet Revolution"	"Czechoslovakia"	1989.0	1989.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+444.0	"Congolese Independence Movement"	"Democratic Republic of Congo"	1959.0	1960.0	"Belgian rule"	0.0	1.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+409.0	"CNL"	"Democratic Republic of Congo"	1964.0	1965.0	"Mobutu regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+112.0	"Kabila-ADFL"	"Democratic Republic of Congo"	1996.0	1997.0	"Mobutu regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+410.0	"Second Congo War"	"Democratic Republic of Congo"	1998.0	2002.0	"Kabila Regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+326.0	"CNDP"	"Democratic Republic of Congo"	2006.0	2008.0	"Congo government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+294.0	"M23"	"Democratic Republic of Congo"	2012.0	2013.0	"Congo government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+547.0	"anti-Kabila campaign"	"Democratic Republic of Congo"	2017.0	2018.0	"Kabila regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1062.0	"Danish resistance"	"Denmark"	1940.0	1943.0	"Nazi occupation"	0.0	1.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+2.0	"Afar insurgency"	"Djibouti"	1991.0	1994.0	"Djibouti regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+260.0	"Djibouti Arab Spring"	"Djibouti"	2011.0	2011.0	"Gov't of Djibouti (President Guelleh)"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1020.0	"Dominican insurgency"	"Dominican Republic"	1916.0	1924.0	"U.S. occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+448.0	"anti-Balaguer strikes"	"Dominican Republic"	1961.0	1962.0	"Balaguer regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+455.0	"leftists"	"Dominican Republic"	1965.0	1965.0	"Loyalist regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+74.0	"East German uprising"	"East Germany"	1953.0	1953.0	"Communist regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+467.0	"pro-dem movement"	"East Germany"	1989.0	1989.0	"Communist regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+230.0	"Freitilin"	"East Timor"	1975.0	1979.0	"Indonesian occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+230.0	"Timorese resistance"	"East Timor"	1989.0	1999.0	"Indonesian occupation"	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+501.0	"Anti-Alkatiri"	"East Timor"	2006.0	2006.0	"PM Mari Alkatiri"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+456.0	"1965 Anti-Junta Campaign"	"Ecuador"	1965.0	1966.0	"Gov't of Ecuador (junta)"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+481.0	"1997 Anti-Bucaram Campaign"	"Ecuador"	1997.0	1997.0	"Gov't of Ecuador (President Bucaram)"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+489.0	"2000 Anti-Mahuad Protests"	"Ecuador"	2000.0	2000.0	"Government of Ecuador"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+497.0	"2004 Anti-Gutierrez Protests"	"Ecuador"	2004.0	2004.0	"Government of Ecuador"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+261.0	"Rebellion of the Forajidos"	"Ecuador"	2005.0	2005.0	"Ecuadorian President Colonel Lucio Gutierrez"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+531.0	"Out Correa Campaign"	"Ecuador"	2015.0	2017.0	"Correa government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+330.0	"Egyptian Revolution for Independence"	"Egypt"	1918.0	1922.0	"British Colonial Government"	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+384.0	"Egyptian Insurgency-Jamaat Al Islamiyya"	"Egypt"	1992.0	1999.0	"Gov't of Egpyt"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+118.0	"Kefaya"	"Egypt"	2000.0	2005.0	"Mubarak regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+331.0	"Anti-Mubarak movement"	"Egypt"	2007.0	2011.0	"Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+262.0	"Anti-Morsi Protests"	"Egypt"	2013.0	2013.0	"President Morsi"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+295.0	"Pro-Morsi Protests"	"Egypt"	2013.0	2014.0	"President Morsi"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+319.0	"Sinai Insurgency"	"Egypt"	2013.0	2019.0	"Sisi Government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+568.0	"anti-Sisi protests"	"Egypt"	2019.0	2019.0	"Sisi government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1053.0	"leftist rebellion"	"El Salvador"	1932.0	1932.0	"authoritarian Martinez regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1076.0	"anti Aguirre y Salinas"	"El Salvador"	1944.0	1945.0	"Aguirre y Salinas govt"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1070.0	"Strike of Fallen Arms"	"El Salvador"	1944.0	1944.0	"Martinez dictatorship"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+445.0	"Anti-Lemus campaign"	"El Salvador"	1960.0	1960.0	"Lemus govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+191.0	"El Salvador anti-junta"	"El Salvador"	1977.0	1980.0	"Mil/civ junta"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+191.0	"Farabundo Marti National Liberation Front (FMLN)"	"El Salvador"	1979.0	1991.0	"El Salvador government"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+199.0	"Shifta insurgency"	"Eritrea"	1945.0	1952.0	"UK occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+376.0	"Metsavennad (Forest Brothers, Estonian Anti-Occupation Campaign)"	"Estonia"	1945.0	1953.0	"Soviet occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+202.0	"Singing Revolution"	"Estonia"	1987.0	1991.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+382.0	"Oromiya Self Determination"	"Ethiopia"	1973.0	2018.0	"Gov't of Ethiopia"	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+460.0	"Eritrean-led rebels"	"Ethiopia"	1974.0	1991.0	"Ethiopian government"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+207.0	"Somali rebels (Ogaden)"	"Ethiopia"	1976.0	1980.0	"Ethiopian occupation of Ogaden"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+229.0	"Tigrean Liberation Front"	"Ethiopia"	1982.0	1991.0	"Ethiopian government"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+464.0	"Ogaden Self Determination"	"Ethiopia"	1984.0	2018.0	"Gov't of Ethiopia"	0.0	0.0	1.0	1.0	1.0	0.0	1.0	0.0	0.0	0.0
+263.0	"Indo-Fijian Anti-Coup Campaign"	"Fiji"	1987.0	1987.0	"Coup Leader Sitiveni Rabuka"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+426.0	"Anti-Coalition Government Campaign"	"Fiji"	1987.0	1987.0	"Timoci Bravadra"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+264.0	"Anti-Chaudhry Campaign"	"Fiji"	2000.0	2000.0	"Government of Fiji"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1025.0	"communist rebels"	"Finland"	1918.0	1918.0	"Finnish government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1063.0	"French resistance"	"France"	1940.0	1944.0	"German occupation"	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+178.0	"French Nationalists/SAO"	"France"	1960.0	1962.0	"French withdrawal from Algeria"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	0.0	1.0
+559.0	"Yellow Vests"	"France"	2018.0	2019.0	"Macron government"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+392.0	"Southern Ossetian Separatist Campaign"	"Georgia"	1991.0	1992.0	"Gov't of Georgia"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+329.0	"Georgia-Abkhazia War"	"Georgia"	1992.0	1994.0	"Georgian occupation"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+183.0	"Rose Revolution"	"Georgia"	2003.0	2003.0	"Shevardnadze regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+332.0	"2007 Anti-Saakashvili Campaign"	"Georgia"	2007.0	2007.0	"Government of Georgia"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+434.0	"Third South Ossetian Campaign"	"Georgia"	2008.0	2008.0	"Georgian government"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+332.0	"2009 Anti-Saakashvili Campaign"	"Georgia"	2009.0	2009.0	"Government of Georgia"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+569.0	"2019 Georgian Protests"	"Georgia"	2019.0	2019.0	"Ghakaria govt"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1039.0	"Ruhrkampf resistance"	"Germany"	1923.0	1924.0	"French occupation"	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+58.0	"Convention People's Party movement"	"Ghana"	1955.0	1957.0	"British rule"	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+490.0	"anti-Rawlings campaign"	"Ghana"	2000.0	2000.0	"Rawlings government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1068.0	"Greek resistance"	"Greece"	1943.0	1944.0	"Nazi occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+401.0	"Greek Civil War"	"Greece"	1946.0	1949.0	"British and US occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+457.0	"Greece premier protest"	"Greece"	1965.0	1966.0	"Government led by Premier George Athanassiades-Novas"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+89.0	"Greek anti-military"	"Greece"	1973.0	1974.0	"Military rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1075.0	"anti-Estrada Cabrera"	"Guatemala"	1919.0	1920.0	"Estrada Cabrera govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1071.0	"October Revolutionaries"	"Guatemala"	1944.0	1944.0	"Ubico dictatorship"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1073.0	"Conservative movement"	"Guatemala"	1954.0	1954.0	"Arbenz leftist regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+450.0	"Anti-Ydigoras"	"Guatemala"	1962.0	1962.0	"Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+133.0	"Marxist rebels (URNG)"	"Guatemala"	1966.0	1996.0	"government of Guatemala"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+477.0	"Anti-Serrano"	"Guatemala"	1993.0	1993.0	"Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+370.0	"Guatemala Uprising"	"Guatemala"	2015.0	2015.0	"Perez government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+548.0	"Anti-Morales Protests"	"Guatemala"	2017.0	2019.0	"Gov't of Guatemala (Morales)"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+348.0	"RDFG"	"Guinea"	2000.0	2001.0	"Gov't of Guinea"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+327.0	"pro-democracy movement"	"Guinea"	2007.0	2010.0	"Conte regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+160.0	"PAIGC"	"Guinea-Bissau"	1963.0	1974.0	"Portuguese occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+400.0	"Military Junta for the Consolidation of Democracy, Peace and Justice"	"Guinea-Bissau"	1998.0	1999.0	"Gov't of Guinea-Bisseau"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+9.0	"anti-Burnham/Hoyte campaign"	"Guyana"	1990.0	1992.0	"Burnham/Hoyte autocratic regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1026.0	"Caco Revolt"	"Haiti"	1918.0	1920.0	"U.S. occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+437.0	"pro-democracy movement"	"Haiti"	1946.0	1946.0	"Lescot government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	0.0
+441.0	"anti-Maglore movement"	"Haiti"	1956.0	1956.0	"Maglore government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+15.0	"anti-Duvalier campaign"	"Haiti"	1985.0	1986.0	"Jean Claude Duvalier"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+296.0	"Anti-National Governing Council (CNG)"	"Haiti"	1987.0	1987.0	"National Governing Council"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+297.0	"Anti-Aristide Campaign 2004"	"Haiti"	2003.0	2004.0	"Haitian President Jean Bertrand Aristide"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+338.0	"Pro-Aristide Campaign"	"Haiti"	2005.0	2010.0	"Haitian government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+505.0	"Anti-MINUSTAH Campaign"	"Haiti"	2008.0	2008.0	"UN Peacekeepers (MINUSTAH)"	0.0	0.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+524.0	"Anti-Martelly campaign"	"Haiti"	2014.0	2016.0	"Michel Matelly govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+560.0	"Anti-Jovenel Moise Protests"	"Haiti"	2018.0	2019.0	"Moise government"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+1042.0	"Conservative movement"	"Honduras"	1924.0	1924.0	"Carias regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+265.0	"Honduran pro-democracy movement"	"Honduras"	1944.0	1944.0	"Carias regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+266.0	"Frente Nacionalæde Resistencia Popular (FNRP)"	"Honduras"	2009.0	2009.0	"Coup government, led by Roberto Micheletti"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+532.0	"Honduran indignados"	"Honduras"	2015.0	2015.0	"Hernandez government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+549.0	"Anti-Hernandez"	"Honduras"	2017.0	2019.0	"Gov't of Honduras (Hernandez)"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+570.0	"Hernández Must Go campaign"	"Honduras"	2019.0	2019.0	"Hernández govt"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1029.0	"anti-communist movement (Whites)"	"Hungary"	1919.0	1920.0	"communist regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+93.0	"Hungarian anti-communist"	"Hungary"	1956.0	1956.0	"communist regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+94.0	"Hungarian anti-Soviet"	"Hungary"	1956.0	1956.0	"Soviet occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+95.0	"pro-dem movement"	"Hungary"	1989.0	1989.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+550.0	"Anti-Orban"	"Hungary"	2017.0	2019.0	"Prime Minister Viktor Orban"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+298.0	"Cutlery Revolution (Kitchenware/Kitchen Implement Revolution)"	"Iceland"	2008.0	2009.0	"PM Geir Haarde government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+541.0	"Panama Papers Anti-Government Protest"	"Iceland"	2016.0	2016.0	"Icelandic Government, PM Gunnlaugsson"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1030.0	"Indian independence movement"	"India"	1919.0	1947.0	"British rule"	0.0	1.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+1036.0	"Moplah Rebellion"	"India"	1921.0	1922.0	"local Hindu leaders"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+368.0	"Punnapra-Vayalar Uprising"	"India"	1946.0	1946.0	"The Princely State of Travencore, British India"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+96.0	"Hyderabad activists"	"India"	1948.0	1948.0	"Indian annexation"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+355.0	"Telangana People's Front"	"India"	1948.0	1952.0	"Indian government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+144.0	"Naga Rebellion"	"India"	1956.0	2019.0	"Indian occupation"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+135.0	"Mizo Revolt"	"India"	1966.0	1986.0	"Indian occupation"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+347.0	"Naxalite insurgency"	"India"	1967.0	1971.0	"Indian government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+148.0	"Naxalite rebellion"	"India"	1970.0	1971.0	"Indian regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+267.0	"Anti-Indira Campaign (Phase 1)"	"India"	1975.0	1975.0	"Government of India"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+267.0	"Anti-Indira Campaign (Phase 3)"	"India"	1977.0	1977.0	"Prime Minister Indira Gandhi"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+379.0	"Manipur"	"India"	1979.0	2019.0	"Gov't of India"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+201.0	"Sikh insurgency"	"India"	1984.0	1994.0	"separatism"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+351.0	"Assam independence"	"India"	1985.0	2019.0	"Gov't of India"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+465.0	"Gurkha Independence Campaign"	"India"	1986.0	1986.0	"Government of India"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+466.0	"1986-7 Khalistan Campaign"	"India"	1986.0	1987.0	"Government of India"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+352.0	"Bodoland Independence Campaign (secesesion)"	"India"	1986.0	2019.0	"Gov't of India"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+374.0	"Tripura"	"India"	1989.0	2019.0	"Indian government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+470.0	"1990 Kashmir Plebiscite Protests"	"India"	1990.0	1990.0	"Government of India"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+115.0	"Kashmiri Muslim separatists"	"India"	1990.0	2005.0	"Indian occupation"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+353.0	"Western Southeast Asia Front"	"India"	2015.0	2019.0	"Indian Rule, Myanmarese rule"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+542.0	"Kashmir anti-India protests"	"India"	2016.0	2019.0	"Indian Government"	0.0	0.0	1.0	1.0	0.0	1.0	1.0	0.0	0.0	0.0
+101.0	"Indonesian Revolt"	"Indonesia"	1945.0	1949.0	"Dutch occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+137.0	"Moluccans"	"Indonesia"	1950.0	1950.0	"Indonesian government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+65.0	"Darul Islam"	"Indonesia"	1953.0	1953.0	"Indonesian government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+102.0	"leftists"	"Indonesia"	1956.0	1960.0	"Sukarno regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+87.0	"GAM"	"Indonesia"	1975.0	2005.0	"Indonesian occupation"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+29.0	"anti-Suharto campaign"	"Indonesia"	1997.0	1998.0	"Suharto rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+268.0	"Student Protests (Anti-Habibie)"	"Indonesia"	1999.0	1999.0	"Pres. BJ Habibie"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+299.0	"Constitutional Revolution"	"Iran"	1905.0	1906.0	"Mozaffar ad-Din Shah"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1014.0	"Constitutionalists"	"Iran"	1908.0	1909.0	"shah regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+378.0	"KDPI (First Separatist Movement)"	"Iran"	1945.0	1946.0	"Iranian rule"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+104.0	"Iranian Revolution"	"Iran"	1977.0	1979.0	"Shah Reza Pahlavi"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+111.0	"KDPI"	"Iran"	1979.0	1996.0	"Iranian regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+103.0	"Mujahideen"	"Iran"	1981.0	2001.0	"Khomenei regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+486.0	"Tir 18 Riot for democracy"	"Iran"	1999.0	1999.0	"President Mohammad Khatami"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+385.0	"PJAK"	"Iran"	2005.0	2018.0	"Government of Iran"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+333.0	"Green Revolution and Day of Rage"	"Iran"	2009.0	2013.0	"Government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+551.0	"2017 Iran Anti-Government Protests"	"Iran"	2017.0	2019.0	"Iranian Government"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+571.0	"2019 Iranian protests"	"Iran"	2019.0	2019.0	"Khomenei regime"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+1031.0	"Iraqi rebels"	"Iraq"	1920.0	1920.0	"British occupation"	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+197.0	"Shammar Tribe and pro-Western officers"	"Iraq"	1959.0	1959.0	"Qassim regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+122.0	"Kurdish rebellion"	"Iraq"	1961.0	1970.0	"Iraqi government"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+121.0	"Kurdish secession against Saddam"	"Iraq"	1985.0	1991.0	"secession"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+388.0	"SCIRI"	"Iraq"	1989.0	1996.0	"Government of Iraq"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+473.0	"Iraqis Protest Saddam Hussein Following Iraqi Withdrawal from Kuwait"	"Iraq"	1991.0	1991.0	"Iraqi Government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+200.0	"Shiite rebellion"	"Iraq"	1991.0	1991.0	"Hussein regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+110.0	"Kurdish civil conflict"	"Iraq"	1996.0	1996.0	"Iraqi government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+105.0	"Iraqi insurgency (Sunni/AQI/ISIL)"	"Iraq"	2004.0	2019.0	"Iraqi government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+506.0	"Sadar's Anti-US Occupation campaign"	"Iraq"	2008.0	2009.0	"US Government"	0.0	0.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+511.0	"Day of Rage Protests"	"Iraq"	2011.0	2011.0	"Prime Minister Nouri al-Maliki and Several government ministeries"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+514.0	"Anti-Shiite Government Protests"	"Iraq"	2012.0	2014.0	"Prime Minister Maliki"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+572.0	"anti-Mahdi movement"	"Iraq"	2019.0	2019.0	"Mahdi govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+71.0	"Druze resistance"	"Israel"	1981.0	1982.0	"Israeli occupation of Golan"	0.0	1.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+1069.0	"Italian resistance"	"Italy"	1943.0	1945.0	"Nazi occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+438.0	"Trieste Strikes"	"Italy"	1946.0	1946.0	"Allied military government & Italian government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+292.0	"Ivorian pro-democracy movement"	"Ivory Coast"	1989.0	1990.0	"Houphouet-Boigny regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+491.0	"anit-Guei Protests"	"Ivory Coast"	2000.0	2000.0	"Guei regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+162.0	"PMIC"	"Ivory Coast"	2002.0	2005.0	"incumbent regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+293.0	"Pro-Ouattara Campaign"	"Ivory Coast"	2010.0	2011.0	"Gbagbo Regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+446.0	"Anti-Kishi Campaign"	"Japan"	1960.0	1960.0	"Government of Japan"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+165.0	"Palestinian activists"	"Jordan"	1970.0	1970.0	"Jordanian rule"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	0.0	1.0
+320.0	"Protest for Constitutional Reform"	"Jordan"	2011.0	2013.0	"Government (Prime Minister Samir Rifai)"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1061.0	"Kenyan independence movement"	"Kenya"	1938.0	1938.0	"British rule"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+134.0	"Mau Mau Rebellion"	"Kenya"	1952.0	1956.0	"British occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+142.0	"NFDLM secessionists"	"Kenya"	1964.0	1968.0	"secession"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+7.0	"anti-Arap Moi"	"Kenya"	1990.0	1991.0	"Daniel Arap Moi"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+428.0	"Kenyan Al-Shabaab Insurgency"	"Kenya"	2015.0	2019.0	"Kenya"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+533.0	"Kosovo Anti-Governmant Protests"	"Kosovo"	2015.0	2019.0	"Kosovo Government"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+123.0	"Kyrgyzstan Democratic Movement"	"Kyrgyzstan"	1990.0	1991.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+231.0	"Tulip Revolution"	"Kyrgyzstan"	2005.0	2005.0	"Akayev regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+269.0	"Second Revolution"	"Kyrgyzstan"	2010.0	2010.0	"Kyrgyz president Kurmanbek Bakiyev"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+300.0	"Anti-Interim Government"	"Kyrgyzstan"	2010.0	2010.0	"Interim government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+364.0	"Laotian Independence"	"Laos"	1946.0	1949.0	"French occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+366.0	"First Pathet Lao"	"Laos"	1950.0	1957.0	"Royal Loatian Government (RLG)"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+167.0	"Second Pathet Lao"	"Laos"	1959.0	1975.0	"Laotian government"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+380.0	"Meza Brali (Forest Brothers, Latvian anti-occupation campaign)"	"Latvia"	1945.0	1950.0	"Soviet occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+127.0	"pro-dem movement"	"Latvia"	1989.0	1991.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1044.0	"Druze Revolt"	"Lebanon"	1925.0	1927.0	"French occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+440.0	"White Revolution"	"Lebanon"	1951.0	1952.0	"Al-Khuri regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+28.0	"leftists (anti-Shamun)"	"Lebanon"	1958.0	1958.0	"Shamun regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+128.0	"leftists"	"Lebanon"	1975.0	1990.0	"Lebanese government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+395.0	"Hundred Day War"	"Lebanon"	1978.0	1978.0	"Syrian occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+90.0	"Hizballah"	"Lebanon"	1982.0	2000.0	"Israeli occupation of Southern Lebanon"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+53.0	"Cedar Revolution"	"Lebanon"	2005.0	2005.0	"Syrian forces"	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+321.0	"Lebanon Political Crisis"	"Lebanon"	2006.0	2008.0	"Government of Prime Minister Fouad Siniora"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	
+394.0	"2006 Lebanon War"	"Lebanon"	2006.0	2006.0	"Israeli occupation in southern Lebanon"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+573.0	"October Revolution"	"Lebanon"	2019.0	2019.0	"Hariri govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+482.0	"Fair Election Campaign"	"Lesotho"	1997.0	2002.0	"Mokhehle regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+14.0	"anti-Doe rebels"	"Liberia"	1989.0	1990.0	"Doe regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+143.0	"NPFL & ULIMO"	"Liberia"	1992.0	1995.0	"Johnson regime"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+147.0	"national patriotic forces"	"Liberia"	1996.0	1996.0	"Liberian govt"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+126.0	"LURD"	"Liberia"	1999.0	2003.0	"Taylor regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1032.0	"Italo-Libyan War (Sanusi)"	"Libya"	1920.0	1931.0	"Italian occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+270.0	"Libyan Civil War"	"Libya"	2011.0	2011.0	"Qaddafi regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+301.0	"Islamist militia factions (Second Libyan Civil War)"	"Libya"	2014.0	2019.0	"General National Congress government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+381.0	"Mikso Broliai (Forest Brothers, Lithuanian Anti-Occupation Campaign)"	"Lithuania"	1945.0	1956.0	"Soviet occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+190.0	"pro-democracy movement/Sajudis"	"Lithuania"	1988.0	1991.0	"Lithuanian regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+395.0	"NLA Insurgency"	"Macedonia"	2001.0	2001.0	"Government of Macedonia"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+373.0	"Colorful Revolution"	"Macedonia"	2015.0	2017.0	"Macedonian Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+83.0	"Franco-Madagascan"	"Madagascar"	1947.0	1948.0	"French occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+271.0	"Anti-Tsiranana"	"Madagascar"	1972.0	1972.0	"Tsiranana regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1.0	"Active Voices"	"Madagascar"	1991.0	1993.0	"Didier Radsiraka"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+130.0	"pro-democracy movement"	"Madagascar"	2002.0	2002.0	"Radsiraka regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+508.0	"anti-Rajoelina movement"	"Madagascar"	2009.0	2014.0	"Rajoelina government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+272.0	"anti-Ravalomanana movement"	"Madagascar"	2009.0	2009.0	"Ravalomanana government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+157.0	"Nyasaland African Congress"	"Malawi"	1958.0	1959.0	"British rule"	0.0	1.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+8.0	"anti-Banda campaign"	"Malawi"	1992.0	1994.0	"Banda regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+302.0	"Anti-Mutharika"	"Malawi"	2011.0	2012.0	"President Mutharika Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+131.0	"Malayan Emergency"	"Malaysia"	1948.0	1960.0	"British occupation"	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+484.0	"Reformasi"	"Malaysia"	1998.0	1999.0	"PM Mahathir Mohammed"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+17.0	"Anti-Gayoom Campaign"	"Maldives"	2003.0	2008.0	"Gayoom Regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+515.0	"Anti-Nasheed Campaign"	"Maldives"	2012.0	2012.0	"President Mohammed Nasheed"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+303.0	"Nasheed Supporters"	"Maldives"	2012.0	2013.0	"President Mohammed Waheed Hassan Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+350.0	"Anti-Yameen"	"Maldives"	2015.0	2019.0	"Gayoom Regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+220.0	"Tauregs"	"Mali"	1989.0	1995.0	"Mali regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+132.0	"Mali anti-military"	"Mali"	1990.0	1991.0	"Military rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+328.0	"Northern Mali conflict"	"Mali"	2012.0	2015.0	"Mailian government"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+339.0	"Anti-Aziz Protests"	"Mauritania"	2011.0	2014.0	"Mohamed Ould Abdel Aziz Regime, Government run census"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1015.0	"Liberals and Radicals rebellion"	"Mexico"	1910.0	1920.0	"Diaz regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1040.0	"Huerta led rebels"	"Mexico"	1923.0	1924.0	"Obregon regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1046.0	"Cristeros rebellion"	"Mexico"	1926.0	1929.0	"Mexican regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1047.0	"Escoban-led rebellion"	"Mexico"	1929.0	1929.0	"Calles government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+25.0	"anti-PRI campaign"	"Mexico"	1987.0	2000.0	"corrupt govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+10.0	"anti-Calderon campaign"	"Mexico"	2006.0	2006.0	"Calderon regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+525.0	"2014 Mexican anti-Corruption Campaign"	"Mexico"	2014.0	2015.0	"Pena Nieto government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+69.0	"Dniestr"	"Moldova"	1992.0	1992.0	"Moldovan regime"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+509.0	"Moldovan \"Grapevine\" Revolution"	"Moldova"	2009.0	2009.0	"Communist Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+534.0	"Moldovan Anti-Government Protest"	"Moldova"	2015.0	2016.0	"Moldovan Government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+138.0	"Mongolian anti-communist"	"Mongolia"	1989.0	1990.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+535.0	"Montenegrin Opposition Protest"	"Montenegro"	2015.0	2015.0	"Montenegrin Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+574.0	"97000 Resist campaign"	"Montenegro"	2019.0	2019.0	"Đukanović govt"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1012.0	"Fez Caids Rebellion"	"Morocco"	1907.0	1908.0	"French occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+1017.0	"Wars of Independence"	"Morocco"	1911.0	1917.0	"French occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+1037.0	"Rifian Rebellion"	"Morocco"	1921.0	1926.0	"Franco-Spanish occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+140.0	"Moroccan Independence War"	"Morocco"	1953.0	1956.0	"French/Spanish occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+98.0	"Ifni war"	"Morocco"	1957.0	1958.0	"Spanish occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+340.0	"Western Sahara Independence Movement"	"Morocco"	1999.0	2005.0	"Moroccan Government"	0.0	0.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+86.0	"Front for the Liberation of Mozambique"	"Mozambique"	1962.0	1975.0	"Portuguese occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+181.0	"Renamo"	"Mozambique"	1979.0	1992.0	"Mozambique government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+349.0	"Naga Insurgency"	"Myanmar"	1956.0	2019.0	"Burmese and Indian rule"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+273.0	"Saffron Revolution"	"Myanmar"	2007.0	2007.0	"Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+536.0	"Western Southeast Asia Front"	"Myanmar"	2015.0	2019.0	"Indian Rule, Myanmarese rule"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+188.0	"SWAPO"	"Namibia"	1976.0	1988.0	"South African occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+1007.0	"South West African Revolt (Herero Revolt)"	"Namibia/South West Africa"	1904.0	1906.0	"German occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+1011.0	"Zulu Rebellion (Natal Rebellion)"	"Natal"	1906.0	1906.0	"British occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+224.0	"The Stir"	"Nepal"	1990.0	1990.0	"Monarchy/Panchayat regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+492.0	"CPN-M/UPF"	"Nepal"	2001.0	2006.0	"Nepalese government"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+149.0	"Nepalese anti-government"	"Nepal"	2002.0	2006.0	"Nepalese govt; martial law"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+502.0	"Mahadeshi Autonomy Campaign"	"Nepal"	2007.0	2007.0	"Government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+274.0	"Maoist Anti-Govt Protests"	"Nepal"	2010.0	2010.0	"Madhav Kumar Nepal Govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+516.0	"Anti-Maoist Campaign"	"Nepal"	2012.0	2012.0	"Maoist Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1045.0	"Nicaraguan Guerillas"	"Nicaragua"	1925.0	1933.0	"US backed Conservative gov't/ US intervening troops"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+275.0	"Independent Liberal Party"	"Nicaragua"	1944.0	1944.0	"President Somoza"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+80.0	"FSLN"	"Nicaragua"	1978.0	1979.0	"Nicaraguan regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+276.0	"Anti-Somoza Strike"	"Nicaragua"	1978.0	1978.0	"Somoza regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+57.0	"Contras"	"Nicaragua"	1981.0	1990.0	"Sandinista regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+561.0	"Anti-Ortega Protests"	"Nicaragua"	2018.0	2019.0	"Gov't of Nicaragua (Ortega)"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+151.0	"Niger anti-military"	"Niger"	1990.0	1992.0	"Military rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+153.0	"Independence Movement"	"Nigeria"	1945.0	1950.0	"British occupation"	0.0	1.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+42.0	"Biafrans"	"Nigeria"	1967.0	1970.0	"Nigerian govt"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+154.0	"Muslim fundamentalists"	"Nigeria"	1980.0	1984.0	"Nigerian govt"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+158.0	"Ogoni movement"	"Nigeria"	1990.0	1995.0	"Nigerian govt and corporate exploitation"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+152.0	"Nigeria anti-military"	"Nigeria"	1993.0	1999.0	"Military rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+334.0	"Boko Haram"	"Nigeria"	2011.0	2019.0	"Nigerian govt"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+97.0	"IRA/Irish nationalists"	"Northern Ireland"	1968.0	1998.0	"British control"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+1064.0	"Norwegian resistance"	"Norway"	1940.0	1945.0	"Nazi occupation"	0.0	1.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+175.0	"Popular Front for the Liberation of Oman and the Arab Gulf (PFLOAG)"	"Oman"	1962.0	1976.0	"Oman government"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1006.0	"VMRO Rebels (Macedonians) in Ilinden uprising"	"Ottoman Empire"	1903.0	1903.0	"Ottoman rule"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+373.0	"Second Balochistan Separatist Movement"	"Pakistan"	1962.0	1969.0	"Government of Pakistan"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+21.0	"anti-Khan campaign"	"Pakistan"	1968.0	1969.0	"Khan regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+40.0	"Bengalis"	"Pakistan"	1971.0	1971.0	"Pakistani rule"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+36.0	"Third Balochistan Separatist Movement"	"Pakistan"	1973.0	1977.0	"Government of Pakistan"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+277.0	"Anti-Bhutto"	"Pakistan"	1977.0	1977.0	"Prime Minister Zulfiqar Ali Bhutto"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+163.0	"pro-dem movement"	"Pakistan"	1983.0	1983.0	"Zia al-Huq"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+278.0	"Anti-Zia al-Haq"	"Pakistan"	1986.0	1986.0	"President Zia al-Haq"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+136.0	"Mohajir"	"Pakistan"	1994.0	1999.0	"Pakistani government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+375.0	"Fourth Balochistan Separatist Movement"	"Pakistan"	2004.0	2019.0	"Government of Pakistan"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+304.0	"Anti-Musharraf Campaign (Lawyer's Movement)"	"Pakistan"	2007.0	2008.0	"Musharraf Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+342.0	"Islamist insurgency"	"Pakistan"	2007.0	2019.0	"Pakistani government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+510.0	"Anti-Zardari Campaign"	"Pakistan"	2009.0	2009.0	"Zardari Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+526.0	"2014 Anti-Sharif Campaign"	"Pakistan"	2014.0	2014.0	"Sharif Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+345.0	"Anti-British Mandate"	"Palestine"	1920.0	1936.0	"British colonial rule"	0.0	0.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+1058.0	"Palestinian Arab Revolt"	"Palestine"	1936.0	1939.0	"Pro-Jewish British policies"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+164.0	"First Intifada"	"Palestine"	1987.0	1990.0	"Israeli occupation"	0.0	1.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+109.0	"Jewish resistance"	"Palestinian Territories"	1945.0	1948.0	"British occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+164.0	"Palestinian Liberation"	"Palestinian Territories"	1973.0	2019.0	"Israeli occupation"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+24.0	"anti-Noriega campaign"	"Panama"	1987.0	1989.0	"Noriega regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+45.0	"Bougainville Revolt"	"Papua New Guinea"	1988.0	1998.0	"Papuan regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+543.0	"Anti-prime minister protest"	"Papua New Guinea"	2016.0	2016.0	"Prime Minister Peter O'Neill"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+166.0	"leftist rebellion"	"Paraguay"	1947.0	1947.0	"Morinigo regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+487.0	"Anti-Cubas Protests"	"Paraguay"	1999.0	1999.0	"Gov't of Paraguay"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1054.0	"Aprista rebels"	"Peru"	1932.0	1932.0	"Cerro regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+195.0	"Senderista Insurgency (Sendero Luminoso) The Shinning Path"	"Peru"	1980.0	2012.0	"Peruvian government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+16.0	"anti-Fujimori campaign"	"Peru"	2000.0	2000.0	"Fujimori govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1001.0	"Filipino nationalists"	"Philippines"	1899.0	1902.0	"U.S. occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+1065.0	"Philippines Malayan insurgency"	"Philippines"	1941.0	1945.0	"Japanese occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+91.0	"Hukbalahap Rebellion"	"Philippines"	1946.0	1954.0	"Filipino government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+139.0	"Moro National Liberation Front"	"Philippines"	1968.0	1987.0	"Filipino government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+150.0	"New People's Army"	"Philippines"	1972.0	1992.0	"Filipino government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+168.0	"People Power"	"Philippines"	1983.0	1986.0	"Ferdinand Marcos"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+194.0	"Second People Power Movement"	"Philippines"	2001.0	2001.0	"Estrada regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+279.0	"People Power III"	"Philippines"	2001.0	2001.0	"Government of the Philippines"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1072.0	"Polish resistance"	"Poland"	1944.0	1944.0	"German occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+177.0	"Poznan protests"	"Poland"	1956.0	1956.0	"Communist regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+171.0	"Poland Anti-Communist I"	"Poland"	1968.0	1968.0	"Communist regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+172.0	"Poland Anti-Communist II"	"Poland"	1970.0	1970.0	"Communist regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+173.0	"Warsaw Worker's Uprising"	"Poland"	1976.0	1976.0	"Communist regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+206.0	"Solidarity"	"Poland"	1980.0	1989.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+544.0	"Anti-right wing government"	"Poland"	2016.0	2019.0	"Law and Justice Party"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+52.0	"Carnation Revolution"	"Portugal"	1973.0	1974.0	"Military rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+396.0	"Anti-Lissouba Campaign (Cocoyes, Ninjas, Cobras)"	"Republic of the Congo"	1993.0	1997.0	"Government of Congo"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+412.0	"Democratic Republic of Yemen Secessionist Movement"	"Republic of Yemen"	1994.0	1994.0	"Republic of Yemen"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+1013.0	"Peasant Rebellion"	"Romania"	1907.0	1907.0	"land dist system"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	0.0	1.0
+253.0	"anti-Ceaucescu movement"	"Romania"	1987.0	1989.0	"Ceasescu regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+11.0	"anti-Ceaucescu rebels"	"Romania"	1989.0	1989.0	"Ceacescu regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+471.0	"1990 Anti-Government Protests"	"Romania"	1990.0	1992.0	"Gov't of Romania"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+472.0	"The Golaniad"	"Romania"	1990.0	1993.0	"Provisional Gov't/Gov't of Romania"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+517.0	"2012 Anti-Government Protests"	"Romania"	2012.0	2012.0	"Gov't of Romania"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+537.0	"Colectiv Revolution"	"Romania"	2015.0	2015.0	"Romanian Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+552.0	"Romania anti-government protest"	"Romania"	2017.0	2019.0	"Government of Romania"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	1.0
+1009.0	"Peasant/Worker Rebellion"	"Russia"	1905.0	1906.0	"Romanov dynasty"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1021.0	"Urkun Uprising"	"Russia"	1916.0	1917.0	"Romanov regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1023.0	"Russian Revolution"	"Russia"	1917.0	1917.0	"Romanov regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1024.0	"anti-Bolsheviks"	"Russia"	1917.0	1921.0	"Bolshevik regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+185.0	"pro-dem movement"	"Russia"	1990.0	1991.0	"Anti-coup"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0
+399.0	"Anti-Yeltsin"	"Russia"	1993.0	1993.0	"Gov't of Russia (Yeltsin)"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+55.0	"Chechen separatists"	"Russia"	1994.0	2009.0	"Russian occupation"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+503.0	"Dissenter's March"	"Russia"	2007.0	2008.0	"United Russia"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+343.0	"Caucasus Emirate"	"Russia"	2007.0	2019.0	"Russian goverment"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+335.0	"Snow Revolution"	"Russia"	2010.0	2019.0	"Putin"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+186.0	"Rwandan independence"	"Rwanda"	1956.0	1962.0	"Belgain occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+241.0	"Watusi"	"Rwanda"	1963.0	1964.0	"Hutu regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+235.0	"Tutsi rebels"	"Rwanda"	1990.0	1993.0	"Hutu regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+168.0	"Patriotic Front"	"Rwanda"	1994.0	1994.0	"Hutu regime and genocide"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+403.0	"Hutu Nationalist Insurgency"	"Rwanda"	1996.0	2001.0	"Gov't of Rwanda"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1048.0	"Ikhwan rebellion"	"Saudi Arabia"	1929.0	1930.0	"Ibn Saud regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+305.0	"MFDC secessionist campaign"	"Senegal"	1982.0	1983.0	"Gov't of Senegal"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+386.0	"Casamance Conflict"	"Senegal"	1982.0	2014.0	"Gov't of Senegal"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+13.0	"anti-Diouf campaign"	"Senegal"	2000.0	2000.0	"Diouf govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+518.0	"Anti-Wade June 23 Movement"	"Senegal"	2012.0	2012.0	"Wade regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+23.0	"anti-Milosevic"	"Serbia"	1996.0	2000.0	"Milosevic regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+119.0	"KLA"	"Serbia"	1998.0	1999.0	"secession"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+553.0	"Anti-Vucic"	"Serbia"	2017.0	2019.0	"Gov't of Serbia (Vucic)"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+180.0	"RUF"	"Sierra Leone"	1991.0	1996.0	"Republican government"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+179.0	"Public Against Violence"	"Slovakia"	1989.0	1992.0	"Czech communist government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+204.0	"Slovenia anti-communist"	"Slovenia"	1989.0	1990.0	"Communist regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+205.0	"Slovenian independence"	"Slovenia"	1990.0	1991.0	"Yugoslavian rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+1002.0	"Dervish resistance"	"Somalia"	1899.0	1904.0	"British and Ethiopian occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+208.0	"clan factions; SNM"	"Somalia"	1982.0	1991.0	"Siad Barre regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+357.0	"Somali Civil War"	"Somalia"	1991.0	2000.0	"Government of Somalia"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+209.0	"Somalia militia insurgencies"	"Somalia"	1993.0	1994.0	"U.S. and UN relief missions"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+344.0	"Islamist insurgency"	"Somalia"	2006.0	2019.0	"Somali government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+1003.0	"Boer separatists"	"South Africa"	1899.0	1902.0	"British occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+210.0	"First Defiance Campaign"	"South Africa"	1952.0	1961.0	"Apartheid"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0
+211.0	"South African Second Defiance Campaign"	"South Africa"	1984.0	1994.0	"Apartheid"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0
+554.0	"Anti-Zuma"	"South Africa"	2017.0	2018.0	"Gov't of South Africa (Zuma)"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+214.0	"Student Revolution"	"South Korea"	1960.0	1960.0	"Rhee regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+212.0	"South Korean anti-junta"	"South Korea"	1979.0	1980.0	"military junta"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+463.0	"Student’s Anti-Chun Protest"	"South Korea"	1982.0	1987.0	"Gov't of Chun Doo Hwan"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+213.0	"South Korean anti-military"	"South Korea"	1986.0	1987.0	"Mil govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+336.0	"Anti-Roh Tae Woo"	"South Korea"	1988.0	1992.0	"President Roh Tae-Woo"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+480.0	"Student's Anti-Kim Protest"	"South Korea"	1995.0	1995.0	"Gov't of Kim Young Sam"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+538.0	"Anti-Park protests"	"South Korea"	2015.0	2017.0	"President Park Geun-Hye and Government of South Korea"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+322.0	"SPLM/A"	"South Sudan"	2011.0	2019.0	"South Sudan government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+452.0	"1963 Buddhist Protests"	"South Vietnam"	1963.0	1963.0	"The Government of South Vietnam"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+280.0	"1964 Anti-Khanh Protests"	"South Vietnam"	1964.0	1964.0	"The Military Government of South Vietnam"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+280.0	"Anti-Huong"	"South Vietnam"	1964.0	1965.0	"Government of South Vietnam, PM Tran Van Huong"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+458.0	"1966-67 Anti-Ky Protests"	"South Vietnam"	1966.0	1967.0	"The Military Government of South Vietnam"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+280.0	"Anti-Military Govt"	"South Vietnam"	1966.0	1966.0	"Military Government of South Vietnam"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+461.0	"1974-75 Anti-Thieu Protests"	"South Vietnam"	1974.0	1975.0	""	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1056.0	"Asturian miners"	"Spain"	1934.0	1934.0	"right-wing government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1059.0	"Fascists"	"Spain"	1936.0	1939.0	"Republican government"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+73.0	"ETA"	"Spain"	1968.0	2011.0	"Spanish occupation"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+545.0	"Catalan separatist protest"	"Spain"	2016.0	2019.0	"Spanish Government"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0
+108.0	"JVP"	"Sri Lanka"	1971.0	1971.0	"Sri Lankan government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+125.0	"LTTE"	"Sri Lanka"	1983.0	2009.0	"Sri Lankan occupation"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+393.0	"JVP II"	"Sri Lanka"	1987.0	1990.0	"Gov't of Sri Lanka"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+493.0	"Anti-Kumaratunga"	"Sri Lanka"	2001.0	2001.0	"President Kumaratunga"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+31.0	"Anya Nya"	"Sudan"	1963.0	1972.0	"Sudanese government"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+454.0	"October Revolution"	"Sudan"	1964.0	1964.0	"Abboud regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+187.0	"SPLA-Garang faction"	"Sudan"	1983.0	2005.0	"Sudanese government"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+18.0	"anti-Jaafar"	"Sudan"	1985.0	1985.0	"Jaafar Nimiery"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+107.0	"JEM/SLA"	"Sudan"	2003.0	2012.0	"Janjaweed militia"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	0.0	1.0
+323.0	"Anti-al-Bashir Government"	"Sudan"	2011.0	2013.0	"Omar al-Bashir's Regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+402.0	"South Kordofan and Blue Nile Conflict"	"Sudan"	2011.0	2018.0	"Government of Sudan (Bashir Regime)"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+562.0	"Sudan Uprising"	"Sudan"	2018.0	2019.0	"Omar al-Bashir's Regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+307.0	"Anti-Bouterse"	"Suriname"	1983.0	1984.0	"Military dictatorship of Desiré Delano \"Dési\" Bouterse"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+488.0	"Anti-Wijdenbosch"	"Suriname"	1999.0	2000.0	"Gov't of Suriname (Wijdenbosch)"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+281.0	"Swaziland Anti-Monarchy Protests"	"Swaziland"	2011.0	2011.0	"Mswati Monarchy"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1033.0	"Franco-Syrian War"	"Syria"	1920.0	1920.0	"French occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+141.0	"Muslim Brotherhood"	"Syria"	1980.0	1982.0	"Syrian regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+282.0	"Syrian Civil War"	"Syria"	2011.0	2019.0	"Assad regime"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+282.0	"Syrian Uprising"	"Syria"	2011.0	2011.0	"Assad regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+356.0	"Islamic State"	"Syria"	2013.0	2019.0	"Syrian government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+215.0	"Taiwan pro-democracy"	"Taiwan"	1979.0	1985.0	"autocratic regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+474.0	"1991 Opposition Protests"	"Tajikistan"	1991.0	1991.0	"Tajikistan government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+174.0	"Popular Democratic Army (UTO)"	"Tajikistan"	1992.0	1997.0	"Rakhmanov regime"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+219.0	"Tanzania pro-democracy"	"Tanzania"	1992.0	1995.0	"Mwinyi regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1010.0	"Maji Maji Revolt"	"Tanzania/German East Africa"	1905.0	1906.0	"German colonizers"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+221.0	"communist rebels"	"Thailand"	1965.0	1982.0	"Thai government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+223.0	"student protests"	"Thailand"	1973.0	1973.0	"military dictatorship"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+222.0	"pro-dem movement"	"Thailand"	1992.0	1992.0	"Suchinda regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+354.0	"2004 Southern Thai Insurrection"	"Thailand"	2004.0	2019.0	"Thai Government"	0.0	0.0	1.0	1.0	1.0	0.0	1.0	0.0	0.0	0.0
+30.0	"anti-Thaksin campaign"	"Thailand"	2005.0	2006.0	"Thaksin regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+283.0	"Anti-Military Government Campaign"	"Thailand"	2007.0	2007.0	"Military-installed government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+284.0	"People's Alliance for Democracy Campaign"	"Thailand"	2008.0	2008.0	"People Power Party Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+324.0	"Red Shirt Campaign"	"Thailand"	2008.0	2010.0	"Abhisit Vejjajiva Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+308.0	"Civil Movement for Democracy"	"Thailand"	2013.0	2014.0	"Yingluck government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+429.0	"New Democracy Movement"	"Thailand"	2014.0	2019.0	"Thai Military Regime"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+1018.0	"First War of Independence"	"Tibet"	1912.0	1913.0	"Chinese occupation"	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+227.0	"Tibetan independence movement"	"Tibet"	1987.0	1989.0	"Chinese occupation"	0.0	0.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+285.0	"Anti-Eyadema"	"Togo"	1991.0	1991.0	"Gen. Eyadame"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+286.0	"Togo anti-Gnassingbe/Coup Crisis"	"Togo"	2005.0	2005.0	"President Faure Gnassingbe Regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+309.0	"Let's Save Togo (Anti-Gnassingbe)"	"Togo"	2012.0	2013.0	"President Faure Gnassingbe Regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+555.0	"2017 Anti-Gnassingbe"	"Togo"	2017.0	2019.0	"Gov't of Togo (Faure Gnassingbe)"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+310.0	"Pro-Democracy Protests"	"Tonga"	2005.0	2006.0	"Government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+232.0	"Tunisian independence movement"	"Tunisia"	1952.0	1954.0	"French occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+311.0	"Anti-Ben Ali Campaign (Jasmin Revolution)"	"Tunisia"	2010.0	2011.0	"Government (Ben Ali Regime)"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+312.0	"Protests Against the Crisis Talks"	"Tunisia"	2013.0	2013.0	"Council negotiating end to political crisis"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+312.0	"Anti-Islamist Government Protests"	"Tunisia"	2013.0	2014.0	"Ennahda Party"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1022.0	"Arab Revolt"	"Turkey"	1916.0	1918.0	"Ottoman rule"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+1034.0	"Kockiri rebellion Kurdistan (KTC)"	"Turkey"	1920.0	1922.0	"Kurdish secession"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+1043.0	"Sheikh Said insurgency"	"Turkey"	1924.0	1927.0	"Kemal regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+447.0	"Students Lead Protest for Regime Change"	"Turkey"	1960.0	1960.0	"Government"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+459.0	"Anti-government protests"	"Turkey"	1970.0	1971.0	"incumbent govt"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+251.0	"Kurdish rebellion"	"Turkey"	1978.0	1999.0	"Turkish government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+494.0	"Economic Crisis Sparks Calls for Resignation"	"Turkey"	2001.0	2001.0	"Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+520.0	"Anti-Erdogan"	"Turkey"	2013.0	2015.0	"Erdogan government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+539.0	"Renewed Kurdistan Worker's Party (PKK)"	"Turkey"	2015.0	2019.0	"Turkish government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+556.0	"Anti-Erdogan II"	"Turkey"	2017.0	2019.0	"President Erdogan"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+46.0	"Buganda Tribe"	"Uganda"	1966.0	1966.0	"Uganda government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+145.0	"National Resistance Army"	"Uganda"	1980.0	1986.0	"Okello regime"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+124.0	"LRA"	"Uganda"	1986.0	2017.0	"Museveni government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+398.0	"UPA"	"Uganda"	1987.0	1992.0	"Ugandan govt"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+427.0	"ADF Insurgency"	"Uganda"	1996.0	2019.0	"Ugandan govt"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+512.0	"Anti-Museveni"	"Uganda"	2011.0	2013.0	"President Museveni Govt"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+468.0	"Donetsk Miner's Strike"	"Ukraine"	1989.0	1991.0	"Government in Moscow"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+287.0	"Students Union Protests"	"Ukraine"	1990.0	1990.0	"Masol Regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+159.0	"Orange Revolution"	"Ukraine"	2000.0	2005.0	"Kuchma regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+314.0	"Euromaidan"	"Ukraine"	2013.0	2014.0	"President Yanukovych"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+527.0	"Ultras \"United Ukraine\" Campaign"	"Ukraine"	2014.0	2014.0	"Russian occupation/pro-Russian rebels"	0.0	0.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+315.0	"Rebels in East Ukraine (Ukrainian Civil War)"	"Ukraine"	2014.0	2019.0	"Ukraine government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	0.0	1.0	0.0
+557.0	"anti-Trump resistance"	"United States"	2017.0	2019.0	"Trump administration"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+1008.0	"Blancos Rebellion"	"Uruguay"	1904.0	1904.0	"Ordonez regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+234.0	"Tupamaros"	"Uruguay"	1963.0	1972.0	"Uruguay government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+239.0	"Uruguay anti-military campaign"	"Uruguay"	1984.0	1985.0	"Military rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+1035.0	"Peasants in Ta (Tambov Rebellion)"	"USSR"	1920.0	1921.0	"Soviet regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+1057.0	"Central Asian rebels"	"USSR"	1934.0	1934.0	"Soviet policies of conscription"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	0.0	1.0
+1066.0	"Belarus resistance"	"USSR"	1941.0	1945.0	"Nazi occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+238.0	"Ukrainian rebellion"	"USSR"	1946.0	1951.0	"Communist regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+442.0	"Georgian anti-Khruschev protests"	"USSR"	1956.0	1956.0	"Khruschev regime"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+469.0	"Georgian anti-Soviet movement"	"USSR"	1989.0	1991.0	"Soviet rule"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+1004.0	"La Revolucion Libertador"	"Venezuela"	1901.0	1903.0	"Venezuela government"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+19.0	"anti-Jimenez campaign"	"Venezuela"	1958.0	1958.0	"Jimenez dictatorship"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+34.0	"Armed Forces for National Liberation (FALN)"	"Venezuela"	1962.0	1965.0	"Betancourt regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+476.0	"Anti-Perez"	"Venezuela"	1992.0	1992.0	"Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+387.0	"Military Forces of Hugo Chavez"	"Venezuela"	1992.0	1992.0	"Government of Venezuela"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+495.0	"2002 Anti-Chavez Campaign"	"Venezuela"	2002.0	2004.0	"Government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+252.0	"anti-coup"	"Venezuela"	2002.0	2002.0	"anti-Chavez coup"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+528.0	"anti-Maduro"	"Venezuela"	2014.0	2019.0	"Maduro government"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+100.0	"Indochina revolt"	"Vietnam"	1945.0	1954.0	"French occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+156.0	"North Vietnam (National Liberation Front)"	"Vietnam"	1960.0	1975.0	"government of South Vietnam"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+449.0	"North Vietnam (National Liberation Front) anti-occupation"	"Vietnam"	1961.0	1975.0	"U.S. occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+1074.0	"Anti-Dutch colonial struggle"	"West Papua"	1911.0	1943.0	"Dutch colonial rule/Japanese occupation"	0.0	0.0	1.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+242.0	"West Papua rebels"	"West Papua"	1965.0	1978.0	"Indonesian occupation"	0.0	0.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+242.0	"West Papua self-determination struggle"	"West Papua"	1979.0	2019.0	"Indonesian occupation"	0.0	0.0	1.0	1.0	0.0	1.0	1.0	0.0	0.0	0.0
+243.0	"Western Sahara Freedom Movement (POLISARIO)"	"Western Sahara"	1975.0	1989.0	"Moroccan occupation"	0.0	1.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+340.0	"Renewed Western Sahara Independence Protests"	"Western Sahara"	2010.0	2019.0	"Moroccan Government"	0.0	0.0	1.0	1.0	0.0	1.0	1.0	0.0	0.0	0.0
+246.0	"Yemeni insurgency"	"Yemen"	1955.0	1957.0	"British and Aden administration"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+79.0	"FLOSY, NLF in Aden"	"Yemen"	1963.0	1967.0	"UK occupation"	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+389.0	"NDF"	"Yemen"	1979.0	1982.0	"Government of Yemen"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+258.0	"Al-Houthi Rebellion"	"Yemen"	2004.0	2015.0	"Yemen government"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+256.0	"South Yemen Secessionist Movement"	"Yemen"	2007.0	2014.0	"Government"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+341.0	"Al Qaeda in the Arabian Peninsula"	"Yemen"	2009.0	2019.0	"Yemen government"	0.0	0.0	1.0	1.0	1.0	0.0	0.0	1.0	0.0	0.0
+316.0	"Anti Ali Adduallah Saleh Campaign"	"Yemen"	2011.0	2012.0	"Government (Saleh Regime)"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+540.0	"Anti-Houthi Movement"	"Yemen"	2015.0	2019.0	"Al-Houthi Rebel government"	0.0	0.0	1.0	1.0	0.0	1.0	0.0	1.0	0.0	0.0
+244.0	"Yahya Family revolt"	"Yemen Arab Republic"	1948.0	1948.0	"countercoup"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+184.0	"Royalists"	"Yemen Arab Republic"	1962.0	1969.0	"al-Sallal regime"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+245.0	"leftists"	"Yemen People's Republic"	1986.0	1986.0	"Ali Nasir regime"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+1067.0	"Balkan resistance"	"Yugoslavia"	1941.0	1945.0	"German occupation"	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+247.0	"student protests"	"Yugoslavia"	1968.0	1968.0	"Communist regime"	0.0	1.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+60.0	"Croatian nationalists"	"Yugoslavia"	1970.0	1971.0	"Yugoslav government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+120.0	"Kosovo Albanian nationalist movement"	"Yugoslavia"	1981.0	1981.0	"Yugoslav government"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+119.0	"Kosovo Albanian"	"Yugoslavia"	1988.0	1998.0	"Serbian rule"	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0
+61.0	"Croats"	"Yugoslavia"	1991.0	1992.0	"Serb government"	1.0	0.0	0.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+116.0	"Katanga-led leftists"	"Zaire/DRC"	1960.0	1965.0	"secession from DRC"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	0.0	1.0	0.0
+78.0	"FLNC"	"Zaire/DRC"	1977.0	1978.0	"DRC/Zaire regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+189.0	"Sacred Union"	"Zaire/DRC"	1991.0	1993.0	"Mobutu regime"	0.0	0.0	1.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+249.0	"Zambian independence movement"	"Zambia"	1961.0	1963.0	"British rule"	1.0	0.0	0.0	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+248.0	"Zambia anti-single party rule"	"Zambia"	1990.0	1991.0	"One-party rule"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+12.0	"anti-Chiluba campaign"	"Zambia"	2001.0	2001.0	"Chiluba regime"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0
+250.0	"Zimbabwe African People's Union"	"Zimbabwe"	1972.0	1979.0	"Smith/Muzorena regime"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+161.0	"PF-ZAPU guerillas"	"Zimbabwe"	1983.0	1987.0	"Mugabe regime"	0.0	1.0	0.0	0.0	1.0	0.0	0.0	1.0	0.0	0.0
+546.0	"Anti-Mugabe"	"Zimbabwe"	2016.0	2017.0	"Gov't of Zimbabwe (Mugabe)"	1.0	0.0	0.0	0.0	0.0	1.0	0.0	1.0	0.0	0.0

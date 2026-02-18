@@ -1,0 +1,1093 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Garamond}
+  \setsansfont[]{Garamond}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Conceptual Framework for Defections Project},
+  pdfauthor={Jonathan Pinckney},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Conceptual Framework for Defections Project}
+\author{Jonathan Pinckney}
+\date{2026-02-04}
+\begin{document}
+\maketitle
+
+
+\section{Introduction}\label{introduction}
+
+When do supporters of authoritarian and democratic backsliding regimes
+cease to support their leaders? When do they \emph{defect}? And what
+actions by opposition forces, civil resistance campaigns, or third party
+actors can motivate such changes? This document presents a conceptual
+framework for understanding this process. The framework will guide a
+series of research projects that seek to generate and test hypotheses on
+when, why, and how defection happens. These research projects in turn
+will inform a series of public engagement and storytelling projects to
+facilitate understanding of how to spark defection from authoritarian
+and democratic backsliding regimes.
+
+\subsection{What is Defection?}\label{what-is-defection}
+
+All political regimes rely on key groups and institutions to provide
+them with the power and resources needed to sustain themselves. For
+example, for political regimes to engage in repression they require the
+consistent cooperation of police and security forces. If security forces
+refuse to carry out orders, then the state will be unable to repress
+opposition. Similarly, every regime requires some degree of propaganda
+and public-facing narrative. If media refuse to spread regime
+narratives, then the regime will be unable to gain the compliance of the
+populace. And every citizen helps keep the regime that rules them in
+power through paying taxes. All political power rests upon a flow of
+these kinds of resources and obedience that must be continually
+replenished (\citeproc{ref-sharp-politics-1973}{Sharp 1973}).
+
+Most of the time, regime supporters provide their support in relatively
+unchanging ways. Orders are rarely questioned, norms of authority and
+deference are followed, and politics proceeds as it always has. These
+common patterns of obedience create the illusion that power is stable
+and unchanging.
+
+Yet loyalties shift. Out of changing self-interest, or fear of the
+future, or moral conviction, the individuals and groups that previously
+supported a regime cease to do so. They behave in ways that defy the
+wishes of political leaders: soldiers refuse to open fire on
+demonstrators, government attorneys refuse to engage in
+politically-motivated prosecutions, legislators resign from their
+offices, or vote against the leaders or parties that originally brought
+them to power.
+
+All these are examples of what we, drawing on an extensive literature,
+refer to as \emph{defection}. Defection is any instance in which a
+regime supporter significantly and substantively decreases their level
+of regime support. It is a critical component of any process of
+political change. It is particularly crucial in processes of
+\emph{nonviolent} political change, whose logic of change rests not on
+eliminating one's opponents but on shifting them to one's side
+(\citeproc{ref-chenoweth-why-2011}{Chenoweth and Stephan 2011}).
+
+Consider, as a unifying metaphor, the \emph{spectrum of allies and
+opponents} (shown in Figure~\ref{fig-spectrum}), originally developed by
+Oppenheimer and Lakey (\citeproc{ref-oppenheimer-manual-1965}{1965}).
+The tool places all relevant social and political groups involved a
+political struggle into five ordinal positions along a spectrum of
+loyalty toward a regime, ranging from active support to active
+opposition. This identification process then informs the strategies that
+movements employ toward those groups, always seeking to move them from
+the right to the left. A \emph{loyalty shift} is any movement from any
+point along this spectrum to any other, while \emph{defection}
+specifically denotes any left-ward movement that begins in active or
+passive support.\footnote{Defection thus overlaps with but is not
+  identical to \emph{mobilization}, which is any right-to-left movement
+  on the spectrum that ends in the ``Active Opposition'' point.
+  Defection overlaps with mobilization when it begins in Passive or
+  Active Support and ends in Active Opposition, yet many instances of
+  defection do not end in active opposition.}
+
+\begin{figure}
+
+\centering{
+
+\pandocbounded{\includegraphics[keepaspectratio]{defections-framework_files/figure-pdf/fig-spectrum-1.pdf}}
+
+}
+
+\caption{\label{fig-spectrum}Spectrum of Allies and Opponents}
+
+\end{figure}%
+
+\subsection{Scope Conditions}\label{scope-conditions}
+
+Defection is a process that occurs in all political regimes, and in some
+sense, within all organizations.\footnote{Hirschman
+  (\citeproc{ref-hirschman-exit-1970}{1970}) is one attempt to generate
+  a macro-theory of defection relevant across all kinds of
+  organizations, with a focus on firms.} For this project, we
+specifically examine defection in the context of authoritarian and
+democratic backsliding regimes.
+
+This scope condition is both theoretically and practically motivated.
+Theoretically, we expect defection in these contexts to systematically
+differ from defection in healthy democracies. Repression of opponents is
+substantially higher in authoritarian and would-be authoritarian regimes
+(\citeproc{ref-davenport-state-2007}{Davenport 2007};
+\citeproc{ref-adhikari-examining-2024}{Adhikari, King, and Murdie
+2024}), making defection a far riskier action than in democracies. Given
+this different risk environment, the personal, social, and political
+motivators of defection are likely to be distinct.\footnote{The
+  boundaries between these conditions are fuzzy. Scholars debate, for
+  instance, what constitutes a period of democratic backsliding
+  (\citeproc{ref-little-measuring-2024}{Little and Meng 2024}), and some
+  of these periods look very similar to periods of democracy. We define
+  democratic backsliding following Jee, Lueders, and Myrick
+  (\citeproc{ref-jee-unified-2022}{2022}), 755, as ``any change of a
+  political community's formal or informal rules which reduces that
+  community's ability to guarantee the freedom of choice, freedom from
+  tyranny, or equality in freedom.'' In the 21st century, such periods
+  tend to be characterized by ``executive aggrandizement,'' the gradual
+  centralization of power in the hands of the executive, often initially
+  through legal avenues (\citeproc{ref-bermeo-democratic-2016}{Bermeo
+  2016}; \citeproc{ref-riedl-pathways-2024}{Riedl et al. 2024}).
+  Operationally, our starting point for identifying periods of
+  democratic backsliding is the definition of autocratization episodes
+  from Lührmann and Lindberg (\citeproc{ref-luhrmann-third-2019}{2019})}
+
+In practical terms, this project's core motivation is to better
+understand how to protect, repair, and advance democracy. Thus the
+factors that motivate lower-risk defection in healthy democracies are of
+less interest. We do not rule out the possibility that examining
+defection in democratic settings may yield useful insights, nor do we
+think that our findings would be irrelevant for better understanding
+defection in healthy democracy.
+
+We also focus on defection in the contemporary world, with particular
+attention to the post-Cold War period. This is because, as the
+literature has shown, the logic of both authoritarian rule and
+democratic backsliding is significantly different today than in the
+past. Authoritarian regimes today are much more likely to have
+pseudo-democratic institutions, and to rely less on the most direct and
+brutal forms of physical repression
+(\citeproc{ref-guriev-informational-2019}{Guriev and Treisman 2019};
+\citeproc{ref-levitsky-competitive-2010}{Levitsky and Way 2010}).
+Historically, democratic backsliding tended to occur in sharp, dramatic
+breaks (\citeproc{ref-linz-breakdown-1978}{Linz and Stepan 1978}).
+Today, gradual processes of decline centered in aggrandizement of the
+executive and conducted under a veneer of legality are more common
+(\citeproc{ref-bermeo-democratic-2016}{Bermeo 2016};
+\citeproc{ref-riedl-democratic-2025}{Riedl et al. 2025}).
+
+\section{What Do We Already Know?}\label{what-do-we-already-know}
+
+Different forms of defection have largely been studied in isolation,
+without a unifying framework. Many scholars have examined defection by
+the military or other security forces, particularly in the context of
+ongoing civil resistance campaigns
+(\citeproc{ref-nepstad-mutiny-2013}{Nepstad 2013};
+\citeproc{ref-morency-laflamme-question-2018}{Morency-Laflamme 2018};
+\citeproc{ref-grewal-military-2019}{Grewal 2019};
+\citeproc{ref-neu-strategies-2022}{Neu 2022};
+\citeproc{ref-dahl-disaggregating-2026}{Dahl, Celestino, and Gates
+2026}; \citeproc{ref-pion-berlin-staying-2014}{Pion-Berlin, Esparza, and
+Grisham 2014}). Others have examined defection by individual elites or
+specific elite groups. For instance, there is a significant literature
+investigating why and how legislators in authoritarian single-party
+regimes leave the ruling party (\citeproc{ref-delrio-strategic-2022}{del
+Río 2022}; \citeproc{ref-reuter-economic-2011}{Reuter and Gandhi 2011};
+\citeproc{ref-reuter-elite-2019}{Reuter and Szakonyi 2019}), and a
+smaller body of work examining why individual authoritarian regime
+supporters withdraw their support (\citeproc{ref-hale-who-2017}{Hale and
+Colton 2017}; \citeproc{ref-tertytchnaya-protests-2020}{Tertytchnaya
+2020}).
+
+While this fragmented literature comes to a variety of conclusions, a
+few consensus findings stand out:
+
+First, defection is \emph{consequential}. The civil resistance
+literature is a central touchstone here. Defections by security forces
+in particular significantly increase the likelihood that a maximalist
+civil resistance campaign will succeed
+(\citeproc{ref-chenoweth-why-2011}{Chenoweth and Stephan 2011}); civil
+resistance strategies aimed at inducing defections among regime
+supporters have been shown to outperform strategies focused solely on
+mass mobilization (\citeproc{ref-chenoweth-dynamic-2022}{Chenoweth,
+Hocking, and Marks 2022}). Beyond civil resistance, divisions in elite
+coalitions are one of the most consequential precursors of
+democratization (\citeproc{ref-odonnell-transitions-1986}{O'Donnell and
+Schmitter 1986}; \citeproc{ref-djuve-patterns-2019}{Djuve, Knutsen, and
+Wig 2019})\footnote{Though the effects of such divisions may be
+  contingent on regime characteristics
+  (\citeproc{ref-delrio-democratic-2025}{del Río and Higashijima 2025})}
+
+Second, defection is \emph{difficult}. Loyalty to one's group, even at
+the expense of personal self-interest, is a basic characteristic of
+human psychology (\citeproc{ref-billig-social-1973}{Billig and Tajfel
+1973}). Thus, defection faces inherent psychological barriers. These
+barriers are reinforced by deliberate regime strategies. Authoritarian
+leaders recognize the threat posed by defection and invest in strategies
+to prevent it (\citeproc{ref-svolik-politics-2012}{Svolik 2012};
+\citeproc{ref-markowitz-kompromat-2017}{Markowitz 2017}), from designing
+institutional structures to co-opt potential defectors or counterbalance
+them against one another (\citeproc{ref-gandhi-political-2008}{Gandhi
+2008}; \citeproc{ref-debruin-how-2020}{De Bruin 2020}) to censorship of
+nascent collective action (\citeproc{ref-king-how-2013}{King, Pan, and
+Roberts 2013}), to unleashing state repression
+(\citeproc{ref-fruge-repressive-2019}{Frugé 2019}). Together, these
+psychological and practical barriers make defection rare. In del Río
+(\citeproc{ref-delrio-strategic-2022}{2022})'s study of defection among
+legislative elites in authoritarian regimes, only 3\% of the individuals
+studied ever defected, even in the final days of a regime. Similarly, in
+a study of democratic backsliding spells, Pinckney and Trilling
+(\citeproc{ref-pinckney-breaking-2025}{2025}) find that support groups
+for democratic backsliding regimes defected \emph{en masse} in only a
+small proportion of backsliding spells.
+
+Third, defection is \emph{complex but predictable}. In a foundational
+contribution, Kuran (\citeproc{ref-kuran-now-1991}{1991}) argued that
+defection from authoritarian regimes is inherently unpredictable due to
+near-universal preference falsification. This prevents an outside
+observer from knowing beforehand when individuals would be willing to
+speak out against the regime. When change did occur, Kuran argued it was
+likely to come about as a sudden and shocking ``cascade.'' While Kuran's
+argument remains an important touchstone, subsequent research has
+highlighted that while defection is complex, often nonlinear, and
+challenging to study in authoritarian contexts, it does have reliable
+predictors. Economic self-interest is a consistent theme among these
+predictors. Both poor economic performance at the national level, and
+declining personal economic fortunes in the authoritarian regime are
+strong predictors of defection
+(\citeproc{ref-reuter-economic-2011}{Reuter and Gandhi 2011};
+\citeproc{ref-grewal-military-2019}{Grewal 2019};
+\citeproc{ref-pion-berlin-staying-2014}{Pion-Berlin, Esparza, and
+Grisham 2014}). Widespread defection taking place in neighboring
+countries is another
+(\citeproc{ref-beissinger-structure-2007}{Beissinger 2007};
+\citeproc{ref-gleditsch-diffusion-2017}{Gleditsch and Rivera 2017};
+\citeproc{ref-bunce-defeating-2011}{Bunce and Wolchik 2011}). Scholars
+have found that institutional structures that make defection more costly
+tend to make it less likely
+(\citeproc{ref-langston-breaking-2002}{Langston 2002}).
+
+\section{A Few Guiding Assumptions}\label{a-few-guiding-assumptions}
+
+Given the conceptual breadth of defections, even within the empirical
+scope limitations described above there are numerous ways to study the
+phenomenon. In this section we lay out a few of the core theoretical
+assumptions underlying our approach.
+
+\subsection{Defection Can Be Individual or
+Collective}\label{defection-can-be-individual-or-collective}
+
+Defection occurs at both the individual (micro) level and group (meso)
+level. Individuals may make personal decisions to defect that do not
+substantively impact the social and political groups to which they
+belong. Groups can also defect collectively in ways that cannot be
+reduced to a simple aggregation of individual decisions. Individuals are
+embedded within social groups, and groups are embedded in large social
+and political systems. While the aggregation of individual-level
+characteristics for all members of a group can tell us something about
+the group's likely behavior, it is unlikely to capture the whole story.
+Likewise, knowing the groups to which an individual belongs can help
+predict propensity to defect, but is unlikely to tell us everything.
+
+This means there is interesting and important research to be done on
+defection both at the individual and the group level, and research that
+ignores one of these levels is likely to yield an incomplete picture.
+
+\subsection{Defection is Social}\label{defection-is-social}
+
+Defection cannot be studied in isolation. While unit-level factors
+influence a person or group's propensity to defect, defection unfolds in
+an inescapably social context. Individuals and groups decide whether or
+not to defect not just based on what they want but on what they think
+other people and groups are likely to do
+(\citeproc{ref-koehler-disaffection-2016}{Koehler, Ohl, and Albrecht
+2016}). Understanding defection therefore requires attention not only to
+characteristics of individuals or groups but also to their embeddedness
+within broader social networks and the flows of information through
+those networks.
+
+\subsection{Defection Has Multi-Faceted, Obscure
+Motivations}\label{defection-has-multi-faceted-obscure-motivations}
+
+Individuals or groups defect for many reasons. These may be stated or
+unstated, and may be transparent or opaque even to the defectors
+themselves. In some cases, defection may be a matter of rational,
+material utility maximization; in others it may be a matter of moral
+conviction or suasion (\citeproc{ref-pearlman-moral-2018}{Pearlman
+2018}). Or it may be motivated by changing norms of appropriate behavior
+in one's social group. These motivations are not sharply segmented from
+one another, and frequently interact. Material interests are easier to
+advance if one can morally justify them. Conversely, commitment to one's
+principles is easier to sustain if it also happens be materially
+beneficial.
+
+The interrelated and often ambiguous nature of defection motivations
+implies that we should treat self-reported explanations as one data
+source among many, not as the definitive answer to \emph{why} defection
+occurred. The stories people tell about why they made consequential
+decisions are not simply direct replications of their actual
+motivations, but are narratives intended to shape a self or collective
+image (\citeproc{ref-nisbett-telling-1977}{Nisbett and Wilson 1977}).
+
+This leads directly to the following guiding assumption:
+
+\subsection{Defection is Behavioral}\label{defection-is-behavioral}
+
+Defection is defined not by what people \emph{think} but by what they
+\emph{do}. For defection to occur, there must be an observable
+behavioral change vis a vis an authoritarian regime. Individuals or
+groups must stop providing forms of support they previously provided.
+While changes in beliefs or attitudes may be important precursors to
+defection, if they do not result in meaningful, observable behavior
+change they do not constitute defection.
+
+This does not mean we are uninterested in public expressions of loyalty
+or dissent toward an authoritarian regime. Speech is an important aspect
+of behavior, particularly in authoritarian contexts where even the
+slightest indication of dissent is politically meaningful
+(\citeproc{ref-hale-who-2017}{Hale and Colton 2017}). Statements that
+reflect a dissident attitude toward a regime are important behavioral
+changes and can lead to transformational consequences
+(\citeproc{ref-kuran-now-1991}{Kuran 1991}). In Communist Romania, the
+simple act of a crowd publicly booing a speech by dictator Nicolae
+Ceausescu led directly to the downfall of the regime.
+
+At the same time, what constitutes defection is not the same across
+contexts. Whether a particular behavior is a defection will depend on
+what, for that individual or group, constitutes loyalty. Some behaviors
+may be clearly defection across almost all contexts, but in most cases
+identifying defection and assessing its significance will require
+significant contextual knowledge.\footnote{See Pinckney
+  (\citeproc{ref-pinckney-nonviolent-2021}{2021}) for a similar
+  discussion of what constitutes nonviolent resistance. A public march,
+  for instance, by an excluded group in a dictatorship where such
+  marches are criminalized, is a bold act of nonviolent resistance. A
+  tactically identical march by a privileged group in a democracy may
+  simply be politics as usual.}
+
+Vaclav Havel (\citeproc{ref-havel-power-1985}{1985})'s seminal essay
+``The Power of the Powerless'' illustrates this point. Havel describes
+the momentousness of a shopkeeper in Communist Czechoslovakia choosing
+to remove a ``Workers of the World, Unite'' sign from his shop window.
+Havel describes how the universality of such displays creates the
+metaphysical structure that gives the post-totalitarian Communist regime
+its power, rendering even minor acts of defiance politically
+consequential. However, to recognize the importance of such an action,
+we must understand the routine behaviors expected of an average citizen
+of this regime and how people interpret deviations from those behaviors.
+
+This discussion leads into our final guiding theoretical assumption:
+
+\subsection{Defection Takes Many
+Forms}\label{defection-takes-many-forms}
+
+The ways in which defection happens are as diverse as the ways that
+regime supporters display loyalty. Defection will look different across
+individuals and groups. It can involve incremental steps or dramatic
+steps, can be publicized to the world or confided within private
+networks of trusted friends and confidants.
+
+As a first step towards theoretical clarity, we categorize forms of
+defection as falling along two dimensions: whether they \emph{break} or
+\emph{bind} with the regime and whether the involve \emph{speaking,
+acting,} or \emph{standing in the way.}
+
+The first dimension captures whether the defection is intended to change
+the regime from within or from outside.\footnote{This dimension has
+  close parallels to the idea of \emph{insider} or \emph{outsider}
+  strategies for achieving social change, as well as Hirschman's classic
+  distinction between ``voice'' and ``exit''
+  (\citeproc{ref-hirschman-exit-1970}{Hirschman 1970})} Defection that
+\emph{breaks} typically involves severing ties with the regime, often
+through highly visible actions or explicit denunciations. In social
+psychological terms, it involves a definitive disconnection from a
+social identity once previously held. Defection that \emph{binds}, by
+contrast, seeks to maintain one's prior social identity as a part of a
+regime while applying internal pressure to motivate change in the
+regime's behavior. Such defection typically involves behaviors that are
+quiet, behind the scenes, and perhaps only visible in their effects.
+
+The second dimension refers to the defector's specific behaviors.
+Defection through \emph{speaking} involves verbal expression of
+opposition to the regime. Defection through \emph{acting} entails taking
+positive steps against the regime. Defection through \emph{standing in
+the way} consists of refusing to do what is normally
+expected.\footnote{This dimension roughly parallels Gene Sharp
+  (\citeproc{ref-sharp-politics-1973}{1973})'s division of the methods
+  of nonviolent action into \emph{protest and persuasion} (speaking),
+  \emph{non-cooperation} (standing in the way), and \emph{nonviolent
+  intervention} (acting), with some conceptual overlap and some
+  distinctions. While many instances of defection are likely also
+  instances of nonviolent action/nonviolent resistance, some are not.}
+Table~\ref{tbl-matrix} describes some indicative examples of different
+forms of defections along these two dimensions.
+
+\begin{table}
+
+\caption{\label{tbl-matrix}Types of Defection}
+
+\centering{
+
+\begin{tabular}{>{}lll}
+\toprule
+\textbf{} & \textbf{Breaking} & \textbf{Binding}\\
+\midrule
+\textbf{Speaking} & Public Condemnation & Private Disapproval\\
+\textbf{Acting} & Joining a Demonstration & Creating Internal Reforms\\
+\textbf{Standing in the Way} & Disobeying Orders & Foot-Dragging\\
+\bottomrule
+\end{tabular}
+
+}
+
+\end{table}%
+
+As defection unfolds over time will, it will likely begin with binding
+and then breaking, and may involve a combination speaking, acting, and
+standing in the way. Specific acts of defection by the same group or
+individual can be distinguished based on whether they vary across these
+dimensions.
+
+\section{A Few Propositions}\label{a-few-propositions}
+
+Having laid out our guiding assumptions about defection, we now describe
+a set of initial hypotheses that are warrant further investigation. We
+are particularly interested in the ways in which action by opposition
+groups, civil resistance campaigns, and others struggling against
+authoritarian or backsliding regimes can facilitate or spark defection.
+Accordingly, the hypotheses that follow are generally framed within
+these contexts.
+
+\subsection{Defection Requires a Way
+Out}\label{defection-requires-a-way-out}
+
+Regime supporters will be highly unlikely to defect if they do not
+perceive an acceptable post-defection future. For example, Sinanoglu
+(\citeproc{ref-sinanoglu-autocrats-2025}{2025}) points out that
+corruption can powerfully deter defection among business elites. Not
+only do businesses that have corrupt relationships with authoritarian
+regimes fear losing the material benefits of corruption, they also know
+that their corruption engenders animosity toward them among the
+opposition. Thus, anticipating adverse consequences in a post-regime
+world, business elites may remain loyal to the regime even when it is
+not in their material interest.
+
+Defection is therefore most likely to occur when potential defectors can
+identify viable avenues to achieve their core individual or
+organizational goals post-defection. This is partially a matter of
+institutional structure that may be outside of activists' immediate
+control - if the existing social, political, or economic institutions
+provide no meaningful prospects for post-defection life, then defection
+will be particularly rare
+(\citeproc{ref-langston-breaking-2002}{Langston 2002}). Eliminating such
+alternative pathways is a key strategy of authoritarian control.
+
+However, skillful resistance campaigns can counter this strategy by
+promoting ``ways out'' for potential defectors. They may do so by
+creating alternative institutions, negotiating exit plans, and by
+promoting an inclusive vision of a post-regime future in which potential
+defectors can see themselves.
+
+\subsection{It's Not What You Know, It's Who You
+Know}\label{its-not-what-you-know-its-who-you-know}
+
+Defection is likely to be driven by social connections. Individuals and
+groups behave not only according to a material ``logic of consequences''
+but also according to a ``logic of appropriateness'' for what people and
+groups ``like them'' typically do
+(\citeproc{ref-march-institutional-1998}{March and Olsen 1998}). All
+else equal, any factor that increases a regime supporter's positive
+connections to individuals and groups that have publicly-known lower
+levels of loyalty to the regime will tend to reduce that supporter's
+regime loyalty and increase the probability of defection. This mechanism
+also connects to the social psychological dynamics of in-group loyalty
+that make defection difficult. When the boundaries of the relevant
+``group'' are blurred, such that regime supporters come to see their
+social group as including both regime supporters and opponents, then
+in-group loyalty will no longer necessarily imply \emph{regime} loyalty.
+
+For this mechanism to operate, lower levels of regime loyalty among a
+supporter's social group must be \emph{known}. Thus, factors that cause
+regime supporters to update their priors about the level of dissent
+against the regime, particularly among unlikely dissenters, is likely to
+increase the probability of defection.
+
+For resistance campaigns, this implies that defection should be more
+likely under two conditions: (1) when the campaign increases their
+social connection to regime supporters and (2) when they effectively
+signal that dissent is both more widespread and more durable than regime
+supporters previously anticipated.
+
+\subsection{\ldots but Material Consequences
+Matter}\label{but-material-consequences-matter}
+
+While social connections are important, they do not tell the whole
+story. Defection in authoritarian contexts is also a high-risk,
+high-cost endeavor, and regime supporters are likely to be sensitive to
+the costs of their potential actions. Thus, factors that increase the
+personal or group cost of remaining loyal to the regime relative to the
+cost of defection are likely to increase the scale and scope of
+defection. To avoid overly stretching the concept of cost we focus on
+material costs and benefits.
+
+Resistance campaigns can heighten the costs of loyalty through tactics
+of non-cooperation or nonviolent intervention that target the material
+bases of support for regime loyalists.
+
+There is a tension between the social logic for promoting defection
+highlighted in the previous hypothesis and the material logic of
+promoting defection emphasized here. To illustrate, consider a business
+that is providing support to an authoritarian leader. An
+anti-authoritarian campaign could attempt to spur defection by
+encouraging its members to patronize the business, thereby building
+strong social connections between the business and the campaign's
+members and developing a social logic of appropriateness that might
+motivate the business to defect. Alternatively, the campaign could
+organize a boycott, cutting off social connections between itself and
+the business, but heightening the material costs of loyalty until
+certain concessions are made. Which strategy should the campaign pursue?
+
+We are skeptical that either the social or the material logic of
+sparking defection predominates across all contexts. Instead, effective
+campaigns are likely to spark defection through a carefully sequenced
+combination of tactics that leverage both logics. Tactics that attempt
+to impose material costs are more likely to succeed when they are built
+on existing social connections and clear communication. In other words,
+material pressure may be most effective when the imposition of costs is
+seen as a temporary break in a relationship that can be restored based
+on good behavior.
+
+Future research should explore the specific parameters under which these
+logics can be most effectively employed, how they are best combined, and
+how they interact with other consequential factors such as the relative
+power, pre-existing relationships, and institutional position of regime
+supporters.
+
+\subsection{Little Steps are Easier than Big
+Steps}\label{little-steps-are-easier-than-big-steps}
+
+We expect that defection is generally easier among those with the lowest
+levels of support for a regime, and that small-scale defections are far
+more common than large-scale defections. In the framework of the
+spectrum of allies and opponents, we expect that the most common type of
+defection is a shift from passive support to neutrality. The second most
+common will be moves from active support to passive support. Jumps of
+more than one level - most extremely from active support to active
+opposition - will be much less common.\footnote{For evidence supporting
+  this general framework see Neundorf et al.
+  (\citeproc{ref-neundorf-loyal-2025}{2025}) or Tertytchnaya
+  (\citeproc{ref-tertytchnaya-protests-2020}{2020}).}
+
+For active supporters to become active opponents of a regime multiple
+steps will thus typically be required. Active supporters will typically
+move from active to passive support, then to neutrality, followed by
+passive opposition, before (if ever) ultimately reaching active
+opposition.
+
+\subsection{\ldots but authoritarianism can make defection all or
+nothing}\label{but-authoritarianism-can-make-defection-all-or-nothing}
+
+Authoritarian and would-be authoritarian regimes have strong incentives
+to prevent the gradual declines in loyalty described in the previous
+hypothesis. They are highly likely to punish even modest indications of
+declining loyalty with severe repression. As a result, supporters whose
+private loyalties are shifting will be more hesitant to express those
+shifts. This means that over time authoritarian and would-be
+authoritarian regimes accumulate large numbers of public supporters
+whose private preferences strongly oppose them
+(\citeproc{ref-kuran-now-1991}{Kuran 1991}). When these individuals
+defect, they are likely to do so in dramatic, all-or-nothing ways.
+
+Thus, we hypothesize that the scale of defection is directly related to
+the degree of authoritarianism in the current political regime. In more
+open political environments, we will tend to observe more small
+defections, such as moves from passive support to neutrality. As the
+system becomes more authoritarian, defection will become less frequent,
+but larger and more abrupt when it occurs. We will see more instances of
+active regime supporters moving to active regime opponents.
+
+\section{Conclusion}\label{conclusion}
+
+All political regimes are built on loyalty. Understanding changes in
+that loyalty is key to understanding regime stability and
+transformation. For democratization to occur, or for democratic
+backsliding to be checked, the individuals and groups that support an
+authoritarian leader must cease to provide that support. They must
+defect.
+
+This project, grounded in the conceptual framework laid out in this
+document, seeks to unify the disparate ways scholars have studied
+previously defection and advance new insights into when, how, and why
+defection occurs. By doing so, this project aims to provide actionable
+recommendations to activists and policymakers seeking to advance,
+defend, and repair democracy around the world.
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-adhikari-examining-2024}
+Adhikari, Bimal, Jeffrey King, and Amanda Murdie. 2024. {``Examining the
+Effects of Democratic Backsliding on Human Rights Conditions.''}
+\emph{Journal of Human Rights} 23 (3): 267--82.
+\url{https://doi.org/10.1080/14754835.2023.2295878}.
+
+\bibitem[\citeproctext]{ref-beissinger-structure-2007}
+Beissinger, Mark R. 2007. {``Structure and Example in Modular Political
+Phenomena: {The} Diffusion of Bulldozer/Rose/Orange/Tulip
+Revolutions.''} \emph{Perspectives on Politics} 5 (2): 259--76.
+
+\bibitem[\citeproctext]{ref-bermeo-democratic-2016}
+Bermeo, Nancy. 2016. {``On {Democratic Backsliding}.''} \emph{Journal of
+Democracy} 27 (1): 5--19. \url{https://doi.org/10.1353/jod.2016.0012}.
+
+\bibitem[\citeproctext]{ref-billig-social-1973}
+Billig, Michael, and Henri Tajfel. 1973. {``Social Categorization and
+Similarity in Intergroup Behaviour.''} \emph{European Journal of Social
+Psychology} 3 (1): 27--52.
+\url{https://doi.org/10.1002/ejsp.2420030103}.
+
+\bibitem[\citeproctext]{ref-bunce-defeating-2011}
+Bunce, Valerie J., and Sharon L. Wolchik. 2011. \emph{Defeating
+{Authoritarian Leaders} in {Postcommunist Countries}}. New York, NY:
+Cambridge University Press.
+
+\bibitem[\citeproctext]{ref-chenoweth-dynamic-2022}
+Chenoweth, Erica, Andrew Hocking, and Zoe Marks. 2022. {``A Dynamic
+Model of Nonviolent Resistance Strategy.''} \emph{PLOS ONE} 17 (7):
+e0269976. \url{https://doi.org/10.1371/journal.pone.0269976}.
+
+\bibitem[\citeproctext]{ref-chenoweth-why-2011}
+Chenoweth, Erica, and Maria J. Stephan. 2011. \emph{Why Civil Resistance
+Works: {The} Strategic Logic of Nonviolent Conflict}. New York, NY:
+Columbia University Press.
+
+\bibitem[\citeproctext]{ref-dahl-disaggregating-2026}
+Dahl, Marianne, Mauricio Rivera Celestino, and Scott Gates. 2026.
+{``Disaggregating {Defection}: {Dissent Campaign Strategies} and
+{Security Force Disloyalty}.''} \emph{Journal of Conflict Resolution} 70
+(1): 170--95. \url{https://doi.org/10.1177/00220027251348389}.
+
+\bibitem[\citeproctext]{ref-davenport-state-2007}
+Davenport, Christian. 2007. \emph{State Repression and the Domestic
+Democratic Peace}. Cambridge University Press.
+
+\bibitem[\citeproctext]{ref-debruin-how-2020}
+De Bruin, Erica. 2020. \emph{How to {Prevent Coups} d'{Etat}:
+{Counterbalancing} and {Regime Survival}}. Ithaca, NY: Cornell
+University Press.
+
+\bibitem[\citeproctext]{ref-delrio-strategic-2022}
+del Río, Adrián. 2022. {``Strategic {Uncertainty} and {Elite Defections}
+in {Electoral Autocracies}: {A Cross-National Analysis}.''}
+\emph{Comparative Political Studies} 55 (13): 2250--82.
+\url{https://doi.org/10.1177/00104140221074273}.
+
+\bibitem[\citeproctext]{ref-delrio-democratic-2025}
+del Río, Adrián, and Masaaki Higashijima. 2025. {``Democratic {Reforms}
+in {Dictatorships}: {Elite Divisions}, {Party Origins}, and the
+{Prospects} of {Political Liberalization}.''} \emph{Comparative
+Political Studies} 58 (12): 2682--2717.
+\url{https://doi.org/10.1177/00104140241302772}.
+
+\bibitem[\citeproctext]{ref-djuve-patterns-2019}
+Djuve, Vilde Lunnan, Carl Henrik Knutsen, and Tore Wig. 2019.
+{``Patterns of {Regime Breakdown Since} the {French Revolution}.''}
+\emph{Comparative Political Studies} 53 (6): 923--58.
+\url{https://doi.org/10.1177/0010414019879953}.
+
+\bibitem[\citeproctext]{ref-fruge-repressive-2019}
+Frugé, Kimberly R. 2019. {``Repressive Agent Defections: {How} Power,
+Costs, and Uncertainty Influence Military Behavior and State
+Repression.''} \emph{Conflict Management and Peace Science} 36 (6):
+591--607. \url{https://doi.org/10.1177/0738894219881433}.
+
+\bibitem[\citeproctext]{ref-gandhi-political-2008}
+Gandhi, Jennifer. 2008. \emph{Political {Institutions} Under
+{Dictatorship}}. Cambridge: Cambridge University Press.
+\url{https://doi.org/10.1017/CBO9780511510090}.
+
+\bibitem[\citeproctext]{ref-gleditsch-diffusion-2017}
+Gleditsch, Kristian S., and Mauricio Rivera. 2017. {``The Diffusion of
+Nonviolent Campaigns.''} \emph{Journal of Conflict Resolution} 61 (5):
+1120--45.
+
+\bibitem[\citeproctext]{ref-grewal-military-2019}
+Grewal, Sharan. 2019. {``Military Defection During Localized Protests:
+{The} Case of {Tataouine}.''} \emph{International Studies Quarterly} 63
+(2): 259--69.
+
+\bibitem[\citeproctext]{ref-guriev-informational-2019}
+Guriev, Sergei, and Daniel Treisman. 2019. {``Informational
+{Autocrats}.''} \emph{Journal of Economic Perspectives} 33 (4):
+100--127. \url{https://doi.org/10.1257/jep.33.4.100}.
+
+\bibitem[\citeproctext]{ref-hale-who-2017}
+Hale, Henry E., and Timothy J. Colton. 2017. {``Who {Defects}?
+{Unpacking} a {Defection Cascade} from {Russia}'s {Dominant Party}
+2008--12.''} \emph{American Political Science Review} 111 (2): 322--37.
+\url{https://doi.org/10.1017/S0003055416000642}.
+
+\bibitem[\citeproctext]{ref-havel-power-1985}
+Havel, Vaclav. 1985. {``The {Power} of the {Powerless}.''} In \emph{The
+{Power} of the {Powerless}: {Citizens Against} the {State} in
+{Central-Eastern Europe}}, edited by John Keane, 23--96. Armonk, NY:
+M.E. Sharpe, Inc.
+
+\bibitem[\citeproctext]{ref-hirschman-exit-1970}
+Hirschman, Albert O. 1970. \emph{Exit, {Voice}, and {Loyalty}:
+{Responses} to {Decline} in {Firms}, {Organizations}, and {States}}.
+Cambridge, MA: Harvard University Press.
+
+\bibitem[\citeproctext]{ref-jee-unified-2022}
+Jee, Haemin, Hans Lueders, and Rachel Myrick. 2022. {``Towards a Unified
+Approach to Research on Democratic Backsliding.''}
+\emph{Democratization} 29 (4): 754--67.
+\url{https://doi.org/10.1080/13510347.2021.2010709}.
+
+\bibitem[\citeproctext]{ref-king-how-2013}
+King, Gary, Jennifer Pan, and Margaret E. Roberts. 2013. {``How
+Censorship in {China} Allows Government Criticism but Silences
+Collective Expression.''} \emph{American Political Science Review} 107
+(2): 326--43.
+
+\bibitem[\citeproctext]{ref-koehler-disaffection-2016}
+Koehler, Kevin, Dorothy Ohl, and Holger Albrecht. 2016. {``From
+{Disaffection} to {Desertion}: {How Networks Facilitate Military
+Insubordination} in {Civil Conflict}.''} \emph{Comparative Politics} 48
+(4): 439--57. \url{https://doi.org/10.5129/001041516819197601}.
+
+\bibitem[\citeproctext]{ref-kuran-now-1991}
+Kuran, Timur. 1991. {``Now Out of Never: {The} Element of Surprise in
+the {East European} Revolution of 1989.''} \emph{World Politics} 44 (1):
+7--48.
+
+\bibitem[\citeproctext]{ref-langston-breaking-2002}
+Langston, Joy. 2002. {``Breaking {Out} Is {Hard} to {Do}: {Exit},
+{Voice}, and {Loyalty} in {Mexico}'s {One-Party Hegemonic Regime}.''}
+\emph{Latin American Politics and Society} 44 (3): 61--88.
+\url{https://doi.org/10.1111/j.1548-2456.2002.tb00214.x}.
+
+\bibitem[\citeproctext]{ref-levitsky-competitive-2010}
+Levitsky, Steven, and Lucan A. Way. 2010. \emph{Competitive
+Authoritarianism: {Hybrid} Regimes After the {Cold War}}. New York, NY:
+Cambridge University Press.
+
+\bibitem[\citeproctext]{ref-linz-breakdown-1978}
+Linz, Juan J., and Alfred Stepan, eds. 1978. \emph{The {Breakdown} of
+{Democratic Regimes}}. Johns Hopkins University Press.
+
+\bibitem[\citeproctext]{ref-little-measuring-2024}
+Little, Andrew T., and Anne Meng. 2024. {``Measuring Democratic
+Backsliding.''} \emph{PS: Political Science \& Politics}, 1--13.
+
+\bibitem[\citeproctext]{ref-luhrmann-third-2019}
+Lührmann, Anna, and Staffan I. Lindberg. 2019. {``A Third Wave of
+Autocratization Is Here: What Is New about It?''} \emph{Democratization}
+26 (7): 1095--1113.
+
+\bibitem[\citeproctext]{ref-march-institutional-1998}
+March, James G., and Johan P. Olsen. 1998. {``The Institutional Dynamics
+of International Political Orders.''} \emph{International Organization}
+52 (4): 943--69.
+
+\bibitem[\citeproctext]{ref-markowitz-kompromat-2017}
+Markowitz, Lawrence P. 2017. {``Beyond {Kompromat}: {Coercion},
+{Corruption}, and {Deterred Defection} in {Uzbekistan}.''}
+\emph{Comparative Politics} 50 (1): 103--21.
+\url{https://doi.org/10.5129/001041517821864390}.
+
+\bibitem[\citeproctext]{ref-morency-laflamme-question-2018}
+Morency-Laflamme, Julien. 2018. {``A Question of Trust: Military
+Defection During Regime Crises in {Benin} and {Togo}.''}
+\emph{Democratization} 25 (3): 464--80.
+\url{https://doi.org/10.1080/13510347.2017.1375474}.
+
+\bibitem[\citeproctext]{ref-nepstad-mutiny-2013}
+Nepstad, Sharon Erickson. 2013. {``Mutiny and Nonviolence in the {Arab
+Spring}: {Exploring} Military Defections and Loyalty in {Egypt},
+{Bahrain}, and {Syria}.''} \emph{Journal of Peace Research} 50 (3):
+337--49.
+
+\bibitem[\citeproctext]{ref-neu-strategies-2022}
+Neu, Kara Kingma. 2022. {``Strategies of {Dictatorship} and {Military
+Disloyalty} During {Anti-Authoritarian Protests}: {Explaining
+Defections} and {Coups}.''} \emph{Journal of Global Security Studies} 7
+(1): ogab033. \url{https://doi.org/10.1093/jogss/ogab033}.
+
+\bibitem[\citeproctext]{ref-neundorf-loyal-2025}
+Neundorf, Anja, Aykut Ozturk, Ksenia Northmore-Ball, Katerina
+Tertytchnaya, and Johannes Gerschewski. 2025. {``A {Loyal Base}:
+{Support} for {Authoritarian Regimes} in {Times} of {Crisis}.''}
+\emph{Comparative Political Studies} 58 (9): 1854--89.
+\url{https://doi.org/10.1177/00104140241283006}.
+
+\bibitem[\citeproctext]{ref-nisbett-telling-1977}
+Nisbett, Richard E., and Timothy D. Wilson. 1977. {``Telling More Than
+We Can Know: {Verbal} Reports on Mental Processes.''}
+\emph{Psychological Review} 84 (3): 231.
+
+\bibitem[\citeproctext]{ref-odonnell-transitions-1986}
+O'Donnell, Guillermo, and Philippe C. Schmitter. 1986. \emph{Transitions
+from Authoritarian Rule: {Tentative} Conclusions about Uncertain
+Democracies}. Baltimore, MD: JHU Press.
+
+\bibitem[\citeproctext]{ref-oppenheimer-manual-1965}
+Oppenheimer, Martin, and George Lakey. 1965. \emph{A {Manual} for
+{Direct Action}}. Quadrangle Books.
+
+\bibitem[\citeproctext]{ref-pearlman-moral-2018}
+Pearlman, Wendy. 2018. {``Moral {Identity} and {Protest Cascades} in
+{Syria}.''} \emph{British Journal of Political Science} 48 (4):
+877--901. \url{https://doi.org/10.1017/S0007123416000235}.
+
+\bibitem[\citeproctext]{ref-pinckney-nonviolent-2021}
+Pinckney, Jonathan. 2021. {``Nonviolent {Resistance}, {Social Justice},
+and {Positive Peace}.''} In \emph{The {Palgrave Handbook} on {Positive
+Peace}}, edited by Katerina Standish, Heather Devere, Adan Suazo, and
+Rachel Rafferty. Palgrave Macmillan.
+
+\bibitem[\citeproctext]{ref-pinckney-breaking-2025}
+Pinckney, Jonathan, and Claire Trilling. 2025. {``Breaking {Down
+Pillars} of {Support} for {Democratic Backsliding}.''}
+\emph{Mobilization: An International Quarterly} 30 (2): 171--88.
+
+\bibitem[\citeproctext]{ref-pion-berlin-staying-2014}
+Pion-Berlin, David, Diego Esparza, and Kevin Grisham. 2014. {``Staying
+{Quartered}: {Civilian Uprisings} and {Military Disobedience} in the
+{Twenty-First Century}.''} \emph{Comparative Political Studies} 47 (2):
+230--59. \url{https://doi.org/10.1177/0010414012450566}.
+
+\bibitem[\citeproctext]{ref-reuter-economic-2011}
+Reuter, Ora John, and Jennifer Gandhi. 2011. {``Economic {Performance}
+and {Elite Defection} from {Hegemonic Parties}.''} \emph{British Journal
+of Political Science} 41 (1): 83--110.
+\url{https://doi.org/10.1017/S0007123410000293}.
+
+\bibitem[\citeproctext]{ref-reuter-elite-2019}
+Reuter, Ora John, and David Szakonyi. 2019. {``Elite Defection Under
+Autocracy: {Evidence} from {Russia}.''} \emph{American Political Science
+Review} 113 (2): 552--68.
+
+\bibitem[\citeproctext]{ref-riedl-democratic-2025}
+Riedl, Rachel Beatty, Paul Friesen, Jennifer McCoy, and Kenneth Roberts.
+2025. {``Democratic {Backsliding}, {Resilience}, and {Resistance}.''}
+\emph{World Politics} 77 (1): 151--78.
+
+\bibitem[\citeproctext]{ref-riedl-pathways-2024}
+Riedl, Rachel Beatty, Jennifer McCoy, Kenneth Roberts, and Murat Somer.
+2024. {``Pathways of {Democratic Backsliding}, {Resistance}, and
+({Partial}) {Recoveries}.''} \emph{The ANNALS of the American Academy of
+Political and Social Science} 712 (1): 8--31.
+\url{https://doi.org/10.1177/00027162251319909}.
+
+\bibitem[\citeproctext]{ref-sharp-politics-1973}
+Sharp, Gene. 1973. \emph{The {Politics} of {Nonviolent Action}}. Boston,
+MA: Porter Sargent.
+
+\bibitem[\citeproctext]{ref-sinanoglu-autocrats-2025}
+Sinanoglu, Semuhi. 2025. {``Autocrats and {Their Business Allies}: {The
+Informal Politics} of {Defection} and {Co-optation}.''} \emph{Government
+and Opposition} OnlineFirst.
+
+\bibitem[\citeproctext]{ref-svolik-politics-2012}
+Svolik, Milan W. 2012. \emph{The Politics of Authoritarian Rule}. New
+York, NY: Cambridge University Press.
+
+\bibitem[\citeproctext]{ref-tertytchnaya-protests-2020}
+Tertytchnaya, Katerina. 2020. {``Protests and {Voter Defections} in
+{Electoral Autocracies}: {Evidence From Russia}.''} \emph{Comparative
+Political Studies} 53 (12): 1926--56.
+\url{https://doi.org/10.1177/0010414019843556}.
+
+\end{CSLReferences}
+
+
+
+
+\end{document}

@@ -1,0 +1,295 @@
+---
+title: "Defections Project Codebook"
+author: "Jonathan Pinckney"
+format:
+  html:
+    code-fold: true
+    code-tools:
+      source: collapse
+editor: source
+bibliography: "../main-library.bib"  
+
+---
+
+```{r}
+#| include: false
+
+library(tidyverse)
+library(plotly)
+library(kableExtra)
+
+vdem.full <- vdemdata::vdem
+
+reg.support.vars <- select(vdem.full,year,country_name,contains("v2reg"))
+
+group.ids <- list(`0` = "Aristocracy",
+                  `1` = "Landholders",
+                  `2` = "Party Elites",
+                  `3` = "Business Elites",
+                  `4` = "Bureaucracy",
+                  `5` = "Military",
+                  `6` = "Ethnic Group",
+                  `7` = "Religious Group",
+                  `8` = "Local Elites",
+                  `9` = "Urban Workers",
+                  `10` = "Urban Middle Class",
+                  `11` = "Rural Workers",
+                  `12` = "Rural Middle Class",
+                  `13` = "Foreign Govt")
+
+working.data <- read_rds("data/working-data.rds")
+
+group.cyear <- working.data[[1]]
+cyear.data <- working.data[[2]]
+
+```
+
+
+# Introduction
+
+This document contains the codebook for large-n international data collection as part of the understanding defections for democracy project. The purpose of this data collection is to build a cross-national dataset measuring the loyalty of all regime support groups in all authoritarian and democratic backsliding regimes in the post-Cold War period, shifts in loyalty, and social movement, opposition, and third-party tactics that we hypothesize may affect the loyalty of regime support groups. We will use the dataset produced through this data collection effort to test a variety of hypotheses on the predictors of defection from authoritarian regimes, as well as to generate case studies for an online dashboard of defections cases. 
+
+## The Regime Support Group 
+
+One major concept for our data collection is the *regime support group* (RSG). Regime support groups are social groups with two characteristics: (1) they support the current regime and (2) their support is impactful in maintaining the regime in power [@knutsen-throne-2025, 5]. We use the term interchangeably with the term "pillar of support", more common in the literature on strategic nonviolent conflict, and which scholars and activists use to refer to the groups that "hold up" a political regime through providing power and resources to that regime [@helvey-strategic-2004; @nepstad-nonviolent-2015]. 
+
+Previous research on RSGs/pillars has conceptualized the regime support groups in a variety of ways. @helvey-strategic-2004 describes nine typical pillars of support for political regimes such as police, military, and civil society organizations. @pinckney-breaking-2025 select four of these to focus on in the context of democratic backsliding. One key insight of this literature is that the same set of RSGs are not always relevant for all regimes, though some (such as the military/security services) are almost always critical to understanding regime stability.  
+
+Previous scholarship has also defined and distinguished support groups in three major ways: by their institutional position (such as the bureaucracy/civil service), their economic class position (business leaders/working classes) or their social identity (ethnic group/racial group/religious group). All three of these methods of distinction are potentially relevant to a comprehensive approach to understanding loyalty and defection. For this project, we define the universe of groups whose behavior we are potentially interested in using the 14-level categorization of the *Regime Support and Opposition Groups* (ReSOG) dataset from @knutsen-throne-2025 (listed in @tbl-rsgs). This categorization combines the institutional, economic, and social definition of support groups that have been used in prior research.
+
+```{r}
+#| label: tbl-rsgs
+#| tbl-cap: "Regime Support Group Categories"
+
+as_tibble(group.ids) %>% 
+  pivot_longer(cols = everything(),
+               names_to = "Group Number",
+               values_to = "Group") %>% 
+  kable()
+
+```
+The same organization or individual can be a part of multiple regime support groups, and can shift from one regime support group to another over time. For example, the regime of Bashar al-Assad in Syria clearly relied on both the military and the Alawite religious/ethnic group as part of its support coalition, and filled the higher ranks of the Syrian military with Alawites as part of their efforts to maintain the military's lotalty.
+
+
+## Defection
+
+*Loyalty shifts* are any movement in the loyalty of a regime support group/pillar away from a regime and toward an opposition. *Defections* are that subset of loyalty shifts in which the individual or group was supportive of the regime prior to the shift. This means that defection is very closely related to *time*. To understand defection, you have to understand not just what the group you are examining is doing today, but what they did yesterday.  
+
+At the level of the individual or organization, defection can be conceptualized as a matter of *intensity*: the degree of active or passive support or opposition that the individual or organization gives to the regime. At the level of the pillar of support, defections can also be conceptualized in terms of *scale*. A defection in *scale* is one in which the number of groups or individuals within the pillar who have shifted loyalty away from the regime increases. 
+
+
+## Unit of Observation
+
+Our unit of observation is the "RSG-country-year." For instance, "Military-Indonesia-1990" would be one observation while "Bureaucracy-Indonesia-1990" would be a separate observation. All variables in our dataset are coded at this level, and change in any variable is theoretically possible at this level, though some variables may be relatively constant over time or across groups within a country. 
+
+## Scope Conditions
+
+The final objective of this data collection project is to code data for all politically relevant regime support groups in every authoritarian and democratic backsliding regime from 1989-2024. Theoretically, authoritarian regimes are all those political regimes that lack the minimum institutional guarantees of democracy defined by @dahl-polyarchy-1973. We operationalize this as all regimes categorized as a "Closed Autocracy" or "Electoral Autocracy" by the "Regimes of the World" measure from V-Dem [@luhrmann-regimes-2018]. Democratic backsliding regimes are all democracies experiencing "substantial de-facto decline of core institutional requirements for electoral democracy" [@luhrmann-third-2019, 1096]. We operationalize this as all democratic regimes going through an "autocratization episode" based on the decision rules specified in @luhrmann-third-2019.^[Specifically, an autocratization episode is a decline of 0.1 on the Electoral Democracy index from V-Dem. Potential episodes begin in any year where a decline of 0.01 or more occurs, and continue as long as there is continued decline, allowing for up to four years of temporary stagnation. Potential episodes end when there is no decline of 0.01 or more over four years, or if there is an increase of 0.02 or more. Potential episodes are only included as manifest episodes if the total decline over the episode adds up to 0.1 or more [@luhrmann-third-2019, 1101]].
+
+For example, @fig-hungary shows the Electoral Democracy Index in Hungary from 1990 to 2024. Hungary is a democracy from the beginning of this period until 2010, when it enters a period of backsliding. It is backsliding until 2017, when Regimes of the World codes it as an electoral autocracy. We would collect data on the regime support groups from 2010-2024, but not for 1990-2009. 
+
+```{r}
+#| fig-cap: "Regime Type Over Time in Hungary"
+#| fig-width: 9
+#| fig-height: 4.8
+#| dpi: 220
+#| label: fig-hungary
+
+hungary.data <- vdem.full %>%
+  select(country_name,year,v2x_polyarchy) %>% 
+  filter(country_name == "Hungary" & year > 1989)
+
+regimes <- tibble(xmin = c(1990,2010,2017),
+                  xmax = c(2010,2017,2024),
+                  Regime = c("Democracy","Backsliding","Authoritarian"))
+
+ggplot() +
+  geom_rect(data = regimes,
+            aes(xmin =xmin,xmax = xmax,ymin = -Inf,ymax = Inf,fill = Regime),
+            alpha = 0.18) +
+  geom_line(data = hungary.data,
+            aes(x = year,y = v2x_polyarchy)) +
+  scale_fill_discrete(name = "", guide = guide_legend(reverse = T)) +
+  labs(x = "Year",y = "Electoral Democracy Score") +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "top",
+        panel.grid.minor = element_blank()) 
+  
+  
+
+```
+
+When it comes to regime support groups, we also limit scope by whether a regime support group is *politically relevant* to the regime in question. Theoretically, this scope limitation recognizes that the same groups are not always important in all political regimes and thus considering their loyalty or their possibility for defection is not meaningful. For instance, in regimes where religion is not a significant area of political contention, the support of religious institutions is unlikely to be a major political consideration.
+
+Wr consider two regime support groups to always be relevant: the military and the bureaucracy. These are relevant because they are key organs of state power. For all other regime support groups, we include them in the data  if more than 50% of expert coders from V-Dem considered them to be a regime support group at any time during the regime.^[Technically speaking, if the regime-specific maximum of the *v2regsupgroups* variable for that support group is greater than 0.5.] 
+
+
+# Data Collection Process
+
+Data collection for this project will proceed in three stages. In the first stage, we will collect data on all regime support groups during periods of democratic backsliding that at any point experienced a civil resistance campaign, as recorded by the list of campaigns in the NAVCO 1.3 dataset [@chenoweth-list-2020]. When data collection for that stage is complete, we will expand to all other periods of democratic backsliding. When that stage is complete we will expand to all periods of authoritarian rule. Within these stages, we will randomize the coding order.
+
+Coding on all RSG-country-years will be done simultaneously by two human coders and one AI agent given the coding rules. Coders will code all relevant regime support groups for the entire lifespan of a regime, then review their coding and any discrepancies between their coding and the other human coder with the project's principal investigator.
+
+## Sources and Coding
+
+Coders should begin by reviewing no fewer than two scholarly sources on the regime they are coding to get an overview of the regime and code variables for RSGs in the regime's first year. Coders should begin by reviewing the sources listed for the regime in question in the Historical Regimes Dataset source spreadsheet, and then supplement the sources there with additional sources if necessary. All RSG variable values should be carried forward from the first year until either the end of the regime in question or until a *potential defection year* for this RSG occurs.
+
+## Potential Defection Years
+
+We assume that changes in RSG loyalty are small at most points during a regime's lifecycle. Thus, collecting detailed data on regime support groups in every year is likely to yield little data of interest and lead to significant wasted effort. To focus our efforts we rely further on the coding of regime support group loyalty by V-Dem's country experts to identity *potential defection years*. Potential defection years are RSG-years that meet one of three conditions:
+
+1. The percentage of expert coders that coded this RSG as supporting the regime experiences a significant drop, TK define  
+2. More than half of expert coders newly code this RSG as being in passive opposition to the regime.
+3. Any number of expert coders code this RSG as being in active opposition to the regime.
+
+*TK, give EG of coding across two groups*
+
+
+
+```{r}
+# Want all instances in which a regime support group is newly-indicated to be part of the opposition to the regime.
+
+# A new shift to passive opposition or a shift from passive opposition to active opposition would count
+
+# potential.dfx.data <- reg.support.vars %>%
+#   filter(year > 1945) %>% 
+#   dplyr::select(country_name,year,v2regidnr,
+#                 contains("v2regsupgroups_"), # Get support group values
+#                 contains("v2regoppgroups_"), # Get opposition group values
+#                 contains("v2regoppgroupsact_"), # Get active opposition group values
+#                 -contains("_nr")) %>% # Drop alternative specification
+#   pivot_longer(cols = -c(country_name,year,v2regidnr),
+#                names_to = "varname") %>%
+#   separate(varname,into = c("variable","group"),sep = "_") %>%
+#   mutate(group = recode(group,!!!group.ids),
+#          variable = recode(variable, 
+#                            "v2regsupgroups" = "support",
+#                            "v2regoppgroups" = "oppose",
+#                            "v2regoppgroupsact" = "active.oppose"
+#                            )) %>% 
+#   pivot_wider(names_from = variable,
+#               values_from = value) %>% 
+#   group_by(v2regidnr,group) %>%
+#   mutate(support.drop = support < lag(support),
+#          opp.increase = oppose > lag(oppose) & lag(support) > 0,
+#          act.opp.increase = active.oppose > lag(active.oppose) & lag(support) > 0,
+#          potential.dfx = if_else(support.drop == TRUE | opp.increase == TRUE | act.opp.increase == TRUE,1,0)
+#   )  
+# 
+# 
+# pillars.total <- potential.dfx.data %>% 
+#   filter(support > 0.5)
+   
+
+
+# Also want all instances in which the number of experts scoring a group as a regime support group decline
+
+
+```
+
+# Variable Coding Rules
+
+## group.loyalty.unity
+
+*Question:* How united is this group in its allegiance or opposition to the regime?
+
+*Responses*  
+  1. The group is completely unified in its support for the regime  
+  2. The group mostly supports the regime  
+  3. The group is roughly evenly split between support for and opposition to the regime  
+  4. The group mostly supports the opposition
+  5. The group is completely unified in its support for the opposition
+
+*Clarification:* When thinking of this group as a whole, how much do they support or oppose the regime in power? What percentage of people in this group visibly oppose the regime? Do prominent figures in this regime speak with one voice in support of the regime, do they speak both in favor of and in opposition to the regime, or do they? Consider the level of support at the end of the year, rather than the beginning of the year.
+
+## group.loyalty.intensity
+
+*Question:* What is the highest level of opposition to the regime that you observe among this group?
+
+*Responses*  
+  1. All members of this group actively support the regime   
+  2. At least some members of this group only passively support the regime  
+  3. At least some members of this group are neutral toward the regime  
+  4. At least some members of this group passively support the opposition  
+  5. At least some members of this group actively support the opposition
+
+*Clarification:*  Across all the individuals and organizations in this group, 
+
+
+## opposition.tactics
+
+*Question:* Did the opposition engage in any intentional attempts to spark defections from this regime support group?
+
+*Clarification:* In this year, did you observe any explicit or clearly implicit attempts by actors opposed to the regime in power (civil resistance campaigns, opposition politicians, civil society figures) to change the loyalty of any of the members of this regime support group to the regime in power? Were there statements condemning this support group's cooperation with the regime? Protests directed at prominent members of the support group? Note 
+
+*Responses*  
+1. There was no meaningful opposition to the regime in this country in this year  
+2. There was opposition but they did not engage in any intentional tactics to spark defection  
+3. Yes, the opposition did seek to spark defection from this regime support group  
+
+## opposition.tactics.list
+
+*Question:* Which specific tactics by the opposition to spark defection from this regime support group did you observe in this year? Select all that apply
+
+*Responses*  
+1. Outreach  
+2. Verbal Protest  
+3. Physical Protest  
+4. Non-cooperation  
+5. Nonviolent Intervention  
+
+*Clarification:* Actors opposed to the regime may attempt to spark defection in a variety of different ways, sometimes multiple ways at the same time. We have split these many ways into five categories, drawing on earlier work from @sharp-politics-1973 and @pinckney-breaking-2025. These categories are not exclusive - you should pick each of them that you observe. Note that actions are relevant whether they explicitly or implicitly aim at changing RSG loyalty. So, for example, a protest where people opposed to the regime chant "the army is with the people" may not be explicitly asking for the army to no longer support the government, but they are implicitly doing so by claiming the mantle of "the people" and calling on the army to be "with" them. Note that this variable should only be coded in years where *opposition.tactics* has been coded as a 3.
+
+
+## defection.tactics
+
+*Question:* What specific actions did members of this support group engage in that resisted or opposed the regime in power?
+
+## 
+
+
+
+
+
+
+# Informative Plots
+
+## Regime Support Groups Over Time
+
+```{r}
+# support.groups <- list(v2regsupgroups_0 = "Aristocracy",
+#                        v2regsupgroups_1 = "Landholders",
+#                        v2regsupgroups_2 = "Party Elites",
+#                        v2regsupgroups_3 = "Business Elites",
+#                        v2regsupgroups_4 = "Bureaucracy",
+#                        v2regsupgroups_5 = "Military",
+#                        v2regsupgroups_6 = "Ethnic Group",
+#                        v2regsupgroups_7 = "Religious Group",
+#                        v2regsupgroups_8 = "Local Elites",
+#                        v2regsupgroups_9 = "Urban Workers",
+#                        v2regsupgroups_10 = "Urban Middle Class",
+#                        v2regsupgroups_11 = "Rural Workers",
+#                        v2regsupgroups_12 = "Rural Middle Class",
+#                        v2regsupgroups_13 = "Foreign Govt")
+# 
+# 
+# 
+# 
+# line.plot <- vdem.full %>% 
+#   group_by(year) %>% 
+#   summarize(across(contains("v2regsupgroups_"),~ sum(.,na.rm = T))) %>% 
+#   select(-v2regsupgroups_nr) %>% 
+#   pivot_longer(cols = contains("v2regsupgroups_"),
+#                names_to = "support.group") %>% 
+#   mutate(support.group = recode(support.group, !!!support.groups)) %>% 
+#   ggplot(aes(x = year,y = value,color = support.group,group = support.group)) +
+#   geom_line(linewidth = 1.5)
+# 
+# ggplotly(line.plot)
+
+```
+
+# References
+
+
+

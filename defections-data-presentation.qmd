@@ -1,0 +1,357 @@
+---
+title: "Developing Defections Data"
+subtitle: "Disccussion of Two Early-Stage Resources"
+author: "Jonathan Pinckney"
+date: "2026-02-20"
+format:
+  revealjs:
+    theme: [dark, custom.scss]
+    slide-number: true
+    width: 1280
+    height: 720
+    center: false
+    hash-type: number
+    footer: "Defections Project — Data Resources"
+    title-slide-attributes:
+      data-background-color: "#16213e"
+bibliography: "../main-library.bib"
+---
+
+```{r}
+library(tidyverse)
+library(marginaleffects)
+
+working.data <- read_rds("data/working-data.rds")
+
+group.cyear.data <- working.data[[1]]
+cyear.data <- working.data[[2]]
+```
+
+## Key Questions for New Data Sources
+
+
+- How can these resources (and others) fit within a common [conceptual  framework]{.highlight-red}?
+- How can we design these resources to most effectively [answer questions]{.highlight-red} from the previous session?
+- What methodological [challenges]{.highlight-red} should we be keeping in mind?
+- How can we design these resources to most effectively [pipeline findings]{.highlight-red} to relevant practitioner audiences?
+
+## What Data Resources Already Exist?
+
+- Military defections, particularly during civil resistance campaigns [@dahl-disaggregating-2026;@chenoweth-updating-2022]
+- Loyalty/defection at the pillar of support level for some pillars in some backsliding spells [@pinckney-breaking-2025]
+- Individual-level data on authoritarian legislators/ministers including instances of defection to the opposition [@delrio-strategic-2022] 
+
+## What is Missing?
+
+- Data that tracks more [diverse populations]{.highlight-red} of regime supporters across time and contexts
+- Data on a wider range of types of defection actions, recognizing the importance of [context]{.highlight-red} and [subtle/quiet action]{.highlight-red}
+- Resources that [process-trace]{.highlight-red} defections across  cases and contexts
+
+## {background-color="#16213e"}
+
+::: {style="text-align: center; margin-top: 150px;"}
+
+[Cross-National Defections Data]{style="font-size: 1.5em; font-weight: bold;"}
+
+:::
+
+## What is This Resource For?
+
+- [Large-*n* analysis]{.highlight-red} to identify factors that predict defection cross-nationally
+- Identifying key global cases of defection for [process-tracing]{.highlight-red}
+
+## Scope Conditions
+
+Every authoritarian and democratic backsliding regime in the post-Cold War era - `r nrow(filter(cyear.data,v2x_regime < 2 | in_manifest_episode == TRUE))` country-years [@luhrmann-regimes-2018; @luhrmann-third-2019]
+
+.  .  .
+
+```{r}
+#| fig-align: "center"
+#| out-width: "90%"
+#| fig-width: 11.5
+#| fig-height: 5
+#| fig-cap: "Regime Periods in Hungary 1990-2024"
+
+hungary.data <- cyear.data %>%
+  select(country_name,year,v2x_polyarchy) %>% 
+  filter(country_name == "Hungary" & year > 1989)
+
+regimes <- tibble(xmin = c(1990,2010,2017),
+                  xmax = c(2010,2017,2024),
+                  Regime = c("Democracy","Backsliding","Authoritarian"))
+
+ggplot() +
+  geom_rect(data = regimes,
+            aes(xmin =xmin,xmax = xmax,ymin = -Inf,ymax = Inf,fill = Regime),
+            alpha = 0.4) +
+  geom_line(data = hungary.data,
+            aes(x = year,y = v2x_polyarchy),
+            color = "white", linewidth = 1) +
+  scale_fill_manual(name = "",
+                    values = c("Democracy" = "#2ECC71",
+                               "Backsliding" = "#FFC107",
+                               "Authoritarian" = "#F44336"),
+                    guide = guide_legend(reverse = T)) +
+  labs(x = "Year",y = "Electoral Democracy Score") +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "top",
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(color = "grey40"),
+    plot.background = element_rect(fill = "#191919", color = "#191919"),
+    panel.background = element_rect(fill = "#191919", color = "#191919"),
+    panel.border = element_blank(),
+        text = element_text(size = 24,color = "white"),
+        axis.text = element_text(color = "grey80"),
+        legend.text = element_text(color = "white"))
+```
+
+## Unit of Analysis
+
+The [**regime support group**]{.highlight-red}-country-year
+
+> "A group of individuals who are supportive of the existing regime, and, *if* it were to retract support would substantially increase the chance that the regime would lose power" [@knutsen-throne-2025, 5]
+
+. .  .  
+
+The *Regime Support and Opposition Groups* dataset: country expert data on whether 14 groups [*support*, *oppose*, or *actively oppose*]{.highlight-red} a political regime.
+
+.  .  .  
+
+Variables are measured as percentage of experts who agree that the group falls into that category
+
+## 
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+
+
+|[Groups]{.highlight-red}|
+|-----------|
+::: {style="font-size: 0.651em"}
+Aristocracy  
+Landholders  
+Party Elites  
+Business Elites  
+[Bureaucracy]{.highlight-red}  
+[Military]{.highlight-red}  
+Ethnic Group  
+Religious Group  
+Local Elites  
+Urban Workers  
+Urban Middle Class  
+Rural Workers  
+Rural Middle Class  
+Foreign Government  
+:::
+
+
+:::
+
+::: {.column width="70%"}
+
+```{r}
+#| fig-width: 7
+#| fig-height: 5.5
+
+thailand.mil <- group.cyear.data %>%
+  filter(country_name == "Burma/Myanmar" & group == "Military" & year > 1989) %>%
+  select(year, support, oppose, active.oppose) %>%
+  pivot_longer(cols = c(support, oppose, active.oppose),
+               names_to = "measure", values_to = "value") %>%
+  mutate(measure = factor(measure,
+                          levels = c("support", "oppose", "active.oppose"),
+                          labels = c("Support", "Oppose", "Actively Oppose")))
+
+ggplot(thailand.mil, aes(x = year, y = value, color = measure)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2) +
+  scale_color_manual(name = "",
+                     values = c("Support" = "#2196F3",
+                                "Oppose" = "#FFC107",
+                                "Actively Oppose" = "#F44336")) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1),
+                     limits = c(0, 1)) +
+  labs(x = "Year", y = "Expert Consensus",
+       title = "Military — Burma/Myanmar") +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "top",
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(color = "grey40"),
+        plot.background = element_rect(fill = "#191919", color = "#191919"),
+        panel.background = element_rect(fill = "#191919", color = "#191919"),
+        panel.border = element_blank(),
+        text = element_text(size = 18, color = "white"),
+        axis.text = element_text(color = "grey80"),
+        legend.text = element_text(color = "white"),
+        plot.title = element_text(color = "white", size = 20))
+```
+
+
+:::
+
+::::
+
+## Potential Defection Years
+
+Country-years in which consensus on regime support was above a threshold in the prior year, and consensus on [*support falls*]{.highlight-red} below a threshold or [*opposition rises*]{.highlight-red} above a threshold in the current year.
+
+```{r}
+#| fig-align: "center"
+#| out-width: "90%"
+#| fig-width: 11.5
+#| fig-height: 5.5
+
+potential.dfx.plot <- group.cyear.data %>%
+  filter(year > 1989 & country_name == "Burma/Myanmar") %>%
+  # group_by(group) %>%
+  # filter(max.support > 0.5 | group %in% c("Military","Bureaucracy")) %>%
+  # ungroup() %>%
+  mutate(potential.dfx = factor(potential.dfx, levels = c(0, 1),
+                                labels = c("No", "Yes")))
+
+ggplot(potential.dfx.plot, aes(x = year, y = group, fill = potential.dfx)) +
+  geom_tile(color = "#191919", linewidth = 0.5) +
+  scale_fill_manual(name = "Potential Defection",
+                    values = c("No" = "#1565C0", "Yes" = "#C41C3B"),
+                    na.value = "grey30") +
+  # scale_x_continuous(breaks = seq(1992, 2024, by = 4)) +
+  labs(x = "Year", y = NULL) +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = "top",
+        panel.grid = element_blank(),
+        plot.background = element_rect(fill = "#191919", color = "#191919"),
+        panel.background = element_rect(fill = "#191919", color = "#191919"),
+        panel.border = element_blank(),
+        text = element_text(size = 24, color = "white"),
+        axis.text = element_text(color = "grey80"),
+        axis.text.y = element_text(size = 16),
+        legend.text = element_text(color = "white"))
+```
+
+
+
+## Potential Variables {.smaller}
+
+Limit to variables not readily available from existing data sources
+
+```{=html}
+<table style="width: 90%; margin: auto; border-collapse: separate; border-spacing: 0; font-size: 0.75em;">
+  <thead>
+    <tr style="border-bottom: 2px solid #888;">
+      <th style="text-align: left; padding: 12px 16px; color: #FFC107; width: 30%;">Variable</th>
+      <th style="text-align: left; padding: 12px 16px; color: #ccc;">Question</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #444;">
+      <td style="padding: 10px 16px; color: #F44336; font-family: monospace; font-weight: bold;">group.loyalty.unity</td>
+      <td style="padding: 10px 16px; color: #eee;">How united is this group in its allegiance or opposition to the regime?</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #444;">
+      <td style="padding: 10px 16px; color: #F44336; font-family: monospace; font-weight: bold;">group.loyalty.intensity</td>
+      <td style="padding: 10px 16px; color: #eee;">What is the highest level of opposition to the regime that you observe among this group?</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #444;">
+      <td style="padding: 10px 16px; color: #F44336; font-family: monospace; font-weight: bold;">opposition.tactics</td>
+      <td style="padding: 10px 16px; color: #eee;">Did the opposition engage in any intentional attempts to spark defections from this group?</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #444;">
+      <td style="padding: 10px 16px; color: #F44336; font-family: monospace; font-weight: bold;">opposition.tactics.list</td>
+      <td style="padding: 10px 16px; color: #eee;">What specific tactics did the opposition employ to attempt to spark defections from this group?</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px 16px; color: #F44336; font-family: monospace; font-weight: bold;">defection.tactics</td>
+      <td style="padding: 10px 16px; color: #eee;">What specific actions did members of this support group engage in that resisted or opposed the regime in power?</td>
+    </tr>
+     <tr>
+      <td style="padding: 10px 16px; color: #F44336; font-family: monospace; font-weight: bold;">social.connection</td>
+      <td style="padding: 10px 16px; color: #eee;">How dense are the social connections between this group and the opposition?</td>
+    </tr>
+     <tr>
+      <td style="padding: 10px 16px; color: #F44336; font-family: monospace; font-weight: bold;">vignette</td>
+      <td style="padding: 10px 16px; color: #eee;">Is this group in this year a good candidate for a defection case study?</td>
+    </tr>
+
+  </tbody>
+</table>
+```
+
+## Data Collection and Coding Process
+
+::: {.incremental}
+- Code variables for each [*relevant*]{.highlight-red} support group from in first year of a regime
+- Carry values forward until [*potential defection year*]{.highlight-red}, then carry values forward until next potential defection year.
+- Code based on curated list of scholarly and media sources. Double-code with human RA coder and LLM-based AI agent.
+:::
+
+## Some Preliminary Modeling!
+
+Civil resistance campaigns correlate with defections!
+
+```{r}
+#| fig-align: "center"
+#| fig-width: 8
+#| fig-height: 5
+
+log.mod <- glm(any.dfx ~ NONVIOL + v2x_polyarchy, family = binomial(link = "logit"),
+               data = cyear.data)
+
+p <- plot_predictions(log.mod, by = "NONVIOL")
+
+p$layers <- lapply(p$layers, function(layer) {
+  layer$aes_params$colour <- "#A93226"
+  layer$aes_params$fill   <- "#A93226"
+  layer
+})
+
+p +
+  scale_x_discrete(labels = c("No", "Yes")) +
+  labs(x = "Civil Resistance Campaign", y = "Defection Probability") +
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major = element_line(color = "grey40"),
+    plot.background  = element_rect(fill = "#191919", color = "#191919"),
+    panel.background = element_rect(fill = "#191919", color = "#191919"),
+    panel.border     = element_blank(),
+    text             = element_text(size = 20, color = "white"),
+    axis.text        = element_text(color = "grey80", size = 18)
+  )
+
+```
+
+
+
+## {background-color="#16213e"}
+
+::: {style="text-align: center; margin-top: 150px;"}
+
+### Discussion
+
+:::
+
+## A Few Major Questions for Feedback
+
+- What are the biggest [problems]{.highlight-red} with this approach? What is it likely to miss?
+- What [variables]{.highlight-red} should we include in order to test hypotheses/provide insights on the questions brought up in the second session?
+- What should we be looking for in informing the [*vignette*]{.highlight-red} variable? What kinds of defection stories from a global context should we be flagging?
+
+
+
+
+
+
+
+## {background-color="#16213e"}
+
+::: {style="text-align: center; margin-top: 150px;"}
+
+### Now over to Julian!
+
+:::
+
+## References

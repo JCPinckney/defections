@@ -1,0 +1,341 @@
+---
+title: "Conceptual Framework for Defections Project"
+author: "Jonathan Pinckney"
+date: "`r Sys.Date()`"
+format: 
+  pdf:
+    mainfont: "Garamond"
+    sansfont: "Garamond"
+editor: source
+link-citations: true
+bibliography: "../main-library.bib"
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+```{r}
+#| include: false
+
+suppressPackageStartupMessages({
+  library(tidyverse)
+  library(kableExtra)
+})
+```
+
+
+# Introduction
+
+When do supporters of authoritarian and democratic backsliding regimes cease to support their leaders? When do they *defect*? And what actions by opposition forces, civil resistance campaigns, or third party actors can motivate such changes? This document presents a conceptual framework for understanding this process. The framework will guide a series of research projects that seek to generate and test hypotheses on when, why, and how defection happens. These research projects in turn will inform a series of public engagement and storytelling projects to facilitate understanding of how to spark defection from authoritarian and democratic backsliding regimes.  
+
+## What is Defection?
+
+All political regimes rely on key groups and institutions to provide them with the power and resources needed to sustain themselves. For example, for political regimes to engage in repression they require the consistent cooperation of police and security forces. If security forces refuse to carry out orders, then the state will be unable to repress opposition. Similarly, every regime requires some degree of propaganda and public-facing narrative. If media refuse to spread regime narratives, then the regime will be unable to gain the compliance of the populace. And every citizen helps keep the regime that rules them in power through paying taxes.  All political power rests upon a flow of these kinds of resources and obedience that must be continually replenished [@sharp-politics-1973].
+
+Most of the time, regime supporters provide their support in relatively unchanging ways. Orders are rarely questioned, norms of authority and deference are followed, and politics proceeds as it always has. These common patterns of obedience create the illusion that power is stable and unchanging. 
+
+Yet loyalties shift. Out of changing self-interest, or fear of the future, or moral conviction, the individuals and groups that previously supported a regime cease to do so. They behave in ways that defy the wishes of political leaders: soldiers refuse to open fire on demonstrators, government attorneys refuse to engage in politically-motivated prosecutions, legislators resign from their offices, or vote against the leaders or parties that originally brought them to power.
+
+All these are examples of what we, drawing on an extensive literature, refer to as *defection*. Defection is any instance in which a regime supporter significantly and substantively decreases their level of regime support. It is a critical component of any process of political change. It is particularly crucial in processes of *nonviolent* political change, whose logic of change rests not on eliminating one's opponents but on shifting them to one's side [@chenoweth-why-2011]. 
+
+Consider, as a unifying metaphor, the *spectrum of allies and opponents* (shown in @fig-spectrum), originally developed by @oppenheimer-manual-1965. The tool places all relevant social and political groups involved a political struggle into five ordinal positions along a spectrum of loyalty toward a regime, ranging from active support to active opposition. This identification process then informs the strategies that movements employ toward those groups, always seeking to move them from the right to the left. A *loyalty shift* is any movement from any point along this spectrum to any other, while *defection* specifically denotes any left-ward movement that begins in active or passive support.^[Defection thus overlaps with but is not identical to *mobilization*, which is any right-to-left movement on the spectrum that ends in the "Active Opposition" point. Defection overlaps with mobilization when it begins in Passive or Active Support and ends in Active Opposition, yet many instances of defection do not end in active opposition.]
+
+```{r}
+#| fig-cap: "Spectrum of Allies and Opponents"
+#| label: fig-spectrum
+
+vlines <- tibble(x = 0:5)
+
+spectrum.data <- tibble(
+  y = rep(0,5),
+  x = seq(0.5,4.5,1),
+  label = c("Active\nOpposition","Passive\nOpposition","Neutral\n","Passive\nSupport","Active\nSupport")
+)
+
+arrows <- tibble(
+  x = c(4.5,3.5,2.5),
+  y = c(0.5,0.2,0.8),
+  xend = c(2.5,1.5,0.5),
+  yend = c(0.5,0.2,0.8),
+  label = c("Defection","Defection","Not\nDefection")
+)
+
+ggplot(spectrum.data,aes(x,y,label = label)) +
+  geom_text(vjust = 1.5,
+            fontface = "bold") +
+  geom_hline(yintercept = 0) +
+  geom_vline(
+    data = vlines,
+    aes(xintercept = x),
+    linetype = "dashed",
+    color = "grey50") +
+  geom_segment(
+    data = arrows,
+    aes(x = x, y = y, xend = xend,yend = yend),
+    arrow = arrow(),
+    linewidth = 1
+  ) +
+  geom_text(
+    data = arrows,
+    aes(
+    x = (x + xend) / 2,
+    y = (y + yend) / 2,
+    label = label
+    ),
+    vjust =-1,
+    fontface = "bold"
+  ) +
+
+  scale_y_continuous(limits = c(-0.3,1.2)) +
+  theme_void()
+```
+
+## Scope Conditions 
+
+Defection is a process that occurs in all political regimes, and in some sense, within all organizations.^[@hirschman-exit-1970 is one attempt to generate a macro-theory of defection relevant across all kinds of organizations, with a focus on firms.] For this project, we specifically examine defection in the context of authoritarian and democratic backsliding regimes. 
+
+This scope condition is both theoretically and practically motivated. Theoretically, we expect defection in these contexts to systematically differ from defection in healthy democracies. Repression of opponents is substantially higher in authoritarian and would-be authoritarian regimes [@davenport-state-2007; @adhikari-examining-2024], making defection a far riskier action than in democracies. Given this different risk environment, the personal, social, and political motivators of defection are likely to be distinct.^[The boundaries between these conditions are fuzzy. Scholars debate, for instance, what constitutes a period of democratic backsliding [@little-measuring-2024], and some of these periods look very similar to periods of democracy. We define democratic backsliding following @jee-unified-2022, 755, as "any change of a political community’s formal or informal rules which reduces that community’s ability to guarantee the freedom of choice, freedom from tyranny, or equality in freedom." In the 21st century, such periods tend to be characterized by "executive aggrandizement," the gradual centralization of power in the hands of the executive, often initially through legal avenues [@bermeo-democratic-2016; @riedl-pathways-2024]. Operationally, our starting point for identifying periods of democratic backsliding is the definition of autocratization episodes from @luhrmann-third-2019] 
+
+In practical terms, this project's core motivation is to better understand how to protect, repair, and advance democracy. Thus the factors that motivate lower-risk defection in healthy democracies are of less interest. We do not rule out the possibility that examining defection in democratic settings may yield useful insights, nor do we think that our findings would be irrelevant for better understanding defection in healthy democracy. 
+
+We also focus on defection in the contemporary world, with particular attention to the post-Cold War period. This is because, as the literature has shown, the logic of both authoritarian rule and democratic backsliding is significantly different today than in the past. Authoritarian regimes today are much more likely to have pseudo-democratic institutions, and to rely less on the most direct and brutal forms of physical repression [@guriev-informational-2019; @levitsky-competitive-2010]. Historically, democratic backsliding tended to occur in sharp, dramatic breaks [@linz-breakdown-1978]. Today, gradual processes of decline centered in aggrandizement of the executive and conducted under a veneer of legality are more common [@bermeo-democratic-2016; @riedl-democratic-2025]. 
+
+# What Do We Already Know?
+
+Different forms of defection have largely been studied in isolation, without a unifying framework. Many scholars have examined defection by the military or other security forces, particularly in the context of ongoing civil resistance campaigns [@nepstad-mutiny-2013; @morency-laflamme-question-2018; @grewal-military-2019; @neu-strategies-2022; @dahl-disaggregating-2026; @pion-berlin-staying-2014]. Others have examined defection by individual elites or specific elite groups. For instance, there is a significant literature investigating why and how legislators in authoritarian single-party regimes leave the ruling party [@delrio-strategic-2022; @reuter-economic-2011; @reuter-elite-2019], and a smaller body of work examining why individual authoritarian regime supporters withdraw their support [@hale-who-2017; @tertytchnaya-protests-2020].
+
+While this fragmented literature comes to a variety of conclusions, a few consensus findings stand out:
+
+First, defection is *consequential*. The civil resistance literature is a central touchstone here. Defections by security forces in particular significantly increase the likelihood that a maximalist civil resistance campaign will succeed [@chenoweth-why-2011]; civil resistance strategies aimed at inducing defections among regime supporters have been shown to outperform strategies focused solely on mass mobilization [@chenoweth-dynamic-2022]. Beyond civil resistance, divisions in elite coalitions are one of the most consequential precursors of democratization [@odonnell-transitions-1986; @djuve-patterns-2019]^[Though the effects of such divisions may be contingent on regime characteristics [@delrio-democratic-2025]]
+
+Second, defection is *difficult*. Loyalty to one's group, even at the expense of personal self-interest, is a basic characteristic of human psychology [@billig-social-1973]. Thus, defection faces inherent psychological barriers. These barriers are reinforced by deliberate regime strategies. Authoritarian leaders recognize the threat posed by defection and invest in strategies to prevent it [@svolik-politics-2012; @markowitz-kompromat-2017], from designing institutional structures to co-opt potential defectors or counterbalance them against one another [@gandhi-political-2008; @debruin-how-2020] to censorship of nascent collective action [@king-how-2013], to unleashing state repression [@fruge-repressive-2019]. Together, these psychological and practical barriers make defection rare. In @delrio-strategic-2022's study of defection among legislative elites in authoritarian regimes, only 3% of the individuals studied ever defected, even in the final days of a regime. Similarly, in a study of democratic backsliding spells, @pinckney-breaking-2025 find that support groups for democratic backsliding regimes defected *en masse* in only a small proportion of backsliding spells.
+
+Third, defection is *complex but predictable*. In a foundational contribution, @kuran-now-1991 argued that defection from authoritarian regimes is inherently unpredictable due to near-universal preference falsification. This prevents an outside observer from knowing beforehand when individuals would be willing to speak out against the regime. When change did occur, Kuran argued it was likely to come about as a sudden and shocking "cascade." While Kuran's argument remains an important touchstone, subsequent research has highlighted that while defection is complex, often nonlinear, and challenging to study in authoritarian contexts, it does have reliable predictors. Economic self-interest is a consistent theme among these predictors. Both poor economic performance at the national level, and declining personal economic fortunes in the authoritarian regime are strong predictors of defection [@reuter-economic-2011; @grewal-military-2019; @pion-berlin-staying-2014]. Widespread defection taking place in neighboring countries is another [@beissinger-structure-2007; @gleditsch-diffusion-2017; @bunce-defeating-2011]. Scholars have found that institutional structures that make defection more costly tend to make it less likely [@langston-breaking-2002].  
+
+
+# A Few Guiding Assumptions
+
+Given the conceptual breadth of defections, even within the empirical scope limitations described above there are numerous ways to study the phenomenon. In this section we lay out a few of the core theoretical assumptions underlying our approach. 
+
+## Defection Can Be Individual or Collective
+
+Defection occurs at both the individual (micro) level and group (meso) level. Individuals may make personal decisions to defect that do not substantively impact the social and political groups to which they belong. Groups can also defect collectively in ways that cannot be reduced to a simple aggregation of individual decisions. Individuals are embedded within social groups, and groups are embedded in large social and political systems. While the aggregation of individual-level characteristics for all members of a group can tell us something about the group's likely behavior, it is unlikely to capture the whole story. Likewise, knowing the groups to which an individual belongs can help predict propensity to defect, but is unlikely to tell us everything.
+
+This means there is interesting and important research to be done on defection both at the individual and the group level, and research that ignores one of these levels is likely to yield an incomplete picture.
+
+## Defection is Social
+
+Defection cannot be studied in isolation. While unit-level factors influence a person or group's propensity to defect, defection unfolds in an inescapably social context. Individuals and groups decide whether or not to defect not just based on what they want but on what they think other people and groups are likely to do [@koehler-disaffection-2016]. Understanding defection therefore requires attention not only to characteristics of individuals or groups but also to their embeddedness within broader social networks and the flows of information through those networks. 
+
+## Defection Has Multi-Faceted, Obscure Motivations
+
+Individuals or groups defect for many reasons. These may be stated or unstated, and may be transparent or opaque even to the defectors themselves. In some cases, defection may be a matter of rational, material utility maximization; in others it may be a matter of moral conviction or suasion [@pearlman-moral-2018]. Or it may be motivated by changing norms of appropriate behavior in one's social group. These motivations are not sharply segmented from one another, and frequently interact. Material interests are easier to advance if one can morally justify them. Conversely, commitment to one's principles is easier to sustain if it also happens be materially beneficial. 
+
+The interrelated and often ambiguous nature of defection motivations implies that we should treat self-reported explanations as one data source among many, not as the definitive answer to *why* defection occurred. The stories people tell about why they made consequential decisions are not simply direct replications of their actual motivations, but are narratives intended to shape a self or collective image [@nisbett-telling-1977].
+
+This leads directly to the following guiding assumption:
+
+## Defection is Behavioral
+
+Defection is defined not by what people *think* but by what they *do*. For defection to occur, there must be an observable behavioral change vis a vis an authoritarian regime. Individuals or groups must stop providing forms of support they previously provided. While changes in beliefs or attitudes may be important precursors to defection, if they do not result in meaningful, observable behavior change they do not constitute defection. 
+
+This does not mean we are uninterested in public expressions of loyalty or dissent toward an authoritarian regime. Speech is an important aspect of behavior, particularly in authoritarian contexts where even the slightest indication of dissent is politically meaningful [@hale-who-2017]. Statements that reflect a dissident attitude toward a regime are important behavioral changes and can lead to transformational consequences [@kuran-now-1991]. In Communist Romania, the simple act of a crowd publicly booing a speech by dictator Nicolae Ceausescu led directly to the downfall of the regime.
+
+At the same time, what constitutes defection is not the same across contexts. Whether a particular behavior is a defection will depend on what, for that individual or group, constitutes loyalty. Some behaviors may be clearly defection across almost all contexts, but in most cases identifying defection and assessing its significance will require significant contextual knowledge.^[See @pinckney-nonviolent-2021 for a similar discussion of what constitutes nonviolent resistance. A public march, for instance, by an excluded group in a dictatorship where such marches are criminalized, is a bold act of nonviolent resistance. A tactically identical march by a privileged group in a democracy may simply be politics as usual.] 
+
+Vaclav @havel-power-1985's seminal essay "The Power of the Powerless" illustrates this point. Havel describes the momentousness of a shopkeeper in Communist Czechoslovakia choosing to remove a "Workers of the World, Unite" sign from his shop window. Havel describes how the universality of such displays creates the metaphysical structure that gives the post-totalitarian Communist regime its power, rendering even minor acts of defiance politically consequential. However, to recognize the importance of such an action, we must understand the routine behaviors expected of an average citizen of this regime and how people interpret deviations from those behaviors.
+
+This discussion leads into our final guiding theoretical assumption:
+
+## Defection Takes Many Forms
+
+The ways in which defection happens are as diverse as the ways that regime supporters display loyalty. Defection will look different across individuals and groups. It can involve incremental steps or dramatic steps, can be publicized to the world or confided within private networks of trusted friends and confidants.
+
+As a first step towards theoretical clarity, we categorize forms of defection as falling along two dimensions: whether they *break* or *bind* with the regime and whether the involve *speaking, acting,* or *standing in the way.* 
+
+The first dimension captures whether the defection is intended to change the regime from within or from outside.^[This dimension has close parallels to the idea of *insider* or *outsider* strategies for achieving social change, as well as Hirschman's classic distinction between "voice" and "exit" [@hirschman-exit-1970]] Defection that *breaks* typically involves severing ties with the regime, often through highly visible actions or explicit denunciations. In social psychological terms, it involves a definitive disconnection from a social identity once previously held. Defection that *binds*, by contrast, seeks to maintain one's prior social identity as a part of a regime while applying internal pressure to motivate change in the regime's behavior. Such defection typically involves behaviors that are quiet, behind the scenes, and perhaps only visible in their effects. 
+
+The second dimension refers to the defector's specific behaviors. Defection through *speaking* involves verbal expression of opposition to the regime. Defection through *acting* entails taking positive steps against the regime. Defection through *standing in the way* consists of refusing to do what is normally expected.^[This dimension roughly parallels Gene @sharp-politics-1973's division of the methods of nonviolent action into *protest and persuasion* (speaking), *non-cooperation* (standing in the way), and *nonviolent intervention* (acting), with some conceptual overlap and some distinctions. While many instances of defection are likely also instances of nonviolent action/nonviolent resistance, some are not.] @tbl-matrix describes some indicative examples of different forms of defections along these two dimensions.
+
+```{r}
+#| tbl-cap: "Types of Defection"
+#| label: tbl-matrix
+
+tbl <- data.frame(
+  Breaking = c("Public Condemnation", "Joining a Demonstration", "Disobeying Orders"),
+  Binding  = c("Private Disapproval", "Creating Internal Reforms", "Foot-Dragging"),
+  row.names = c("Speaking", "Acting", "Standing in the Way")
+)
+
+kable(
+  tbl,
+  format = "latex",
+  booktabs = TRUE,
+  row.names = TRUE,
+  col.names = c("", "Breaking", "Binding"),
+  escape = FALSE
+) %>%
+  row_spec(0, bold = TRUE) %>%
+  column_spec(1,bold = TRUE)
+
+```
+
+As defection unfolds over time will, it will likely begin with binding and then breaking, and may involve a combination speaking, acting, and standing in the way. Specific acts of defection by the same group or individual can be distinguished based on whether they vary across these dimensions.
+
+
+# A Few Propositions
+
+Having laid out our guiding assumptions about defection, we now describe a set of initial hypotheses that are warrant further investigation. We are particularly interested in the ways in which action by opposition groups, civil resistance campaigns, and others struggling against authoritarian or backsliding regimes can facilitate or spark defection. Accordingly, the hypotheses that follow are generally framed within these contexts.
+
+## Defection Requires a Way Out
+
+Regime supporters will be highly unlikely to defect if they do not perceive an acceptable post-defection future. For example, @sinanoglu-autocrats-2025 points out that corruption can powerfully deter defection among business elites. Not only do businesses that have corrupt relationships with authoritarian regimes fear losing the material benefits of corruption, they also know that their corruption engenders animosity toward them among the opposition. Thus, anticipating adverse consequences in a post-regime world, business elites may remain loyal to the regime even when it is not in their material interest.
+
+Defection is therefore most likely to occur when potential defectors can identify viable avenues to achieve their core individual or organizational goals post-defection. This is partially a matter of institutional structure that may be outside of activists' immediate control - if the existing social, political, or economic institutions provide no meaningful prospects for post-defection life, then defection will be particularly rare [@langston-breaking-2002]. Eliminating such alternative pathways is a key strategy of authoritarian control. 
+
+However, skillful resistance campaigns can counter this strategy by promoting "ways out" for potential defectors. They may do so by creating alternative institutions, negotiating exit plans, and by promoting an inclusive vision of a post-regime future in which potential defectors can see themselves.
+
+## It's Not What You Know, It's Who You Know
+
+Defection is likely to be driven by social connections. Individuals and groups behave not only according to a material "logic of consequences" but also according to a "logic of appropriateness" for what people and groups "like them" typically do [@march-institutional-1998]. All else equal, any factor that increases a regime supporter's positive connections to individuals and groups that have publicly-known lower levels of loyalty to the regime will tend to reduce that supporter's regime loyalty and increase the probability of defection. This mechanism also connects to the social psychological dynamics of in-group loyalty that make defection difficult. When the boundaries of the relevant "group" are blurred, such that regime supporters come to see their social group as including both regime supporters and opponents, then in-group loyalty will no longer necessarily imply *regime* loyalty. 
+
+For this mechanism to operate, lower levels of regime loyalty among a supporter's social group must be *known*. Thus, factors that cause regime supporters to update their priors about the level of dissent against the regime, particularly among unlikely dissenters, is likely to increase the probability of defection.
+
+For resistance campaigns, this implies that defection should be more likely under two conditions: (1) when the campaign increases their social connection to regime supporters and (2) when they effectively signal that dissent is both more widespread and more durable than regime supporters previously anticipated.
+
+## ...but Material Consequences Matter
+
+While social connections are important, they do not tell the whole story. Defection in authoritarian contexts is also a high-risk, high-cost endeavor, and regime supporters are likely to be sensitive to the costs of their potential actions. Thus, factors that increase the personal or group cost of remaining loyal to the regime relative to the cost of defection are likely to increase the scale and scope of defection. To avoid overly stretching the concept of cost we focus on material costs and benefits.
+
+Resistance campaigns can heighten the costs of loyalty through tactics of non-cooperation or nonviolent intervention that target the material bases of support for regime loyalists. 
+
+There is a tension between the social logic for promoting defection highlighted in the previous hypothesis and the material logic of promoting defection emphasized here. To illustrate, consider a business that is providing support to an authoritarian leader. An anti-authoritarian campaign could attempt to spur defection by encouraging its members to patronize the business, thereby building strong social connections between the business and the campaign's members and developing a social logic of appropriateness that might motivate the business to defect. Alternatively, the campaign could organize a boycott, cutting off social connections between itself and the business, but heightening the material costs of loyalty until certain concessions are made. Which strategy should the campaign pursue?
+
+We are skeptical that either the social or the material logic of sparking defection predominates across all contexts. Instead, effective campaigns are likely to spark defection through a carefully sequenced combination of tactics that leverage both logics. Tactics that attempt to impose material costs are more likely to succeed when they are built on existing social connections and clear communication. In other words, material pressure may be most effective when the imposition of costs is seen as a temporary break in a relationship that can be restored based on good behavior.
+
+Future research should explore the specific parameters under which these logics can be most effectively employed, how they are best combined, and how they interact with other consequential factors such as the relative power, pre-existing relationships, and institutional position of regime supporters.
+
+
+## Little Steps are Easier than Big Steps
+
+We expect that defection is generally easier among those with the lowest levels of support for a regime, and that small-scale defections are far more common than large-scale defections. In the framework of the spectrum of allies and opponents, we expect that the most common type of defection is a shift from passive support to neutrality. The second most common will be moves from active support to passive support. Jumps of more than one level - most extremely from active support to active opposition - will be much less common.^[For evidence supporting this general framework see @neundorf-loyal-2025 or @tertytchnaya-protests-2020.]
+
+For active supporters to become active opponents of a regime multiple steps will thus typically be required. Active supporters will typically move from active to passive support, then to neutrality, followed by passive opposition, before (if ever) ultimately reaching active opposition.
+
+## ...but authoritarianism can make defection all or nothing
+
+Authoritarian and would-be authoritarian regimes have strong incentives to prevent the gradual declines in loyalty described in the previous hypothesis. They are highly likely to punish even modest indications of declining loyalty with severe repression. As a result, supporters whose private loyalties are shifting will be more hesitant to express those shifts. This means that over time authoritarian and would-be authoritarian regimes accumulate large numbers of public supporters whose private preferences strongly oppose them [@kuran-now-1991]. When these individuals defect, they are likely to do so in dramatic, all-or-nothing ways.
+
+Thus, we hypothesize that the scale of defection is directly related to the degree of authoritarianism in the current political regime. In more open political environments, we will tend to observe more small defections, such as moves from passive support to neutrality. As the system becomes more authoritarian, defection will become less frequent, but larger and more abrupt when it occurs. We will see more instances of active regime supporters moving to active regime opponents.
+
+# Conclusion
+
+All political regimes are built on loyalty. Understanding changes in that loyalty is key to understanding regime stability and transformation. For democratization to occur, or for democratic backsliding to be checked, the individuals and groups that support an authoritarian leader must cease to provide that support. They must defect.
+
+This project, grounded in the conceptual framework laid out in this document, seeks to unify the disparate ways scholars have studied previously defection and advance new insights into when, how, and why defection occurs. By doing so, this project aims to provide actionable recommendations to activists and policymakers seeking to advance, defend, and repair democracy around the world.
+
+
+
+
+
+
+
+```{r}
+# Labels for the wedges, from left to right
+# 
+# labels <- c(
+# "Active\nallies",
+# "Passive\nallies",
+# "Neutral",
+# "Passive\nopponents",
+# "Active\nopponents"
+# )
+# 
+# n_wedges <- length(labels)
+# 
+# # Angle boundaries for the semicircle: from 0 to pi (top half of the circle)
+# 
+# theta_bounds <- seq(0, pi, length.out = n_wedges + 1)
+# 
+# # Helper: build one wedge as a polygon (center -> arc -> center)
+# 
+# make_wedge <- function(i, n_points = 100, r = 1) {
+# theta_min <- theta_bounds[i]
+# theta_max <- theta_bounds[i + 1]
+# theta <- seq(theta_min, theta_max, length.out = n_points)
+# 
+# data.frame(
+# category = labels[i],
+# x = c(0, r * cos(theta), 0),
+# y = c(0, r * sin(theta), 0),
+# group = i
+# )
+# }
+# 
+# # All wedges in one data frame
+# 
+# wedges <- do.call(rbind, lapply(seq_len(n_wedges), make_wedge))
+# 
+# # Label positions: mid-angle of each wedge, slightly inside the edge
+# 
+# label_theta <- (theta_bounds[-1] + theta_bounds[-length(theta_bounds)]) / 2
+# r_label <- 1.17 # label radius, outside the semicircle
+# 
+# label_data <- data.frame(
+# category = labels,
+# x = r_label * cos(label_theta),
+# y = r_label * sin(label_theta),
+# hjust = 0.5,
+# vjust = 0.5
+# )
+# 
+# # Straight baseline under the semicircle
+# 
+# baseline <- data.frame(
+# x = -1,
+# y = 0,
+# xend = 1,
+# yend = 0
+# )
+# 
+# ggplot() +
+# 
+# # Wedges
+# 
+# geom_polygon(
+# data = wedges,
+# aes(x = x, y = y, group = group),
+# fill = "white", # or set to category-based colors if you like
+# color = "black",
+# linewidth = 0.7
+# ) +
+# 
+# # Baseline along the bottom
+# 
+# geom_segment(
+# data = baseline,
+# aes(x = x, y = y, xend = xend, yend = yend),
+# linewidth = 0.7
+# ) +
+# 
+# # Wedge labels
+# 
+# geom_text(
+# data = label_data,
+# aes(x = x, y = y, label = category),
+# size = 4
+# ) +
+# coord_equal(xlim = c(-1.3, 1.3), ylim = c(0, 1.3)) +
+# theme_void() +
+# theme(plot.margin = margin(10, 10, 10, 10))
+```
+
+
+
+
+
+
+
+
+# References
