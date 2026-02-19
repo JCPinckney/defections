@@ -1,7 +1,7 @@
 ---
 title: "Developing Defections Data"
-subtitle: "Disccussion of Two Early-Stage Resources"
-author: "Jonathan Pinckney"
+subtitle: "Two Early-Stage Resources"
+author: "Jonathan Pinckney and Julian Fortuna"
 date: "2026-02-20"
 format:
   revealjs:
@@ -43,9 +43,11 @@ cyear.data <- working.data[[2]]
 
 ## What is Missing?
 
+::: {.incremental}
 - Data that tracks more [diverse populations]{.highlight-red} of regime supporters across time and contexts
-- Data on a wider range of types of defection actions, recognizing the importance of [context]{.highlight-red} and [subtle/quiet action]{.highlight-red}
+- Data on a wider range of types of defections, recognizing the importance of [context]{.highlight-red} and [subtle/quiet action]{.highlight-red}
 - Resources that [process-trace]{.highlight-red} defections across  cases and contexts
+:::
 
 ## {background-color="#16213e"}
 
@@ -57,8 +59,10 @@ cyear.data <- working.data[[2]]
 
 ## What is This Resource For?
 
+:::{.incremental style="line-height: 2.5; margin-top: 30px;"}
 - [Large-*n* analysis]{.highlight-red} to identify factors that predict defection cross-nationally
 - Identifying key global cases of defection for [process-tracing]{.highlight-red}
+:::
 
 ## Scope Conditions
 
@@ -89,7 +93,7 @@ ggplot() +
             aes(x = year,y = v2x_polyarchy),
             color = "white", linewidth = 1) +
   scale_fill_manual(name = "",
-                    values = c("Democracy" = "#2ECC71",
+                    values = c("Democracy" = "#2196F3",
                                "Backsliding" = "#FFC107",
                                "Authoritarian" = "#F44336"),
                     guide = guide_legend(reverse = T)) +
