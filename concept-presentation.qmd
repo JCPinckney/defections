@@ -14,6 +14,7 @@ format:
     footer: "Defections Project — Conceptual Framework"
     title-slide-attributes:
       data-background-color: "#1a1a2e"
+bibliography: "../main-library.bib"      
 ---
 
 ```{r}
@@ -30,7 +31,6 @@ library(tidyverse)
 
 - Defection is [**consequential**]{.highlight-red} — it shapes regime stability and transformation
 - Yet we lack a [**unifying framework**]{.highlight-red} for understanding defection across contexts
-- 
 
 . . .
 
@@ -39,7 +39,7 @@ library(tidyverse)
 
 ## Power Rests on Obedience {.smaller}
 
-All political regimes rely on key groups and institutions to provide power and resources [(Sharp 1973)]{.small-gray}:
+All political regimes rely on key groups and institutions to provide power and resources [@sharp-politics-1973]:
 
 . . .
 
@@ -69,12 +69,12 @@ Examples:
 
 . . .
 
-Defection is especially crucial in processes of [**nonviolent resistance**]{.highlight-red}, whose logic rests not on eliminating opponents but on *shifting them to one's side* [(Chenoweth & Stephan 2011)]{.small-gray}.
+Defection is especially crucial in processes of [**nonviolent resistance**]{.highlight-red}, whose logic rests not on eliminating opponents but on *shifting them to one's side* [@chenoweth-why-2011].
 
 
 ## The Spectrum of Allies and Opponents {.smaller}
 
-Adapted from [Oppenheimer & Lakey (1965)]{.small-gray}:
+Adapted from @oppenheimer-manual-1965:
 
 ```{r}
 #| fig-align: center
@@ -168,41 +168,29 @@ This project focuses on defection within:
 
 . . .
 
-**1. Authoritarian and democratic backsliding regimes**
+[**1. Authoritarian and democratic backsliding regimes**]{.highlight-red}
 
-- Repression makes defection far riskier than in healthy democracies [(Davenport 2007)]{.small-gray}
+- Repression makes defection far riskier than in healthy democracies [@davenport-state-2007]
 - Different risk environments → different motivators
 - Core motivation: understanding how to protect, repair, and advance democracy
 
 . . .
 
-**2. The contemporary world (post–Cold War)**
+[**2. The contemporary world (post–Cold War)**]{.highlight-red}
 
-- Modern authoritarianism relies more on pseudo-democratic institutions, less on brute repression [(Guriev & Treisman 2019)]{.small-gray}
-- Democratic backsliding today is gradual, centered on executive aggrandizement under a veneer of legality [(Bermeo 2016; Riedl et al. 2025)]{.small-gray}
+- Modern authoritarianism relies more on pseudo-democratic institutions, less on brute repression [@guriev-informational-2019]
+- Democratic backsliding today is gradual, centered on executive aggrandizement under a veneer of legality [@bermeo-democratic-2016; @riedl-pathways-2024]
 
 
 ## What Do We Already Know? {.smaller}
 
 Different forms of defection have been studied in **isolation**:
 
-:::: {.columns}
-
-::: {.column width="50%"}
-
-- **Military/security defection** during civil resistance [(Nepstad 2013; Grewal 2019; Dahl, Celestino & Gates 2026)]{.small-gray}
-- **Legislative defection** from ruling parties in autocracies [(del Río 2022; Reuter & Gandhi 2011)]{.small-gray}
-
+::: {.incremental}
+- **Military/security defection** during civil resistance [@nepstad-mutiny-2013; @grewal-military-2019; @dahl-disaggregating-2026]
+- **Individual Elite defection** from ruling parties in autocracies [@reuter-economic-2011; @reuter-elite-2019; @delrio-strategic-2022]
+- **Mass voter defection** in electoral autocracies [@hale-who-2017; @tertytchnaya-protests-2020]
 :::
-
-::: {.column width="50%"}
-
-- **Individual elite defection** from regime coalitions [(Hale & Colton 2017; Tertytchnaya 2020)]{.small-gray}
-- **Mass voter defection** in electoral autocracies
-
-:::
-
-::::
 
 
 ## Three Consensus Findings {.smaller}
@@ -238,14 +226,12 @@ Different forms of defection have been studied in **isolation**:
 
 ::: {.column width="50%"}
 
-Defection occurs at both levels:
-
-::: {.incremental}
+::: {.incremental style="margin-top: 30px; margin-bottom: 30px;"}
 - [**Individual (micro):**]{.highlight-red} Personal decisions that may or may not affect one's group
 - [**Group (meso):**]{.highlight-red} Collective defection that cannot be reduced to aggregated individual decisions
 :::
 
-[Research at only one level that doesn't accounr for the other yields an incomplete picture.]{.fragment}
+[Research at only one level that doesn't account for the other yields an incomplete picture.]{.fragment}
 
 :::
 
@@ -320,8 +306,10 @@ ggplot() +
 
 Understanding defection requires attention to:
 
+::: {.incremental style="line-height: 2.5; margin-top: 30px;"}
 - [**Embeddedness**]{.highlight-red} within broader social networks
 - [**Information Flows**]{.highlight-red} through those networks
+:::
 
 :::
 
@@ -370,7 +358,7 @@ plot(g,
 People defect for many reasons — often simultaneously:
 
 - [**Rational self-interest**]{.highlight-red} (material utility maximization)
-- [**Moral conviction**]{.highlight-red} [(Pearlman 2018)]{.small-gray}
+- [**Moral conviction**]{.highlight-red} [@pearlman-moral-2018]
 - [**Changing social norms**]{.highlight-red} of appropriate behavior
 
 . . .
@@ -382,40 +370,43 @@ These motivations interact:
 
 . . .
 
-**Key caution:** Self-reported explanations are one data source among many, not definitive answers. People construct narratives to shape self and collective image [(Nisbett & Wilson 1977)]{.small-gray}.
+**Key caution:** Self-reported explanations are one data source among many, not definitive answers. People construct narratives to shape self and collective image [@nisbett-telling-1977].
 
 
 ## Defection Is Behavioral {.smaller}
 
-Defection is defined not by what people [**think**]{.highlight-red} but by what they [**do**]{.highlight-red}.
+:::: {.columns}
 
-. . .
+::: {.column width="50%"}
 
+::: {.incremental}
+- Defection is defined not by what people [**think**]{.highlight-red} but by what they [**do**]{.highlight-red}.
 - There must be an [**observable behavioral change**]{.highlight-red} vis-à-vis the regime
-- Changes in beliefs or attitudes that don't produce behavior change ≠ defection
+- [But **speech** counts as behavior!]{.highlight-red}
+- What counts as defection depends what constitutes [*loyalty*]{.highlight-red} for that individual or group.
+:::
 
-. . .
+:::
 
-But speech counts as behavior!
+::: {.column width = "45%"}
 
-- In authoritarian contexts, even slight indications of dissent are politically meaningful
+![](fruit.png){width="90%"}
 
-. . .
+:::
 
-**Caveat:** What counts as defection depends what constitutes [*loyalty*]{.highlight-red} for that individual or group.
-
-- Havel's shopkeeper removing "Workers of the World, Unite" sign
-
+::::
 
 ## Defection Takes Many Forms {.smaller}
 
-Two dimensions categorize forms of defection:
+<br>
 
 |  | [**Breaking**]{.highlight-red} (exit/outside) | [**Binding**]{.highlight-red} (voice/inside) |
 |---|---|---|
 | [**Speaking**]{.highlight-red} | Public condemnation | Private disapproval |
 | [**Acting**]{.highlight-red} | Joining a demonstration | Creating internal reforms |
 | [**Standing in the way**]{.highlight-red} | Disobeying orders | Foot-dragging |
+
+<br>
 
 . . .
 
@@ -435,31 +426,31 @@ Two dimensions categorize forms of defection:
 
 ## Defection Requires a Way Out {.smaller}
 
-Regime supporters won't defect without perceiving an **acceptable post-defection future**.
+Regime supporters won't defect without perceiving an [**acceptable post-defection future**.]{.highlight-red}
 
 . . .
 
-- Corrupt business elites fear both losing benefits *and* opposition animosity [(Sinanoglu 2025)]{.small-gray}
-- Without viable post-defection pathways, defection is particularly rare [(Langston 2002)]{.small-gray}
+- Corrupt business elites fear both losing benefits *and* opposition animosity [@sinanoglu-autocrats-2025]
+- Without viable post-defection pathways, defection is particularly rare [@langston-breaking-2002]
 - Eliminating alternatives is a key strategy of authoritarian control
 
 . . .
 
 **Implication for resistance campaigns:**
 
-- Create alternative institutions
-- Negotiate exit plans
-- Promote an **inclusive vision** of a post-regime future where potential defectors can see themselves
+- Create [alternative institutions]{.highlight-red}
+- Negotiate [exit plans]{.highlight-red}
+- Promote an [**inclusive vision**]{.highlight-red} of a post-regime future where potential defectors can see themselves
 
 
 ## It's Not What You Know, It's Who You Know {.smaller}
 
-Defection is driven by **social connections** and a "logic of appropriateness" [(March & Olsen 1998)]{.small-gray}.
+Defection is driven by **social connections** and a "logic of appropriateness" [@march-institutional-1998].
 
 . . .
 
 - Positive connections to individuals/groups with lower regime loyalty → reduced loyalty, increased defection probability
-- When group boundaries blur (supporters see their group as including opponents) → in-group loyalty no longer implies regime loyalty
+- When group boundaries blur (supporters see their group as including opponents) → [in-group]{.highlight-red} loyalty no longer implies [regime]{.highlight-red} loyalty
 
 . . .
 
@@ -493,19 +484,18 @@ Campaigns are likely to be effective when they [**sequence**]{.highlight-red} so
 
 - Most common defection: passive support → neutrality
 - Jumps of multiple levels (active support → active opposition) are rare
-- Reaching active opposition typically requires passing through each intermediate stage
 
 . . .
 
 [**But authoritarianism can make defection all-or-nothing**]{.highlight-red}
 
 - Authoritarian regimes punish even modest loyalty declines with severe repression
-- This accumulates large numbers of "false supporters" [(Kuran 1991)]{.small-gray}
+- This accumulates large numbers of false supporters [@kuran-now-1991]
 - When they defect, they do so dramatically
 
 . . .
 
-**Hypothesis:** Defection scale is directly related to degree of authoritarianism. More open → small, frequent defections. More authoritarian → rare but large and abrupt.
+[**Hypothesis:**]{.highlight-red} Defection scale is directly related to degree of authoritarianism. More open → small, frequent defections. More authoritarian → rare but large and abrupt.
 
 
 ## {background-color="#1a1a2e"}
@@ -613,24 +603,23 @@ ggplot(spectrum.data, aes(x, y, label = label)) +
 
 *Some considerations:*
 
-- Gain: Cross-pollination of insights across fragmented literatures
-- Gain: Unified language for practitioners and researchers
-- Loss: Context-specific dynamics may be obscured
-- Loss: Risk of over-generalizing across diverse phenomena
+- Gain: [Cross-pollination]{.highlight-red} of insights across fragmented literatures
+- Gain: [Unified language]{.highlight-red} for practitioners and researchers
+- Loss: [Context-specific dynamics]{.highlight-red} may be obscured
+- Loss: Risk of [over-generalizing]{.highlight-red} across diverse phenomena
 
 
 ## Evaluating the Assumptions {.smaller}
 
 [**Which assumptions are clear/unclear or helpful/unhelpful? Are there contradictions?**]{.highlight-red}
 
-The six assumptions:
+The five assumptions:
 
 1. Defection can be [**individual or collective**]{.highlight-red}
 2. Defection is [**social**]{.highlight-red}
 3. Defection has [**multi-faceted, obscure motivations**]{.highlight-red}
 4. Defection is [**behavioral**]{.highlight-red}
-5. Defection [**takes many forms**]{.highlight-red}
-6. Defection is [**contextual**]{.highlight-red}
+5. Defection [**takes many context-specific forms**]{.highlight-red}
 
 
 
@@ -640,19 +629,21 @@ The six assumptions:
 
 . . .
 
-*Some possible prompts:*
+*Some possible areas to explore:*
 
-- Role of **emotions** (fear, hope, shame, anger) as distinct from rational calculation or moral conviction?
-- **Temporality** — does timing of defection matter independently?
-- **Reversibility** — can defectors return to support? How does this affect the framework?
-
+:::{.incremental style="margin-top: 30px; margin-bottom: 20px"}
+- Role of [**emotions**]{.highlight-red} (fear, hope, shame, anger) as distinct from rational calculation or moral conviction?
+- [**Multi-dimensional Loyalty**]{.highlight-red} - this framework treats regime loyalty as unidimensional. Is that a problem? How should we think about the different directions loyalty can go?
+- [**Reversibility**]{.highlight-red} — defection can be temporary. How should we think about its potential to be reversed?
+:::
 
 ## Other Critiques? {.smaller}
 
-
-- What are the methodological challenges of studying defection given the framework?
-- Are the scope conditions (authoritarian + backsliding regimes) too broad or too narrow?
-- How does this framework relate to adjacent concepts (exit/voice/loyalty, methods of nonviolent action)?
+:::{.incremental style="line-height: 2.5;"}
+- What are the [**methodological challenges**]{.highlight-red} of studying defection given the framework?
+- Are the [**scope conditions**]{.highlight-red} (authoritarian + backsliding regimes) too broad or too narrow?
+- How does this framework relate to [**adjacent concepts**]{.highlight-red} (exit/voice/loyalty, methods of nonviolent action)?
+:::
 
 
 ## {background-color="#1a1a2e"}
@@ -662,3 +653,5 @@ The six assumptions:
 [Thank You!]{style="font-size: 1.5em; font-weight: bold;"}
 
 :::
+
+## References
