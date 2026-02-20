@@ -1,7 +1,7 @@
 ---
 title: "Developing Defections Data"
 subtitle: "Two Early-Stage Resources"
-author: "Jonathan Pinckney and Julian Fortuna"
+author: "Jonathan Pinckney, Julian Fortuna, and Suhan Kacholia"
 date: "2026-02-20"
 format:
   revealjs:
@@ -37,16 +37,16 @@ cyear.data <- working.data[[2]]
 
 ## What Data Resources Already Exist?
 
-- Military defections, particularly during civil resistance campaigns [@dahl-disaggregating-2026;@chenoweth-updating-2022]
+- Military and civil service defections during civil resistance campaigns [@dahl-disaggregating-2026;@chenoweth-updating-2022]
 - Loyalty/defection at the pillar of support level for some pillars in some backsliding spells [@pinckney-breaking-2025]
 - Individual-level data on authoritarian legislators/ministers including instances of defection to the opposition [@delrio-strategic-2022] 
 
 ## What is Missing?
 
 ::: {.incremental}
-- Data that tracks more [diverse populations]{.highlight-red} of regime supporters across time and contexts
+- Data that tracks [broader populations]{.highlight-red} of regime supporters across time and contexts
 - Data on a wider range of types of defections, recognizing the importance of [context]{.highlight-red} and [subtle/quiet action]{.highlight-red}
-- Resources that [process-trace]{.highlight-red} defections across  cases and contexts
+- Comparative case studies and stories that [process-trace]{.highlight-red} defections across cases and contexts
 :::
 
 ## {background-color="#16213e"}
@@ -139,7 +139,7 @@ Aristocracy
 Landholders  
 Party Elites  
 Business Elites  
-[Bureaucracy]{.highlight-red}  
+Bureaucracy  
 [Military]{.highlight-red}  
 Ethnic Group  
 Religious Group  
@@ -286,32 +286,41 @@ Limit to variables not readily available from existing data sources
 ## Data Collection and Coding Process
 
 ::: {.incremental}
-- Code variables for each [*relevant*]{.highlight-red} support group from in first year of a regime
-- Carry values forward until [*potential defection year*]{.highlight-red}, then carry values forward until next potential defection year.
-- Code based on curated list of scholarly and media sources. Double-code with human RA coder and LLM-based AI agent.
+- Code variables for each [*relevant*]{.highlight-red} support group beginning from first year of a regime
+- Carry values forward until [*potential defection year*]{.highlight-red}, then carry values forward until next potential defection year
+- Code based on curated list of scholarly and media sources. Double-code with human RA coder and LLM-based AI agent
+- Where possible, check against existing datasets to see what is being captured and what is not
 :::
 
 ## Some Preliminary Modeling!
 
-Civil resistance campaigns correlate with defections!
+. . .
+
+[Civil resistance campaigns are associated with more potential defections!]{.highlight-red}
 
 ```{r}
 #| fig-align: "center"
 #| fig-width: 8
 #| fig-height: 5
 
-log.mod <- glm(any.dfx ~ NONVIOL + v2x_polyarchy, family = binomial(link = "logit"),
-               data = cyear.data)
-
-p <- plot_predictions(log.mod, by = "NONVIOL")
+# log.mod <- glm(support.drop ~ NONVIOL + v2x_polyarchy + as_factor(year) + country_name, family = binomial(link = "logit"),
+#                data = cyear.data)
+# 
+# p <- plot_predictions(log.mod, by = "NONVIOL")
+# 
+# write_rds(p,"predplot.rds")
+p <- read_rds("predplot.rds")
 
 p$layers <- lapply(p$layers, function(layer) {
   layer$aes_params$colour <- "#A93226"
   layer$aes_params$fill   <- "#A93226"
+  layer$aes_params$size <- 2
+  layer$aes_params$linewidth = 2
   layer
 })
 
 p +
+  scale_y_continuous(labels = scales::percent) +
   scale_x_discrete(labels = c("No", "Yes")) +
   labs(x = "Civil Resistance Campaign", y = "Defection Probability") +
   theme_minimal(base_size = 13) +
@@ -354,7 +363,7 @@ p +
 
 ::: {style="text-align: center; margin-top: 150px;"}
 
-### Now over to Julian!
+### Now over to Julian and Suhan!
 
 :::
 

@@ -188,7 +188,7 @@ Different forms of defection have been studied in **isolation**:
 
 ::: {.incremental}
 - **Military/security defection** during civil resistance [@nepstad-mutiny-2013; @grewal-military-2019; @dahl-disaggregating-2026]
-- **Individual Elite defection** from ruling parties in autocracies [@reuter-economic-2011; @reuter-elite-2019; @delrio-strategic-2022]
+- **Individual Elite defection** from autocratic rgeimes [@reuter-economic-2011; @reuter-elite-2019; @delrio-strategic-2022; @slater-revolutions-2009]
 - **Mass voter defection** in electoral autocracies [@hale-who-2017; @tertytchnaya-protests-2020]
 :::
 
@@ -381,7 +381,7 @@ These motivations interact:
 
 ::: {.incremental}
 - Defection is defined not by what people [**think**]{.highlight-red} but by what they [**do**]{.highlight-red}.
-- There must be an [**observable behavioral change**]{.highlight-red} vis-à-vis the regime
+- There must be an [**observable behavioral change**]{.highlight-red} vis-à-vis the regime for us to say defection has occurred
 - [But **speech** counts as behavior!]{.highlight-red}
 - What counts as defection depends what constitutes [*loyalty*]{.highlight-red} for that individual or group.
 :::
@@ -390,7 +390,9 @@ These motivations interact:
 
 ::: {.column width = "45%"}
 
+::: {.fragment}
 ![](fruit.png){width="90%"}
+:::
 
 :::
 
@@ -426,7 +428,7 @@ These motivations interact:
 
 ## Defection Requires a Way Out {.smaller}
 
-Regime supporters won't defect without perceiving an [**acceptable post-defection future**.]{.highlight-red}
+Regime supporters typically won't defect without perceiving an [**acceptable post-defection future**.]{.highlight-red}
 
 . . .
 
@@ -468,10 +470,12 @@ Social connections are important but likely insufficient. Defection in authorita
 
 **Tension:** Social vs. material logics of sparking defection
 
+. . .
+
 *Example:* A business supporting an authoritarian leader
 
 - [**Social**]{.highlight-red} approach: Patronize the business → build connections → social logic of appropriateness
-- [**Material**]{.highlight-red} approach: Boycott → cut connections → heighten material costs of loyalty
+- [**Material pressure**]{.highlight-red} approach: Boycott → cut connections → heighten material costs of loyalty
 
 . . .
 
