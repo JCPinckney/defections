@@ -1,8 +1,8 @@
 ---
-title: "Conceptual Framework for Defections"
-subtitle: "When and Why Do Regime Supporters Cease Their Support?"
+title: "A Defections Conceptual Framework"
+subtitle: "Why Do Regime Supporters Cease Their Support?"
 author: "Jonathan Pinckney"
-date: "2026-02-17"
+date: "2026-02-20"
 format:
   revealjs:
     theme: [dark, custom.scss]
@@ -63,9 +63,10 @@ All political regimes rely on key groups and institutions to provide power and r
 Examples:
 
 - Soldiers refuse to open fire on demonstrators
-- Government attorneys refuse politically-motivated prosecutions
-- Legislators resign or vote against their party leadership
-- Businesses withdraw financial support
+- Legislators resign or vote against their party
+- Businesses give fewer campaign donations
+- Party elites stop echoing leadership's talking points
+- People who once praised a dictator start mocking him in private
 
 . . .
 
@@ -231,7 +232,7 @@ Different forms of defection have been studied in **isolation**:
 - [**Group (meso):**]{.highlight-red} Collective defection that cannot be reduced to aggregated individual decisions
 :::
 
-[Research at only one level that doesn't account for the other yields an incomplete picture.]{.fragment}
+[Meaningful research can be done at either level, and ideal research will incorporate both.]{.fragment}
 
 :::
 
