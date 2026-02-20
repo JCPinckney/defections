@@ -10,6 +10,7 @@ format:
     width: 1280
     height: 720
     center: false
+    embed-resources: true
     hash-type: number
     footer: "Defections Project — Conceptual Framework"
     title-slide-attributes:
